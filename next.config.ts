@@ -1,7 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  output: 'standalone', // هذا السطر يسمح بتشغيل المشروع على استضافة تدعم Node.js
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;

@@ -1,0 +1,39 @@
+{
+  "nav.search": "Ürünleri ara...",
+  "nav.cart": "Sepet",
+  "nav.login": "Giriş Yap",
+  "nav.deals": "Fırsatlar",
+  "nav.iphones": "iPhone'lar",
+  "nav.samsung": "Samsung",
+  "nav.watches": "Saatler",
+  "nav.laptops": "Dizüstü",
+  "nav.tablets": "Tabletler",
+
+  "home.hero.title": "Teknolojiyi En İyi Şekilde Deneyimleyin.",
+  "home.hero.subtitle": "Yeni iPhone 16 Pro ve daha fazlası. Premium cihazlar, sertifikalı yenilenmiş.",
+  "home.hero.shopNow": "Şimdi Alışveriş Yap",
+  "home.hero.explore": "Fırsatları Keşfet",
+  
+  "home.categories.shopByCategory": "Kategoriye Göre Alışveriş",
+  "home.categories.explorePremium": "Premium seçimlerimizi keşfedin.",
+  
+  "home.sustainability.title": "Gezegenimize Etkimiz",
+  "home.sustainability.subtitle": "Yenilenmiş teknoloji seçerek, birlikte e-atıkları azaltıyor ve daha sürdürülebilir bir gelecek inşa ediyoruz.",
+  "home.sustainability.ewaste": "e-atık engellendi",
+  "home.sustainability.trees": "Ağaç dikildi",
+  "home.sustainability.water": "Litre su tasarrufu",
+  "home.sustainability.customers": "Mutlu Müşteri",
+
+  "home.shopIphone.title": "iPhone Satın Al",
+  "home.shopIphone.subtitle": "Tüm modeller. Seçiminizi yapın.",
+  "home.shopIphone.buyers": "Mutlu Alıcı",
+  "home.shopIphone.buy": "Satın Al",
+  
+  "footer.newsletter.title": "İlk Siparişinizde %10 İndirim Kazanın",
+  "footer.newsletter.subtitle": "Özel fırsatlardan ilk siz haberdar olun.",
+  "footer.newsletter.placeholder": "E-posta adresiniz",
+  "footer.newsletter.subscribe": "Abone Ol",
+  "footer.shop": "Alışveriş",
+  "footer.company": "Şirket",
+  "footer.support": "Destek"
+}

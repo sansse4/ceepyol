@@ -1,0 +1,624 @@
+[
+  {
+    "id": "custom-1775518707054-fhm95btns",
+    "slug": "airpods-max-2",
+    "name": "AirPods Max 2",
+    "brand": "Apple",
+    "category": "audio",
+    "price": 549,
+    "description": "AirPods Max 2 The ultimate over‑ear personal listening experience.",
+    "images": [
+      {
+        "src": "/images/products/airpods-max-2.png",
+        "alt": "AirPods Max 2"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Default",
+        "hex": "#888888"
+      }
+    ],
+    "specs": [
+      {
+        "label": "Type",
+        "value": "AirPods Max 2"
+      }
+    ],
+    "badges": [
+      "New Arrival"
+    ],
+    "condition": "New",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0
+  },
+  {
+    "id": "custom-1775518707060-xa60gkga1",
+    "slug": "airpods-4",
+    "name": "AirPods 4",
+    "brand": "Apple",
+    "category": "audio",
+    "price": 129,
+    "description": "The next evolution of sound and comfort.",
+    "images": [
+      {
+        "src": "/images/products/airpods-4.jpg",
+        "alt": "AirPods 4"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Default",
+        "hex": "#888888"
+      }
+    ],
+    "specs": [
+      {
+        "label": "Type",
+        "value": "AirPods 4"
+      }
+    ],
+    "badges": [
+      "New Arrival"
+    ],
+    "condition": "New",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0
+  },
+  {
+    "id": "custom-1775518707063-wncepujwb",
+    "slug": "650f37e9b4a03118fe65cc68d165a7b4b2d8e2c2b51f598531e407505dade308",
+    "name": "650f37e9b4a03118fe65cc68d165a7b4b2d8e2c2b51f598531e407505dade308",
+    "brand": "Apple",
+    "category": "tablets",
+    "price": 799,
+    "description": "Experience the advanced new 650f37e9b4a03118fe65cc68d165a7b4b2d8e2c2b51f598531e407505dade308.",
+    "images": [
+      {
+        "src": "/images/products/650f37e9b4a03118fe65cc68d165a7b4b2d8e2c2b51f598531e407505dade308.png",
+        "alt": "650f37e9b4a03118fe65cc68d165a7b4b2d8e2c2b51f598531e407505dade308"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Space Gray",
+        "hex": "#535150"
+      }
+    ],
+    "specs": [
+      {
+        "label": "Type",
+        "value": "650f37e9b4a03118fe65cc68d165a7b4b2d8e2c2b51f598531e407505dade308"
+      }
+    ],
+    "badges": [
+      "New"
+    ],
+    "condition": "New",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0
+  },
+  {
+    "id": "custom-1775518707066-yfh5d5r2s",
+    "slug": "ea76151599919eef604187d40e15eef31c70e8d5a7bf7cf8881a2dc4f211870b",
+    "name": "Ea76151599919eef604187d40e15eef31c70e8d5a7bf7cf8881a2dc4f211870b",
+    "brand": "Apple",
+    "category": "tablets",
+    "price": 799,
+    "description": "Experience the advanced new Ea76151599919eef604187d40e15eef31c70e8d5a7bf7cf8881a2dc4f211870b.",
+    "images": [
+      {
+        "src": "/images/products/ea76151599919eef604187d40e15eef31c70e8d5a7bf7cf8881a2dc4f211870b.png",
+        "alt": "Ea76151599919eef604187d40e15eef31c70e8d5a7bf7cf8881a2dc4f211870b"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Space Gray",
+        "hex": "#535150"
+      }
+    ],
+    "specs": [
+      {
+        "label": "Type",
+        "value": "Ea76151599919eef604187d40e15eef31c70e8d5a7bf7cf8881a2dc4f211870b"
+      }
+    ],
+    "badges": [
+      "New"
+    ],
+    "condition": "New",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0
+  },
+  {
+    "id": "custom-1775518707069-23uwwczqw",
+    "slug": "ipad-07e11a653",
+    "name": "Ipad",
+    "brand": "Apple",
+    "category": "tablets",
+    "price": 799,
+    "description": "Experience the advanced new Ipad.",
+    "images": [
+      {
+        "src": "/images/products/ipad-07e11a653.png",
+        "alt": "Ipad"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Space Gray",
+        "hex": "#535150"
+      }
+    ],
+    "specs": [
+      {
+        "label": "Type",
+        "value": "Ipad"
+      }
+    ],
+    "badges": [
+      "New"
+    ],
+    "condition": "New",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0
+  },
+  {
+    "id": "custom-1775518707072-y4der4ps6",
+    "slug": "ipad-pro-b15908d8a",
+    "name": "Ipad pro",
+    "brand": "Apple",
+    "category": "tablets",
+    "price": 799,
+    "description": "Experience the advanced new Ipad pro.",
+    "images": [
+      {
+        "src": "/images/products/ipad-pro-b15908d8a.png",
+        "alt": "Ipad pro"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Space Gray",
+        "hex": "#535150"
+      }
+    ],
+    "specs": [
+      {
+        "label": "Type",
+        "value": "Ipad pro"
+      }
+    ],
+    "badges": [
+      "New"
+    ],
+    "condition": "New",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0
+  },
+  {
+    "id": "custom-1775518707077-32u8lmap3",
+    "slug": "iphone-16",
+    "name": "iPhone 16",
+    "brand": "Apple",
+    "category": "iphones",
+    "price": 699,
+    "description": "iPhone 16 in Ultramarine finish, partial-screen display and side angle shows - Action, volume and side button. Back exterior shows advanced dual-camera system in top left corner. Amazing performance. Durable design.",
+    "images": [
+      {
+        "src": "/images/products/iphone-16.jpg",
+        "alt": "iPhone 16"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Ultramarine",
+        "hex": "#273C74"
+      },
+      {
+        "name": "Teal",
+        "hex": "#63A7A6"
+      },
+      {
+        "name": "Pink",
+        "hex": "#F8D8DC"
+      },
+      {
+        "name": "White",
+        "hex": "#F5F5F7"
+      },
+      {
+        "name": "Black",
+        "hex": "#1D1D1F"
+      }
+    ],
+    "specs": [
+      {
+        "label": "Type",
+        "value": "iPhone 16"
+      }
+    ],
+    "badges": [
+      "New Arrival"
+    ],
+    "condition": "New",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0
+  },
+  {
+    "id": "custom-1775518707082-qaredo18a",
+    "slug": "iphone-17",
+    "name": "iPhone 17",
+    "brand": "Apple",
+    "category": "iphones",
+    "price": 799,
+    "description": "iPhone 17 in Lavender finish, partial-screen display and side angle shows - Action, volume and side button. Back exterior shows Dual Fusion camera system in top left corner. Even more delightful. Even more durable.",
+    "images": [
+      {
+        "src": "/images/products/iphone-17.jpg",
+        "alt": "iPhone 17"
+      }
+    ],
+    "colors": [
+      {
+        "name": "White",
+        "hex": "#F5F5F7"
+      },
+      {
+        "name": "Black",
+        "hex": "#1D1D1F"
+      }
+    ],
+    "specs": [
+      {
+        "label": "Type",
+        "value": "iPhone 17"
+      }
+    ],
+    "badges": [
+      "New Arrival"
+    ],
+    "condition": "New",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0
+  },
+  {
+    "id": "custom-1775518707087-hjb0ynm14",
+    "slug": "iphone-17e",
+    "name": "iPhone 17e",
+    "brand": "Apple",
+    "category": "iphones",
+    "price": 599,
+    "description": "Front and back of iPhone 17e in soft pink, partial front screen, full back with Apple logo and single camera, side shows Action, volume and side buttons. Feature stacked. Value packed.",
+    "images": [
+      {
+        "src": "/images/products/iphone-17e.jpg",
+        "alt": "iPhone 17e"
+      }
+    ],
+    "colors": [
+      {
+        "name": "White",
+        "hex": "#F5F5F7"
+      },
+      {
+        "name": "Black",
+        "hex": "#1D1D1F"
+      }
+    ],
+    "specs": [
+      {
+        "label": "Type",
+        "value": "iPhone 17e"
+      }
+    ],
+    "badges": [
+      "New Arrival"
+    ],
+    "condition": "New",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0
+  },
+  {
+    "id": "custom-1775518707093-7lsheaptm",
+    "slug": "iphone-17-pro",
+    "name": "iPhone 17 Pro",
+    "brand": "Apple",
+    "category": "iphones",
+    "price": 1099,
+    "description": "iPhone 17 Pro iPhone 17 Pro in cosmic orange finish showing partial-screen display and side angle shows - Action button, volume button and side button. Back exterior shows Pro Fusion camera system in top left corner. Cosmic Orange Innovative design for ultimate performance and battery life.",
+    "images": [
+      {
+        "src": "/images/products/iphone-17-pro.jpg",
+        "alt": "iPhone 17 Pro"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Silver",
+        "hex": "#E3E4E5"
+      }
+    ],
+    "specs": [
+      {
+        "label": "Type",
+        "value": "iPhone 17 Pro"
+      }
+    ],
+    "badges": [
+      "New Arrival"
+    ],
+    "condition": "New",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0
+  },
+  {
+    "id": "custom-1775518707097-20qgz1808",
+    "slug": "iphone-air",
+    "name": "iPhone Air",
+    "brand": "Apple",
+    "category": "iphones",
+    "price": 999,
+    "description": "iPhone Air in Sky Blue finish, partial-screen display and side angle shows - Action button, volume button and side button. Back exterior shows Fusion camera system in top left corner. Cloud White Space Black The thinnest iPhone ever. With the power of pro inside.",
+    "images": [
+      {
+        "src": "/images/products/iphone-air.jpg",
+        "alt": "iPhone Air"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Sky Blue",
+        "hex": "#A4B6C3"
+      }
+    ],
+    "specs": [
+      {
+        "label": "Type",
+        "value": "iPhone Air"
+      }
+    ],
+    "badges": [
+      "New Arrival"
+    ],
+    "condition": "New",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0
+  },
+  {
+    "id": "custom-1775518707103-gqq1vosdx",
+    "slug": "macbook-air-13-and-15",
+    "name": "MacBook Air 13” and 15”",
+    "brand": "Apple",
+    "category": "laptops",
+    "price": 1099,
+    "description": "MacBook Air 13” and 15” Thin. Fast. Powerful and portable.",
+    "images": [
+      {
+        "src": "/images/products/macbook-air-13-and-15.png",
+        "alt": "MacBook Air 13” and 15”"
+      }
+    ],
+    "colors": [
+      {
+        "name": "sky blue",
+        "hex": "#A4B6C3"
+      },
+      {
+        "name": "silver",
+        "hex": "#E3E4E5"
+      },
+      {
+        "name": "starlight",
+        "hex": "#F9F6EF"
+      },
+      {
+        "name": "midnight",
+        "hex": "#1C1F24"
+      }
+    ],
+    "specs": [
+      {
+        "label": "Type",
+        "value": "MacBook Air 13” and 15”"
+      }
+    ],
+    "badges": [
+      "New Arrival"
+    ],
+    "condition": "New",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0
+  },
+  {
+    "id": "custom-1775518707107-tnrjpt3ik",
+    "slug": "macbook-neo",
+    "name": "MacBook Neo",
+    "brand": "Apple",
+    "category": "laptops",
+    "price": 599,
+    "description": "MacBook Neo The magic of Mac at a surprising price. for 12 mo.*",
+    "images": [
+      {
+        "src": "/images/products/macbook-neo.png",
+        "alt": "MacBook Neo"
+      }
+    ],
+    "colors": [
+      {
+        "name": "silver",
+        "hex": "#E3E4E5"
+      }
+    ],
+    "specs": [
+      {
+        "label": "Type",
+        "value": "MacBook Neo"
+      }
+    ],
+    "badges": [
+      "New Arrival"
+    ],
+    "condition": "New",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0
+  },
+  {
+    "id": "custom-1775518707112-inu9vi18q",
+    "slug": "macbook-pro-14-and-16",
+    "name": "MacBook Pro 14” and 16”",
+    "brand": "Apple",
+    "category": "laptops",
+    "price": 1699,
+    "description": "MacBook Pro 14” and 16” space black The most advanced Mac laptops for demanding tasks.",
+    "images": [
+      {
+        "src": "/images/products/macbook-pro-14-and-16.png",
+        "alt": "MacBook Pro 14” and 16”"
+      }
+    ],
+    "colors": [
+      {
+        "name": "silver",
+        "hex": "#E3E4E5"
+      }
+    ],
+    "specs": [
+      {
+        "label": "Type",
+        "value": "MacBook Pro 14” and 16”"
+      }
+    ],
+    "badges": [
+      "New Arrival"
+    ],
+    "condition": "New",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0
+  },
+  {
+    "id": "custom-1775518707118-1uz3dc1m2",
+    "slug": "apple-watch-se-3",
+    "name": "Apple Watch SE 3",
+    "brand": "Apple",
+    "category": "watches",
+    "price": 249,
+    "description": "Apple Watch SE 3 Essential health features at a great value.",
+    "images": [
+      {
+        "src": "/images/products/apple-watch-se-3.png",
+        "alt": "Apple Watch SE 3"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Midnight",
+        "hex": "#1C1F24"
+      },
+      {
+        "name": "Starlight",
+        "hex": "#F9F6EF"
+      }
+    ],
+    "specs": [
+      {
+        "label": "Type",
+        "value": "Apple Watch SE 3"
+      }
+    ],
+    "badges": [
+      "New Arrival"
+    ],
+    "condition": "New",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0
+  },
+  {
+    "id": "custom-1775518707123-4dk0mdsrm",
+    "slug": "apple-watch-series-11",
+    "name": "Apple Watch Series 11",
+    "brand": "Apple",
+    "category": "watches",
+    "price": 399,
+    "description": "Apple Watch Series 11 The ultimate way to watch your health.",
+    "images": [
+      {
+        "src": "/images/products/apple-watch-series-11.png",
+        "alt": "Apple Watch Series 11"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Space Gray",
+        "hex": "#535150"
+      },
+      {
+        "name": "Silver",
+        "hex": "#E3E4E5"
+      }
+    ],
+    "specs": [
+      {
+        "label": "Type",
+        "value": "Apple Watch Series 11"
+      }
+    ],
+    "badges": [
+      "New Arrival"
+    ],
+    "condition": "New",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0
+  },
+  {
+    "id": "custom-1775518707128-4uus88f90",
+    "slug": "apple-watch-ultra-3",
+    "name": "Apple Watch Ultra 3",
+    "brand": "Apple",
+    "category": "watches",
+    "price": 799,
+    "description": "Apple Watch Ultra 3 The ultimate sports and adventure watch.",
+    "images": [
+      {
+        "src": "/images/products/apple-watch-ultra-3.png",
+        "alt": "Apple Watch Ultra 3"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Black",
+        "hex": "#1D1D1F"
+      }
+    ],
+    "specs": [
+      {
+        "label": "Type",
+        "value": "Apple Watch Ultra 3"
+      }
+    ],
+    "badges": [
+      "New Arrival"
+    ],
+    "condition": "New",
+    "inStock": true,
+    "rating": 5,
+    "reviewCount": 0
+  }
+]

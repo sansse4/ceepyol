@@ -1,0 +1,39 @@
+{
+  "nav.search": "Search products...",
+  "nav.cart": "Cart",
+  "nav.login": "Login",
+  "nav.deals": "Deals",
+  "nav.iphones": "iPhones",
+  "nav.samsung": "Samsung",
+  "nav.watches": "Watches",
+  "nav.laptops": "Laptops",
+  "nav.tablets": "Tablets",
+
+  "home.hero.title": "Experience Tech at its Best.",
+  "home.hero.subtitle": "The new iPhone 16 Pro and more. Premium devices, certified refurbished.",
+  "home.hero.shopNow": "Shop Now",
+  "home.hero.explore": "Explore Deals",
+  
+  "home.categories.shopByCategory": "Shop by Category",
+  "home.categories.explorePremium": "Explore our premium selection.",
+  
+  "home.sustainability.title": "Our Planet Impact",
+  "home.sustainability.subtitle": "By choosing refurbished tech, together we are reducing e-waste and building a more sustainable future.",
+  "home.sustainability.ewaste": "e-waste saved",
+  "home.sustainability.trees": "Trees planted",
+  "home.sustainability.water": "Litres water saved",
+  "home.sustainability.customers": "Happy Customers",
+
+  "home.shopIphone.title": "Shop iPhone",
+  "home.shopIphone.subtitle": "All models. Take your pick.",
+  "home.shopIphone.buyers": "Happy Buyers",
+  "home.shopIphone.buy": "Buy",
+  
+  "footer.newsletter.title": "Get 10% Off Your First Order",
+  "footer.newsletter.subtitle": "Be the first to know about exclusive deals.",
+  "footer.newsletter.placeholder": "Your email address",
+  "footer.newsletter.subscribe": "Subscribe",
+  "footer.shop": "Shop",
+  "footer.company": "Company",
+  "footer.support": "Support"
+}
