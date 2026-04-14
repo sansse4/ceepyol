@@ -8,11 +8,16 @@ export function useTranslation() {
   const [dict, setDict] = useState<Dictionary>(getDictionary("tr"));
 
   useEffect(() => {
-    // Determine locale from cookie
-    const match = document.cookie.match(new RegExp('(^| )NEXT_LOCALE=([^;]+)'));
-    const currentLocale = match ? (match[2] as Locale) : "tr";
-    setLocale(currentLocale);
-    setDict(getDictionary(currentLocale));
+    const readLocale = () => {
+      const match = document.cookie.match(new RegExp('(^| )NEXT_LOCALE=([^;]+)'));
+      const currentLocale = match ? (match[2] as Locale) : "tr";
+      setLocale(currentLocale);
+      setDict(getDictionary(currentLocale));
+    };
+
+    readLocale();
+    window.addEventListener('localechange', readLocale);
+    return () => window.removeEventListener('localechange', readLocale);
   }, []);
 
   const t = (key: keyof Dictionary) => {

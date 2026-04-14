@@ -5,8 +5,8 @@
     "name": "AirPods Max 2",
     "brand": "Apple",
     "category": "audio",
-    "price": 549,
-    "description": "AirPods Max 2 The ultimate over‑ear personal listening experience.",
+    "price": 29999,
+    "description": "The ultimate over-ear personal listening experience. AirPods Max 2 deliver stunning high-fidelity audio with Active Noise Cancellation, Transparency mode, and Personalized Spatial Audio.",
     "images": [
       {
         "src": "/images/products/airpods-max-2.png",
@@ -15,14 +15,54 @@
     ],
     "colors": [
       {
-        "name": "Default",
-        "hex": "#888888"
+        "name": "Midnight",
+        "hex": "#1C1F24"
+      },
+      {
+        "name": "Starlight",
+        "hex": "#F9F6EF"
+      },
+      {
+        "name": "Blue",
+        "hex": "#3D5A8A"
+      },
+      {
+        "name": "Purple",
+        "hex": "#6E4E8A"
+      },
+      {
+        "name": "Orange",
+        "hex": "#E07B39"
       }
     ],
     "specs": [
       {
         "label": "Type",
-        "value": "AirPods Max 2"
+        "value": "Over-Ear Headphones"
+      },
+      {
+        "label": "Driver",
+        "value": "40mm dynamic"
+      },
+      {
+        "label": "ANC",
+        "value": "Active Noise Cancellation"
+      },
+      {
+        "label": "Battery",
+        "value": "Up to 30 hours"
+      },
+      {
+        "label": "Chip",
+        "value": "Apple H2"
+      },
+      {
+        "label": "Connectivity",
+        "value": "Bluetooth 5.3"
+      },
+      {
+        "label": "Audio",
+        "value": "Personalized Spatial Audio"
       }
     ],
     "badges": [
@@ -30,8 +70,10 @@
     ],
     "condition": "New",
     "inStock": true,
-    "rating": 5,
-    "reviewCount": 0
+    "rating": 4.9,
+    "reviewCount": 2840,
+    "priceTRY": 29999,
+    "priceUSD": 671
   },
   {
     "id": "custom-1775518707060-xa60gkga1",
@@ -39,8 +81,8 @@
     "name": "AirPods 4",
     "brand": "Apple",
     "category": "audio",
-    "price": 129,
-    "description": "The next evolution of sound and comfort.",
+    "price": 5999,
+    "description": "The next evolution of sound and comfort. AirPods 4 feature the Apple H2 chip, Active Noise Cancellation, and a completely redesigned fit for all-day comfort.",
     "images": [
       {
         "src": "/images/products/airpods-4.jpg",
@@ -49,14 +91,34 @@
     ],
     "colors": [
       {
-        "name": "Default",
-        "hex": "#888888"
+        "name": "White",
+        "hex": "#F5F5F7"
       }
     ],
     "specs": [
       {
         "label": "Type",
-        "value": "AirPods 4"
+        "value": "In-Ear Earbuds"
+      },
+      {
+        "label": "Chip",
+        "value": "Apple H2"
+      },
+      {
+        "label": "ANC",
+        "value": "Active Noise Cancellation"
+      },
+      {
+        "label": "Battery",
+        "value": "Up to 6 hours (30 hrs with case)"
+      },
+      {
+        "label": "Connectivity",
+        "value": "Bluetooth 5.3"
+      },
+      {
+        "label": "Voice",
+        "value": "Siri"
       }
     ],
     "badges": [
@@ -64,144 +126,919 @@
     ],
     "condition": "New",
     "inStock": true,
-    "rating": 5,
-    "reviewCount": 0
+    "rating": 4.7,
+    "reviewCount": 5120,
+    "priceTRY": 5999,
+    "priceUSD": 135
   },
   {
     "id": "custom-1775518707063-wncepujwb",
     "slug": "650f37e9b4a03118fe65cc68d165a7b4b2d8e2c2b51f598531e407505dade308",
-    "name": "650f37e9b4a03118fe65cc68d165a7b4b2d8e2c2b51f598531e407505dade308",
+    "name": "Apple iPad Air 13-inch (M4)",
     "brand": "Apple",
     "category": "tablets",
-    "price": 799,
-    "description": "Experience the advanced new 650f37e9b4a03118fe65cc68d165a7b4b2d8e2c2b51f598531e407505dade308.",
+    "price": 49999,
+    "description": "iPad Air with the Apple M4 chip in a beautiful 13-inch design. Features Apple Intelligence, a stunning Liquid Retina display, Touch ID, advanced cameras, and Wi-Fi 7.",
     "images": [
       {
-        "src": "/images/products/650f37e9b4a03118fe65cc68d165a7b4b2d8e2c2b51f598531e407505dade308.png",
-        "alt": "650f37e9b4a03118fe65cc68d165a7b4b2d8e2c2b51f598531e407505dade308"
+        "src": "/images/products/apple-ipad-air-13-m4.jpg",
+        "alt": "iPad Air 13 M4 - Starlight"
+      },
+      {
+        "src": "/images/products/ipad-air-13-m4-g2.jpg",
+        "alt": "iPad Air 13 M4 - Side"
+      },
+      {
+        "src": "/images/products/ipad-air-13-m4-g3.jpg",
+        "alt": "iPad Air 13 M4 - Keyboard"
       }
     ],
     "colors": [
       {
+        "name": "Starlight",
+        "hex": "#F9F6EF",
+        "image": "/images/products/apple-ipad-air-13-m4.jpg"
+      },
+      {
+        "name": "Blue",
+        "hex": "#3D5A8A",
+        "image": "/images/products/ipad-air-13-m4-blue.jpg"
+      },
+      {
         "name": "Space Gray",
-        "hex": "#535150"
+        "hex": "#535150",
+        "image": "/images/products/ipad-air-13-m4-black.jpg"
+      },
+      {
+        "name": "Gold",
+        "hex": "#C8A96E",
+        "image": "/images/products/ipad-air-13-m4-gold.jpg"
+      }
+    ],
+    "storage": [
+      {
+        "label": "128GB",
+        "priceAdd": 0
+      },
+      {
+        "label": "256GB",
+        "priceAdd": 8000
       }
     ],
     "specs": [
       {
-        "label": "Type",
-        "value": "650f37e9b4a03118fe65cc68d165a7b4b2d8e2c2b51f598531e407505dade308"
+        "label": "Chip",
+        "value": "Apple M4"
+      },
+      {
+        "label": "Display",
+        "value": "13-inch Liquid Retina, 2732x2048 @ 264 ppi"
+      },
+      {
+        "label": "Storage",
+        "value": "128GB – 1TB"
+      },
+      {
+        "label": "Camera (Front)",
+        "value": "12MP Center Stage"
+      },
+      {
+        "label": "Camera (Back)",
+        "value": "12MP Wide, 4K video"
+      },
+      {
+        "label": "Connectivity",
+        "value": "Wi-Fi 7, USB-C"
+      },
+      {
+        "label": "Biometrics",
+        "value": "Touch ID"
+      },
+      {
+        "label": "Battery",
+        "value": "All-day (up to 10 hours)"
       }
     ],
     "badges": [
-      "New"
+      "Apple Intelligence"
     ],
     "condition": "New",
     "inStock": true,
-    "rating": 5,
-    "reviewCount": 0
+    "rating": 4.3,
+    "reviewCount": 26,
+    "priceTRY": 49999,
+    "priceUSD": 1566.66,
+    "priceVariants": [
+      {
+        "storage": "128GB",
+        "priceTRY": 49999,
+        "priceUSD": 1566.66
+      },
+      {
+        "storage": "256GB",
+        "priceTRY": 57999,
+        "priceUSD": 2014.29
+      }
+    ]
   },
   {
     "id": "custom-1775518707066-yfh5d5r2s",
     "slug": "ea76151599919eef604187d40e15eef31c70e8d5a7bf7cf8881a2dc4f211870b",
-    "name": "Ea76151599919eef604187d40e15eef31c70e8d5a7bf7cf8881a2dc4f211870b",
+    "name": "Apple iPad Air 11-inch (M4)",
     "brand": "Apple",
     "category": "tablets",
-    "price": 799,
-    "description": "Experience the advanced new Ea76151599919eef604187d40e15eef31c70e8d5a7bf7cf8881a2dc4f211870b.",
+    "price": 37999,
+    "description": "iPad Air with the Apple M4 chip packs even more performance into a beautiful 11-inch design. Features Apple Intelligence, Liquid Retina display, Touch ID, and Wi-Fi 7.",
     "images": [
       {
-        "src": "/images/products/ea76151599919eef604187d40e15eef31c70e8d5a7bf7cf8881a2dc4f211870b.png",
-        "alt": "Ea76151599919eef604187d40e15eef31c70e8d5a7bf7cf8881a2dc4f211870b"
+        "src": "/images/products/apple-ipad-air-11-m4.jpg",
+        "alt": "iPad Air 11 M4 - Blue"
+      },
+      {
+        "src": "/images/products/ipad-air-11-m4-g2.jpg",
+        "alt": "iPad Air 11 M4 Side"
+      },
+      {
+        "src": "/images/products/ipad-air-11-m4-g3.jpg",
+        "alt": "iPad Air 11 M4 Keyboard"
+      },
+      {
+        "src": "/images/products/ipad-air-11-m4-g4.jpg",
+        "alt": "iPad Air 11 M4 Pencil"
       }
     ],
     "colors": [
       {
+        "name": "Blue",
+        "hex": "#3D5A8A",
+        "image": "/images/products/apple-ipad-air-11-m4.jpg"
+      },
+      {
         "name": "Space Gray",
-        "hex": "#535150"
+        "hex": "#535150",
+        "image": "/images/products/ipad-air-11-m4-black.jpg"
+      },
+      {
+        "name": "Gold",
+        "hex": "#C8A96E",
+        "image": "/images/products/ipad-air-11-m4-gold.jpg"
+      },
+      {
+        "name": "Purple",
+        "hex": "#6E4E8A",
+        "image": "/images/products/ipad-air-11-m4-purple.jpg"
+      }
+    ],
+    "storage": [
+      {
+        "label": "128GB",
+        "priceAdd": 0
+      },
+      {
+        "label": "256GB",
+        "priceAdd": 6000
       }
     ],
     "specs": [
       {
-        "label": "Type",
-        "value": "Ea76151599919eef604187d40e15eef31c70e8d5a7bf7cf8881a2dc4f211870b"
+        "label": "Chip",
+        "value": "Apple M4"
+      },
+      {
+        "label": "Display",
+        "value": "11-inch Liquid Retina, 2360x1640 @ 264 ppi"
+      },
+      {
+        "label": "Storage",
+        "value": "128GB – 1TB"
+      },
+      {
+        "label": "Camera (Front)",
+        "value": "12MP Center Stage"
+      },
+      {
+        "label": "Camera (Back)",
+        "value": "12MP Wide, 4K video"
+      },
+      {
+        "label": "Connectivity",
+        "value": "Wi-Fi 7, USB-C"
+      },
+      {
+        "label": "Biometrics",
+        "value": "Touch ID"
+      },
+      {
+        "label": "Battery",
+        "value": "All-day (up to 10 hours)"
       }
     ],
     "badges": [
-      "New"
+      "Apple Intelligence"
     ],
     "condition": "New",
     "inStock": true,
-    "rating": 5,
-    "reviewCount": 0
+    "rating": 4.7,
+    "reviewCount": 70,
+    "priceTRY": 37999,
+    "priceUSD": 1297.99,
+    "priceVariants": [
+      {
+        "storage": "128GB",
+        "priceTRY": 37999,
+        "priceUSD": 1297.99
+      },
+      {
+        "storage": "256GB",
+        "priceTRY": 43999,
+        "priceUSD": 1342.66
+      }
+    ]
   },
   {
     "id": "custom-1775518707069-23uwwczqw",
     "slug": "ipad-07e11a653",
-    "name": "Ipad",
+    "name": "Apple iPad 11-inch (A16)",
     "brand": "Apple",
     "category": "tablets",
-    "price": 799,
-    "description": "Experience the advanced new Ipad.",
+    "price": 19999,
+    "description": "The 11-inch iPad is more capable than ever with the superfast A16 chip, a stunning Liquid Retina display, advanced cameras, fast Wi-Fi 6, and USB-C connector.",
     "images": [
       {
-        "src": "/images/products/ipad-07e11a653.png",
-        "alt": "Ipad"
+        "src": "/images/products/apple-ipad-11-a16.jpg",
+        "alt": "iPad 11 A16 - Silver"
+      },
+      {
+        "src": "/images/products/ipad-11-a16-g2.jpg",
+        "alt": "iPad 11 A16 Side"
+      },
+      {
+        "src": "/images/products/ipad-11-a16-g3.jpg",
+        "alt": "iPad 11 A16 Back"
+      },
+      {
+        "src": "/images/products/ipad-11-a16-g4.jpg",
+        "alt": "iPad 11 A16 Usage"
       }
     ],
     "colors": [
       {
-        "name": "Space Gray",
-        "hex": "#535150"
+        "name": "Silver",
+        "hex": "#B8B8B8",
+        "image": "/images/products/ipad-11-a16-silver.jpg"
+      },
+      {
+        "name": "Pink",
+        "hex": "#F2B0C0",
+        "image": "/images/products/ipad-11-a16-pink.jpg"
+      },
+      {
+        "name": "Yellow",
+        "hex": "#F5C842",
+        "image": "/images/products/ipad-11-a16-yellow.jpg"
+      },
+      {
+        "name": "Blue",
+        "hex": "#3D5A8A",
+        "image": "/images/products/apple-ipad-11-a16.jpg"
+      }
+    ],
+    "storage": [
+      {
+        "label": "128GB",
+        "priceAdd": 0
+      },
+      {
+        "label": "256GB",
+        "priceAdd": 5000
       }
     ],
     "specs": [
       {
-        "label": "Type",
-        "value": "Ipad"
+        "label": "Chip",
+        "value": "Apple A16"
+      },
+      {
+        "label": "Display",
+        "value": "11-inch Liquid Retina, 2360x1640 @ 264 ppi"
+      },
+      {
+        "label": "Storage",
+        "value": "128GB – 512GB"
+      },
+      {
+        "label": "Camera (Front)",
+        "value": "12MP Center Stage"
+      },
+      {
+        "label": "Camera (Back)",
+        "value": "12MP Wide, 4K video"
+      },
+      {
+        "label": "Connectivity",
+        "value": "Wi-Fi 6, USB-C"
+      },
+      {
+        "label": "Biometrics",
+        "value": "Touch ID"
+      },
+      {
+        "label": "Battery",
+        "value": "All-day (up to 10 hours)"
       }
     ],
     "badges": [
-      "New"
+      "Best Value"
     ],
     "condition": "New",
     "inStock": true,
-    "rating": 5,
-    "reviewCount": 0
+    "rating": 4.7,
+    "reviewCount": 21668,
+    "priceTRY": 19999,
+    "priceUSD": 671.38,
+    "priceVariants": [
+      {
+        "storage": "128GB",
+        "priceTRY": 19999,
+        "priceUSD": 671.38
+      },
+      {
+        "storage": "256GB",
+        "priceTRY": 24999,
+        "priceUSD": 827.97
+      }
+    ]
   },
   {
     "id": "custom-1775518707072-y4der4ps6",
     "slug": "ipad-pro-b15908d8a",
-    "name": "Ipad pro",
+    "name": "Apple iPad Pro 13-inch (M5)",
     "brand": "Apple",
     "category": "tablets",
-    "price": 799,
-    "description": "Experience the advanced new Ipad pro.",
+    "price": 74999,
+    "description": "iPad Pro with the Apple M5 chip delivers extraordinary performance on a stunning 13-inch Ultra Retina XDR display. Features Neural Accelerators for AI, LiDAR scanner, Face ID, and Wi-Fi 7.",
     "images": [
       {
-        "src": "/images/products/ipad-pro-b15908d8a.png",
-        "alt": "Ipad pro"
+        "src": "/images/products/apple-ipad-pro-13-m5.jpg",
+        "alt": "iPad Pro 13 M5 - Silver"
+      },
+      {
+        "src": "/images/products/ipad-pro-13-m5-g2.jpg",
+        "alt": "iPad Pro 13 M5 Side"
+      },
+      {
+        "src": "/images/products/ipad-pro-13-m5-g3.jpg",
+        "alt": "iPad Pro 13 M5 Back"
+      },
+      {
+        "src": "/images/products/ipad-pro-13-m5-g4.jpg",
+        "alt": "iPad Pro 13 M5 Usage"
       }
     ],
     "colors": [
       {
-        "name": "Space Gray",
-        "hex": "#535150"
+        "name": "Silver",
+        "hex": "#B8B8B8",
+        "image": "/images/products/apple-ipad-pro-13-m5.jpg"
+      },
+      {
+        "name": "Space Black",
+        "hex": "#1C1C1E",
+        "image": "/images/products/ipad-pro-13-m5-black.jpg"
+      }
+    ],
+    "storage": [
+      {
+        "label": "256GB",
+        "priceAdd": 0
+      },
+      {
+        "label": "512GB",
+        "priceAdd": 10000
+      },
+      {
+        "label": "1TB",
+        "priceAdd": 32000
       }
     ],
     "specs": [
       {
-        "label": "Type",
-        "value": "Ipad pro"
+        "label": "Chip",
+        "value": "Apple M5"
+      },
+      {
+        "label": "Display",
+        "value": "13-inch Ultra Retina XDR, 2752x2064 @ 264 ppi"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB – 2TB"
+      },
+      {
+        "label": "Camera (Front)",
+        "value": "12MP Landscape Center Stage"
+      },
+      {
+        "label": "Camera (Back)",
+        "value": "12MP Wide + LiDAR Scanner"
+      },
+      {
+        "label": "Connectivity",
+        "value": "Wi-Fi 7, Thunderbolt 4"
+      },
+      {
+        "label": "Biometrics",
+        "value": "Face ID"
+      },
+      {
+        "label": "Battery",
+        "value": "All-day (up to 10 hours)"
       }
     ],
     "badges": [
-      "New"
+      "Pro",
+      "Apple Intelligence"
     ],
     "condition": "New",
     "inStock": true,
-    "rating": 5,
-    "reviewCount": 0
+    "rating": 4.8,
+    "reviewCount": 383,
+    "priceTRY": 74999,
+    "priceUSD": 1678.61,
+    "priceVariants": [
+      {
+        "storage": "256GB",
+        "priceTRY": 74999,
+        "priceUSD": 1678.61
+      },
+      {
+        "storage": "512GB",
+        "priceTRY": 84999,
+        "priceUSD": 1902.42
+      },
+      {
+        "storage": "1TB",
+        "priceTRY": 106999,
+        "priceUSD": 2394.8
+      }
+    ]
+  },
+  {
+    "id": "custom-ipad-air-11-m3-001",
+    "slug": "apple-ipad-air-11-m3",
+    "name": "Apple iPad Air 11-inch (M3)",
+    "brand": "Apple",
+    "category": "tablets",
+    "price": 34999,
+    "description": "iPad Air with the powerful M3 chip built for Apple Intelligence. Features a stunning 11-inch Liquid Retina display, Touch ID, Wi-Fi 6E, and USB-C connector.",
+    "images": [
+      {
+        "src": "/images/products/apple-ipad-air-11-m3.jpg",
+        "alt": "iPad Air 11 M3 - Blue"
+      },
+      {
+        "src": "/images/products/ipad-air-11-m3-g2.jpg",
+        "alt": "iPad Air 11 M3 Side"
+      },
+      {
+        "src": "/images/products/ipad-air-11-m3-g3.jpg",
+        "alt": "iPad Air 11 M3 Keyboard"
+      },
+      {
+        "src": "/images/products/ipad-air-11-m3-g4.jpg",
+        "alt": "iPad Air 11 M3 Usage"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Blue",
+        "hex": "#3D5A8A",
+        "image": "/images/products/apple-ipad-air-11-m3.jpg"
+      },
+      {
+        "name": "Space Gray",
+        "hex": "#535150",
+        "image": "/images/products/ipad-air-11-m3-black.jpg"
+      },
+      {
+        "name": "Purple",
+        "hex": "#6E4E8A",
+        "image": "/images/products/ipad-air-11-m3-purple.jpg"
+      },
+      {
+        "name": "Starlight",
+        "hex": "#F9F6EF",
+        "image": "/images/products/ipad-air-11-m3-blue.jpg"
+      }
+    ],
+    "storage": [
+      {
+        "label": "128GB",
+        "priceAdd": 0
+      },
+      {
+        "label": "256GB",
+        "priceAdd": 6000
+      }
+    ],
+    "specs": [
+      {
+        "label": "Chip",
+        "value": "Apple M3"
+      },
+      {
+        "label": "Display",
+        "value": "11-inch Liquid Retina, 2360x1640 @ 264 ppi"
+      },
+      {
+        "label": "Storage",
+        "value": "128GB – 1TB"
+      },
+      {
+        "label": "Camera (Front)",
+        "value": "12MP Center Stage"
+      },
+      {
+        "label": "Camera (Back)",
+        "value": "12MP Wide, 4K video"
+      },
+      {
+        "label": "Connectivity",
+        "value": "Wi-Fi 6E, USB-C"
+      },
+      {
+        "label": "Biometrics",
+        "value": "Touch ID"
+      },
+      {
+        "label": "Battery",
+        "value": "All-day (up to 10 hours)"
+      }
+    ],
+    "badges": [
+      "Apple Intelligence"
+    ],
+    "condition": "New",
+    "inStock": true,
+    "rating": 4.6,
+    "reviewCount": 277,
+    "priceTRY": 34999,
+    "priceUSD": 1118.97,
+    "priceVariants": [
+      {
+        "storage": "128GB",
+        "priceTRY": 34999,
+        "priceUSD": 1118.97
+      },
+      {
+        "storage": "256GB",
+        "priceTRY": 40999,
+        "priceUSD": 1186.17
+      }
+    ]
+  },
+  {
+    "id": "custom-ipad-air-13-m3-001",
+    "slug": "apple-ipad-air-13-m3",
+    "name": "Apple iPad Air 13-inch (M3)",
+    "brand": "Apple",
+    "category": "tablets",
+    "price": 45999,
+    "description": "iPad Air with the powerful M3 chip in a large 13-inch design built for Apple Intelligence. Features Liquid Retina display, Touch ID, advanced cameras, and Wi-Fi 6E.",
+    "images": [
+      {
+        "src": "/images/products/apple-ipad-air-13-m3.jpg",
+        "alt": "iPad Air 13 M3 - Starlight"
+      },
+      {
+        "src": "/images/products/ipad-air-13-m3-g2.jpg",
+        "alt": "iPad Air 13 M3 Side"
+      },
+      {
+        "src": "/images/products/ipad-air-13-m3-g3.jpg",
+        "alt": "iPad Air 13 M3 Keyboard"
+      },
+      {
+        "src": "/images/products/ipad-air-13-m3-g4.jpg",
+        "alt": "iPad Air 13 M3 Usage"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Starlight",
+        "hex": "#F9F6EF",
+        "image": "/images/products/apple-ipad-air-13-m3.jpg"
+      },
+      {
+        "name": "Space Gray",
+        "hex": "#535150",
+        "image": "/images/products/ipad-air-13-m3-black.jpg"
+      },
+      {
+        "name": "Blue",
+        "hex": "#3D5A8A",
+        "image": "/images/products/ipad-air-13-m3-blue.jpg"
+      },
+      {
+        "name": "Gold",
+        "hex": "#C8A96E",
+        "image": "/images/products/ipad-air-13-m3-gold.jpg"
+      }
+    ],
+    "storage": [
+      {
+        "label": "128GB",
+        "priceAdd": 0
+      },
+      {
+        "label": "256GB",
+        "priceAdd": 7000
+      }
+    ],
+    "specs": [
+      {
+        "label": "Chip",
+        "value": "Apple M3"
+      },
+      {
+        "label": "Display",
+        "value": "13-inch Liquid Retina, 2732x2048 @ 264 ppi"
+      },
+      {
+        "label": "Storage",
+        "value": "128GB – 1TB"
+      },
+      {
+        "label": "Camera (Front)",
+        "value": "12MP Center Stage"
+      },
+      {
+        "label": "Camera (Back)",
+        "value": "12MP Wide, 4K video"
+      },
+      {
+        "label": "Connectivity",
+        "value": "Wi-Fi 6E, USB-C"
+      },
+      {
+        "label": "Biometrics",
+        "value": "Touch ID"
+      },
+      {
+        "label": "Battery",
+        "value": "All-day (up to 10 hours)"
+      }
+    ],
+    "badges": [
+      "Apple Intelligence"
+    ],
+    "condition": "New",
+    "inStock": true,
+    "rating": 4.8,
+    "reviewCount": 1648,
+    "priceTRY": 45999,
+    "priceUSD": 850.36,
+    "priceVariants": [
+      {
+        "storage": "128GB",
+        "priceTRY": 45999,
+        "priceUSD": 850.36
+      },
+      {
+        "storage": "256GB",
+        "priceTRY": 52999,
+        "priceUSD": 984.75
+      }
+    ]
+  },
+  {
+    "id": "custom-ipad-mini-a17-001",
+    "slug": "apple-ipad-mini-a17-pro",
+    "name": "Apple iPad mini (A17 Pro)",
+    "brand": "Apple",
+    "category": "tablets",
+    "price": 29999,
+    "description": "The full iPad experience in an ultraportable 8.3-inch design. Features the ultrafast A17 Pro chip, Apple Intelligence, Liquid Retina display, and compatibility with Apple Pencil Pro.",
+    "images": [
+      {
+        "src": "/images/products/apple-ipad-mini-a17-pro.jpg",
+        "alt": "iPad mini A17 Pro - Starlight"
+      },
+      {
+        "src": "/images/products/ipad-mini-a17-g2.jpg",
+        "alt": "iPad mini A17 Side"
+      },
+      {
+        "src": "/images/products/ipad-mini-a17-g3.jpg",
+        "alt": "iPad mini A17 Back"
+      },
+      {
+        "src": "/images/products/ipad-mini-a17-g4.jpg",
+        "alt": "iPad mini A17 Usage"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Starlight",
+        "hex": "#F9F6EF",
+        "image": "/images/products/apple-ipad-mini-a17-pro.jpg"
+      },
+      {
+        "name": "Space Gray",
+        "hex": "#535150",
+        "image": "/images/products/ipad-mini-a17-black.jpg"
+      },
+      {
+        "name": "Pink",
+        "hex": "#F2B0C0",
+        "image": "/images/products/ipad-mini-a17-pink.jpg"
+      },
+      {
+        "name": "Purple",
+        "hex": "#6E4E8A",
+        "image": "/images/products/ipad-mini-a17-purple.jpg"
+      }
+    ],
+    "storage": [
+      {
+        "label": "128GB",
+        "priceAdd": 0
+      },
+      {
+        "label": "256GB",
+        "priceAdd": 7000
+      }
+    ],
+    "specs": [
+      {
+        "label": "Chip",
+        "value": "Apple A17 Pro"
+      },
+      {
+        "label": "Display",
+        "value": "8.3-inch Liquid Retina, 2266x1488 @ 326 ppi"
+      },
+      {
+        "label": "Storage",
+        "value": "128GB – 512GB"
+      },
+      {
+        "label": "Camera (Front)",
+        "value": "12MP Ultra Wide Center Stage"
+      },
+      {
+        "label": "Camera (Back)",
+        "value": "12MP Wide, 4K video"
+      },
+      {
+        "label": "Connectivity",
+        "value": "Wi-Fi 6E, USB-C"
+      },
+      {
+        "label": "Biometrics",
+        "value": "Touch ID"
+      },
+      {
+        "label": "Battery",
+        "value": "All-day (up to 10 hours)"
+      }
+    ],
+    "badges": [
+      "Apple Intelligence",
+      "Ultraportable"
+    ],
+    "condition": "New",
+    "inStock": true,
+    "rating": 4.8,
+    "reviewCount": 2880,
+    "priceTRY": 29999,
+    "priceUSD": 783.3,
+    "priceVariants": [
+      {
+        "storage": "128GB",
+        "priceTRY": 29999,
+        "priceUSD": 783.3
+      },
+      {
+        "storage": "256GB",
+        "priceTRY": 36999,
+        "priceUSD": 917.99
+      }
+    ]
+  },
+  {
+    "id": "custom-ipad-pro-11-m5-001",
+    "slug": "apple-ipad-pro-11-m5",
+    "name": "Apple iPad Pro 11-inch (M5)",
+    "brand": "Apple",
+    "category": "tablets",
+    "price": 59999,
+    "description": "iPad Pro with the Apple M5 chip delivers extraordinary performance on a stunning 11-inch Ultra Retina XDR display. Features Neural Accelerators for AI, LiDAR scanner, Face ID, and Wi-Fi 7.",
+    "images": [
+      {
+        "src": "/images/products/apple-ipad-pro-11-m5.jpg",
+        "alt": "iPad Pro 11 M5 - Silver"
+      },
+      {
+        "src": "/images/products/ipad-pro-11-m5-g2.jpg",
+        "alt": "iPad Pro 11 M5 Side"
+      },
+      {
+        "src": "/images/products/ipad-pro-11-m5-g3.jpg",
+        "alt": "iPad Pro 11 M5 Back"
+      },
+      {
+        "src": "/images/products/ipad-pro-11-m5-g4.jpg",
+        "alt": "iPad Pro 11 M5 Usage"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Silver",
+        "hex": "#B8B8B8",
+        "image": "/images/products/apple-ipad-pro-11-m5.jpg"
+      },
+      {
+        "name": "Space Black",
+        "hex": "#1C1C1E",
+        "image": "/images/products/ipad-pro-11-m5-black.jpg"
+      }
+    ],
+    "storage": [
+      {
+        "label": "256GB",
+        "priceAdd": 0
+      },
+      {
+        "label": "512GB",
+        "priceAdd": 10000
+      },
+      {
+        "label": "1TB",
+        "priceAdd": 30000
+      }
+    ],
+    "specs": [
+      {
+        "label": "Chip",
+        "value": "Apple M5"
+      },
+      {
+        "label": "Display",
+        "value": "11-inch Ultra Retina XDR, 2420x1668 @ 264 ppi"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB – 2TB"
+      },
+      {
+        "label": "Camera (Front)",
+        "value": "12MP Landscape Center Stage"
+      },
+      {
+        "label": "Camera (Back)",
+        "value": "12MP Wide + LiDAR Scanner"
+      },
+      {
+        "label": "Connectivity",
+        "value": "Wi-Fi 7, Thunderbolt 4"
+      },
+      {
+        "label": "Biometrics",
+        "value": "Face ID"
+      },
+      {
+        "label": "Battery",
+        "value": "All-day (up to 10 hours)"
+      }
+    ],
+    "badges": [
+      "Pro",
+      "Apple Intelligence"
+    ],
+    "condition": "New",
+    "inStock": true,
+    "rating": 4.7,
+    "reviewCount": 328,
+    "priceTRY": 59999,
+    "priceUSD": 1678.56,
+    "priceVariants": [
+      {
+        "storage": "256GB",
+        "priceTRY": 59999,
+        "priceUSD": 1678.56
+      },
+      {
+        "storage": "512GB",
+        "priceTRY": 69999,
+        "priceUSD": 1902.51
+      },
+      {
+        "storage": "1TB",
+        "priceTRY": 89999,
+        "priceUSD": 2394.74
+      }
+    ]
   },
   {
     "id": "custom-1775518707077-32u8lmap3",
@@ -209,40 +1046,91 @@
     "name": "iPhone 16",
     "brand": "Apple",
     "category": "iphones",
-    "price": 699,
-    "description": "iPhone 16 in Ultramarine finish, partial-screen display and side angle shows - Action, volume and side button. Back exterior shows advanced dual-camera system in top left corner. Amazing performance. Durable design.",
+    "price": 65999,
+    "description": "Amazing performance. Durable design. iPhone 16 features the A18 chip, Camera Control, a 48MP Fusion camera, Action button, and all-day battery life.",
     "images": [
       {
         "src": "/images/products/iphone-16.jpg",
-        "alt": "iPhone 16"
+        "alt": "iPhone 16 - Black"
+      },
+      {
+        "src": "/images/products/ip16-black-g2.jpg",
+        "alt": "iPhone 16 back"
       }
     ],
     "colors": [
       {
-        "name": "Ultramarine",
-        "hex": "#273C74"
-      },
-      {
-        "name": "Teal",
-        "hex": "#63A7A6"
-      },
-      {
-        "name": "Pink",
-        "hex": "#F8D8DC"
+        "name": "Black",
+        "hex": "#1C1C1E",
+        "image": "/images/products/ip16-black.jpg"
       },
       {
         "name": "White",
-        "hex": "#F5F5F7"
+        "hex": "#F5F5F7",
+        "image": "/images/products/ip16-white.jpg"
       },
       {
-        "name": "Black",
-        "hex": "#1D1D1F"
+        "name": "Ultramarine",
+        "hex": "#3D5A8A",
+        "image": "/images/products/ip16-blue.jpg"
+      },
+      {
+        "name": "Teal",
+        "hex": "#4A9B8A",
+        "image": "/images/products/ip16-green.jpg"
+      },
+      {
+        "name": "Pink",
+        "hex": "#F2B0C0",
+        "image": "/images/products/ip16-pink.jpg"
+      }
+    ],
+    "storage": [
+      {
+        "label": "128GB",
+        "priceAdd": 0
+      },
+      {
+        "label": "256GB",
+        "priceAdd": 5000
+      },
+      {
+        "label": "512GB",
+        "priceAdd": 15000
       }
     ],
     "specs": [
       {
-        "label": "Type",
-        "value": "iPhone 16"
+        "label": "Chip",
+        "value": "Apple A18"
+      },
+      {
+        "label": "Display",
+        "value": "6.1-inch Super Retina XDR, 2556x1179 @ 460 ppi"
+      },
+      {
+        "label": "Camera (Main)",
+        "value": "48MP Fusion + 12MP Ultra Wide"
+      },
+      {
+        "label": "Camera (Front)",
+        "value": "12MP TrueDepth"
+      },
+      {
+        "label": "Battery",
+        "value": "Up to 22 hours video playback"
+      },
+      {
+        "label": "Connectivity",
+        "value": "5G, Wi-Fi 7, USB-C"
+      },
+      {
+        "label": "Biometrics",
+        "value": "Face ID"
+      },
+      {
+        "label": "Special Features",
+        "value": "Camera Control, Action Button"
       }
     ],
     "badges": [
@@ -250,8 +1138,163 @@
     ],
     "condition": "New",
     "inStock": true,
-    "rating": 5,
-    "reviewCount": 0
+    "rating": 4.8,
+    "reviewCount": 12400,
+    "priceTRY": 65999,
+    "priceUSD": 1476,
+    "priceVariants": [
+      {
+        "storage": "128GB",
+        "priceTRY": 65999,
+        "priceUSD": 1476
+      },
+      {
+        "storage": "256GB",
+        "priceTRY": 70999,
+        "priceUSD": 1588
+      },
+      {
+        "storage": "512GB",
+        "priceTRY": 80999,
+        "priceUSD": 1812
+      }
+    ]
+  },
+  {
+    "id": "custom-iphone-16-pro-001",
+    "slug": "iphone-16-pro",
+    "name": "iPhone 16 Pro",
+    "brand": "Apple",
+    "category": "iphones",
+    "price": 83999,
+    "originalPrice": 1099,
+    "monthlyPrice": 41,
+    "images": [
+      {
+        "src": "/images/products/iphone-16-pro-natural.jpg",
+        "alt": "iPhone 16 Pro - Natural Titanium"
+      },
+      {
+        "src": "/images/products/iphone-16-pro-g2.jpg",
+        "alt": "iPhone 16 Pro Back"
+      },
+      {
+        "src": "/images/products/iphone-16-pro-g3.jpg",
+        "alt": "iPhone 16 Pro Camera"
+      },
+      {
+        "src": "/images/products/iphone-16-pro-g4.jpg",
+        "alt": "iPhone 16 Pro Side"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Natural Titanium",
+        "hex": "#B8A99A",
+        "image": "/images/products/iphone-16-pro.jpg"
+      },
+      {
+        "name": "Black Titanium",
+        "hex": "#3A3A3C",
+        "image": "/images/products/iphone-16-pro-g2.jpg"
+      },
+      {
+        "name": "White Titanium",
+        "hex": "#F5F5F0",
+        "image": "/images/products/iphone-16-pro-white-titanium.jpg"
+      },
+      {
+        "name": "Desert Titanium",
+        "hex": "#C9A97A",
+        "image": "/images/products/iphone-16-pro-natural.jpg"
+      }
+    ],
+    "storage": [
+      {
+        "label": "128GB",
+        "priceAdd": 0
+      },
+      {
+        "label": "256GB",
+        "priceAdd": 5000
+      },
+      {
+        "label": "512GB",
+        "priceAdd": 15000
+      },
+      {
+        "label": "1TB",
+        "priceAdd": 25000
+      }
+    ],
+    "specs": [
+      {
+        "label": "Chip",
+        "value": "Apple A18 Pro"
+      },
+      {
+        "label": "Display",
+        "value": "6.3-inch Super Retina XDR, ProMotion 120Hz"
+      },
+      {
+        "label": "Camera",
+        "value": "48MP Fusion + 12MP Ultra Wide + 12MP 5x Telephoto"
+      },
+      {
+        "label": "Front Camera",
+        "value": "12MP TrueDepth"
+      },
+      {
+        "label": "Battery",
+        "value": "Up to 27 hours video playback"
+      },
+      {
+        "label": "Connectivity",
+        "value": "Wi-Fi 7, Bluetooth 5.3, USB 3"
+      },
+      {
+        "label": "Build",
+        "value": "Titanium design, Ceramic Shield"
+      },
+      {
+        "label": "Water Resistance",
+        "value": "IP68 (6m for 30 min)"
+      }
+    ],
+    "description": "iPhone 16 Pro with the A18 Pro chip, ProMotion display, and the most advanced camera system ever in an iPhone. Features Apple Intelligence, titanium design, and USB 3 speeds.",
+    "badges": [
+      "Apple Intelligence",
+      "ProMotion 120Hz"
+    ],
+    "condition": "New",
+    "inStock": true,
+    "rating": 4.9,
+    "reviewCount": 8420,
+    "buyerCount": 15600,
+    "priceTRY": 83999,
+    "priceUSD": 1879,
+    "priceVariants": [
+      {
+        "storage": "128GB",
+        "priceTRY": 83999,
+        "priceUSD": 1879
+      },
+      {
+        "storage": "256GB",
+        "priceTRY": 88999,
+        "priceUSD": 1991
+      },
+      {
+        "storage": "512GB",
+        "priceTRY": 98999,
+        "priceUSD": 2214
+      },
+      {
+        "storage": "1TB",
+        "priceTRY": 108999,
+        "priceUSD": 2438
+      }
+    ]
   },
   {
     "id": "custom-1775518707082-qaredo18a",
@@ -259,37 +1302,124 @@
     "name": "iPhone 17",
     "brand": "Apple",
     "category": "iphones",
-    "price": 799,
-    "description": "iPhone 17 in Lavender finish, partial-screen display and side angle shows - Action, volume and side button. Back exterior shows Dual Fusion camera system in top left corner. Even more delightful. Even more durable.",
+    "price": 77999,
+    "description": "Even more delightful. Even more durable. iPhone 17 features the A19 chip with Dual Fusion camera system, Apple Intelligence, and all-day battery life.",
     "images": [
       {
-        "src": "/images/products/iphone-17.jpg",
-        "alt": "iPhone 17"
+        "src": "/images/products/ip17-purple.jpg",
+        "alt": "iPhone 17 - Lavender"
+      },
+      {
+        "src": "/images/products/ip17-purple-g2.jpg",
+        "alt": "iPhone 17 back"
+      },
+      {
+        "src": "/images/products/ip17-purple-g3.jpg",
+        "alt": "iPhone 17 side"
       }
     ],
     "colors": [
       {
-        "name": "White",
-        "hex": "#F5F5F7"
+        "name": "Lavender",
+        "hex": "#C8B4E0",
+        "image": "/images/products/ip17-purple.jpg"
+      },
+      {
+        "name": "Sage",
+        "hex": "#8AAB8A",
+        "image": "/images/products/ip17-green.jpg"
+      },
+      {
+        "name": "Mist Blue",
+        "hex": "#7AB8E0",
+        "image": "/images/products/ip17-blue.jpg"
       },
       {
         "name": "Black",
-        "hex": "#1D1D1F"
+        "hex": "#1C1C1E",
+        "image": "/images/products/ip17-black.jpg"
+      },
+      {
+        "name": "White",
+        "hex": "#F5F5F7",
+        "image": "/images/products/ip17-white.jpg"
+      }
+    ],
+    "storage": [
+      {
+        "label": "128GB",
+        "priceAdd": 0
+      },
+      {
+        "label": "256GB",
+        "priceAdd": 6000
+      },
+      {
+        "label": "512GB",
+        "priceAdd": 20000
       }
     ],
     "specs": [
       {
-        "label": "Type",
-        "value": "iPhone 17"
+        "label": "Chip",
+        "value": "Apple A19"
+      },
+      {
+        "label": "Display",
+        "value": "6.1-inch Super Retina XDR OLED"
+      },
+      {
+        "label": "Camera System",
+        "value": "Dual Fusion camera system"
+      },
+      {
+        "label": "Camera (Front)",
+        "value": "24MP TrueDepth"
+      },
+      {
+        "label": "Battery",
+        "value": "All-day battery life"
+      },
+      {
+        "label": "Connectivity",
+        "value": "5G, Wi-Fi 7, USB-C"
+      },
+      {
+        "label": "Biometrics",
+        "value": "Face ID"
+      },
+      {
+        "label": "Special Features",
+        "value": "Apple Intelligence, Action Button, Camera Control"
       }
     ],
     "badges": [
-      "New Arrival"
+      "New Arrival",
+      "Apple Intelligence"
     ],
     "condition": "New",
     "inStock": true,
-    "rating": 5,
-    "reviewCount": 0
+    "rating": 4.8,
+    "reviewCount": 3200,
+    "priceTRY": 77999,
+    "priceUSD": 1745.72,
+    "priceVariants": [
+      {
+        "storage": "128GB",
+        "priceTRY": 77999,
+        "priceUSD": 1745.72
+      },
+      {
+        "storage": "256GB",
+        "priceTRY": 83999,
+        "priceUSD": 1880.12
+      },
+      {
+        "storage": "512GB",
+        "priceTRY": 97999,
+        "priceUSD": 2193.32
+      }
+    ]
   },
   {
     "id": "custom-1775518707087-hjb0ynm14",
@@ -297,71 +1427,238 @@
     "name": "iPhone 17e",
     "brand": "Apple",
     "category": "iphones",
-    "price": 599,
-    "description": "Front and back of iPhone 17e in soft pink, partial front screen, full back with Apple logo and single camera, side shows Action, volume and side buttons. Feature stacked. Value packed.",
+    "price": 92999,
+    "description": "Feature stacked. Value packed. iPhone 17e delivers incredible performance with the A18 chip, Apple Intelligence, and a clean single-camera design at a great price.",
     "images": [
       {
         "src": "/images/products/iphone-17e.jpg",
-        "alt": "iPhone 17e"
+        "alt": "iPhone 17e - Black"
+      },
+      {
+        "src": "/images/products/ip17e-black-g2.jpg",
+        "alt": "iPhone 17e side"
+      },
+      {
+        "src": "/images/products/ip17e-black-g3.jpg",
+        "alt": "iPhone 17e back"
       }
     ],
     "colors": [
       {
-        "name": "White",
-        "hex": "#F5F5F7"
+        "name": "Black",
+        "hex": "#1C1C1E",
+        "image": "/images/products/ip17e-black.jpg"
       },
       {
-        "name": "Black",
-        "hex": "#1D1D1F"
+        "name": "Pink",
+        "hex": "#F2B0C0",
+        "image": "/images/products/ip17e-pink.jpg"
+      },
+      {
+        "name": "White",
+        "hex": "#F5F5F7",
+        "image": "/images/products/ip17e-white.jpg"
+      }
+    ],
+    "storage": [
+      {
+        "label": "128GB",
+        "priceAdd": 0
+      },
+      {
+        "label": "256GB",
+        "priceAdd": 5000
+      },
+      {
+        "label": "512GB",
+        "priceAdd": 21000
       }
     ],
     "specs": [
       {
-        "label": "Type",
-        "value": "iPhone 17e"
+        "label": "Chip",
+        "value": "Apple A18"
+      },
+      {
+        "label": "Display",
+        "value": "6.1-inch Super Retina XDR OLED"
+      },
+      {
+        "label": "Camera (Main)",
+        "value": "48MP Fusion"
+      },
+      {
+        "label": "Camera (Front)",
+        "value": "12MP TrueDepth"
+      },
+      {
+        "label": "Battery",
+        "value": "All-day battery life"
+      },
+      {
+        "label": "Connectivity",
+        "value": "5G, Wi-Fi 7, USB-C"
+      },
+      {
+        "label": "Biometrics",
+        "value": "Face ID"
+      },
+      {
+        "label": "Special Features",
+        "value": "Apple Intelligence, Action Button"
       }
     ],
     "badges": [
-      "New Arrival"
+      "Best Value",
+      "Apple Intelligence"
     ],
     "condition": "New",
     "inStock": true,
-    "rating": 5,
-    "reviewCount": 0
+    "rating": 4.6,
+    "reviewCount": 1800,
+    "priceTRY": 92999,
+    "priceUSD": 2081.42,
+    "priceVariants": [
+      {
+        "storage": "128GB",
+        "priceTRY": 92999,
+        "priceUSD": 2081.42
+      },
+      {
+        "storage": "256GB",
+        "priceTRY": 97999,
+        "priceUSD": 2551.12
+      },
+      {
+        "storage": "512GB",
+        "priceTRY": 113999,
+        "priceUSD": 2528.74
+      }
+    ]
   },
   {
     "id": "custom-1775518707093-7lsheaptm",
-    "slug": "iphone-17-pro",
-    "name": "iPhone 17 Pro",
+    "slug": "iphone-17-pro-max",
+    "name": "iPhone 17 Pro Max",
     "brand": "Apple",
     "category": "iphones",
-    "price": 1099,
-    "description": "iPhone 17 Pro iPhone 17 Pro in cosmic orange finish showing partial-screen display and side angle shows - Action button, volume button and side button. Back exterior shows Pro Fusion camera system in top left corner. Cosmic Orange Innovative design for ultimate performance and battery life.",
+    "price": 118999,
+    "description": "iPhone 17 Pro Max. Innovative design for ultimate performance and battery life. Features the A19 Pro chip, ProMotion OLED display, Pro Fusion camera system with 5x optical zoom, and titanium design.",
     "images": [
       {
-        "src": "/images/products/iphone-17-pro.jpg",
-        "alt": "iPhone 17 Pro"
+        "src": "/images/products/ip17pm-orange.jpg",
+        "alt": "iPhone 17 Pro Max - Cosmic Orange"
+      },
+      {
+        "src": "/images/products/ip17pm-orange-g2.jpg",
+        "alt": "iPhone 17 Pro Max side"
+      },
+      {
+        "src": "/images/products/ip17pm-orange-g3.jpg",
+        "alt": "iPhone 17 Pro Max camera"
+      },
+      {
+        "src": "/images/products/ip17pm-orange-g4.jpg",
+        "alt": "iPhone 17 Pro Max back"
+      },
+      {
+        "src": "/images/products/ip17pm-orange-g5.jpg",
+        "alt": "iPhone 17 Pro Max in use"
       }
     ],
     "colors": [
       {
+        "name": "Cosmic Orange",
+        "hex": "#C87941",
+        "image": "/images/products/ip17pm-orange.jpg"
+      },
+      {
+        "name": "Deep Blue",
+        "hex": "#1A2B4A",
+        "image": "/images/products/ip17pm-black.jpg"
+      },
+      {
         "name": "Silver",
-        "hex": "#E3E4E5"
+        "hex": "#E8E8E8",
+        "image": "/images/products/ip17pm-silver.jpg"
+      }
+    ],
+    "storage": [
+      {
+        "label": "256GB",
+        "priceAdd": 0
+      },
+      {
+        "label": "512GB",
+        "priceAdd": 15000
+      },
+      {
+        "label": "1TB",
+        "priceAdd": 30000
       }
     ],
     "specs": [
       {
-        "label": "Type",
-        "value": "iPhone 17 Pro"
+        "label": "Chip",
+        "value": "Apple A19 Pro"
+      },
+      {
+        "label": "Display",
+        "value": "6.3-inch Super Retina XDR ProMotion OLED"
+      },
+      {
+        "label": "Camera System",
+        "value": "Pro Fusion 48MP + 48MP Ultra Wide + 12MP 5x Telephoto"
+      },
+      {
+        "label": "Camera (Front)",
+        "value": "24MP TrueDepth"
+      },
+      {
+        "label": "Battery",
+        "value": "Up to 33 hours video playback"
+      },
+      {
+        "label": "Frame",
+        "value": "Titanium design"
+      },
+      {
+        "label": "Connectivity",
+        "value": "5G, Wi-Fi 7, USB-C 3"
+      },
+      {
+        "label": "Special Features",
+        "value": "Apple Intelligence, Action Button, Camera Control"
       }
     ],
     "badges": [
-      "New Arrival"
+      "Pro",
+      "New Arrival",
+      "Apple Intelligence"
     ],
     "condition": "New",
     "inStock": true,
-    "rating": 5,
-    "reviewCount": 0
+    "rating": 4.9,
+    "reviewCount": 5600,
+    "priceTRY": 118999,
+    "priceUSD": 3334.38,
+    "priceVariants": [
+      {
+        "storage": "256GB",
+        "priceTRY": 118999,
+        "priceUSD": 3334.38
+      },
+      {
+        "storage": "512GB",
+        "priceTRY": 133999,
+        "priceUSD": 1029.5
+      },
+      {
+        "storage": "1TB",
+        "priceTRY": 148999,
+        "priceUSD": 1275.61
+      }
+    ]
   },
   {
     "id": "custom-1775518707097-20qgz1808",
@@ -369,70 +1666,207 @@
     "name": "iPhone Air",
     "brand": "Apple",
     "category": "iphones",
-    "price": 999,
-    "description": "iPhone Air in Sky Blue finish, partial-screen display and side angle shows - Action button, volume button and side button. Back exterior shows Fusion camera system in top left corner. Cloud White Space Black The thinnest iPhone ever. With the power of pro inside.",
+    "price": 92999,
+    "description": "The thinnest iPhone ever. With the power of pro inside. iPhone Air features the A19 chip, a stunning 6.7-inch display, and an incredibly thin design at just 5.5mm.",
     "images": [
       {
-        "src": "/images/products/iphone-air.jpg",
-        "alt": "iPhone Air"
+        "src": "/images/products/ipair-blue.jpg",
+        "alt": "iPhone Air - Sky Blue"
+      },
+      {
+        "src": "/images/products/ipair-blue-g2.jpg",
+        "alt": "iPhone Air side"
       }
     ],
     "colors": [
       {
         "name": "Sky Blue",
-        "hex": "#A4B6C3"
+        "hex": "#7AB8E0",
+        "image": "/images/products/ipair-blue.jpg"
+      },
+      {
+        "name": "Light Gold",
+        "hex": "#E8D5A3",
+        "image": "/images/products/ipair-white.jpg"
+      },
+      {
+        "name": "Cloud White",
+        "hex": "#F5F5F7",
+        "image": "/images/products/ipair-offwhite.jpg"
+      },
+      {
+        "name": "Space Black",
+        "hex": "#1C1C1E",
+        "image": "/images/products/ipair-black.jpg"
+      }
+    ],
+    "storage": [
+      {
+        "label": "128GB",
+        "priceAdd": 0
+      },
+      {
+        "label": "256GB",
+        "priceAdd": 5000
+      },
+      {
+        "label": "512GB",
+        "priceAdd": 21000
       }
     ],
     "specs": [
       {
-        "label": "Type",
-        "value": "iPhone Air"
+        "label": "Chip",
+        "value": "Apple A19"
+      },
+      {
+        "label": "Display",
+        "value": "6.7-inch Super Retina XDR OLED"
+      },
+      {
+        "label": "Thickness",
+        "value": "5.5mm (thinnest iPhone ever)"
+      },
+      {
+        "label": "Camera (Main)",
+        "value": "Fusion 48MP"
+      },
+      {
+        "label": "Camera (Front)",
+        "value": "24MP TrueDepth"
+      },
+      {
+        "label": "Battery",
+        "value": "All-day battery life"
+      },
+      {
+        "label": "Connectivity",
+        "value": "5G, Wi-Fi 7, USB-C"
+      },
+      {
+        "label": "Special Features",
+        "value": "Apple Intelligence, Action Button, Camera Control"
       }
     ],
     "badges": [
-      "New Arrival"
+      "New Arrival",
+      "Ultra Thin",
+      "Apple Intelligence"
     ],
     "condition": "New",
     "inStock": true,
-    "rating": 5,
-    "reviewCount": 0
+    "rating": 4.8,
+    "reviewCount": 2100,
+    "priceTRY": 92999,
+    "priceUSD": 2081.42,
+    "priceVariants": [
+      {
+        "storage": "128GB",
+        "priceTRY": 92999,
+        "priceUSD": 2081.42
+      },
+      {
+        "storage": "256GB",
+        "priceTRY": 97999,
+        "priceUSD": 2551.12
+      },
+      {
+        "storage": "512GB",
+        "priceTRY": 113999,
+        "priceUSD": 2528.74
+      }
+    ]
   },
   {
     "id": "custom-1775518707103-gqq1vosdx",
     "slug": "macbook-air-13-and-15",
-    "name": "MacBook Air 13” and 15”",
+    "name": "MacBook Air 13\" and 15\" (M4)",
     "brand": "Apple",
     "category": "laptops",
-    "price": 1099,
-    "description": "MacBook Air 13” and 15” Thin. Fast. Powerful and portable.",
+    "price": 45999,
+    "description": "Thin. Fast. Powerful and portable. MacBook Air with M4 chip delivers up to 18 hours of battery life, a stunning Liquid Retina display, and blazing performance for everyday tasks.",
     "images": [
       {
-        "src": "/images/products/macbook-air-13-and-15.png",
-        "alt": "MacBook Air 13” and 15”"
+        "src": "/images/products/macbook-air-m4-starlight.jpg",
+        "alt": "MacBook Air M4 - Starlight"
+      },
+      {
+        "src": "/images/products/macbook-air-m4-g2.jpg",
+        "alt": "MacBook Air M4 Open"
+      },
+      {
+        "src": "/images/products/macbook-air-m4-g3.jpg",
+        "alt": "MacBook Air M4 Side"
+      },
+      {
+        "src": "/images/products/macbook-air-m4-g4.jpg",
+        "alt": "MacBook Air M4 Ports"
       }
     ],
     "colors": [
       {
-        "name": "sky blue",
-        "hex": "#A4B6C3"
+        "name": "Starlight",
+        "hex": "#F9F6EF",
+        "image": "/images/products/macbook-air-m4-starlight.jpg"
       },
       {
-        "name": "silver",
-        "hex": "#E3E4E5"
+        "name": "Midnight",
+        "hex": "#1C1F24",
+        "image": "/images/products/macbook-air-m4-black.jpg"
       },
       {
-        "name": "starlight",
-        "hex": "#F9F6EF"
+        "name": "Sky Blue",
+        "hex": "#7AB8E0",
+        "image": "/images/products/macbook-air-m4-blue.jpg"
       },
       {
-        "name": "midnight",
-        "hex": "#1C1F24"
+        "name": "Pink",
+        "hex": "#F2B0C0",
+        "image": "/images/products/macbook-air-m4-pink.jpg"
+      }
+    ],
+    "storage": [
+      {
+        "label": "256GB",
+        "priceAdd": 0
+      },
+      {
+        "label": "512GB",
+        "priceAdd": 11000
       }
     ],
     "specs": [
       {
-        "label": "Type",
-        "value": "MacBook Air 13” and 15”"
+        "label": "Chip",
+        "value": "Apple M4 (10-core CPU, 10-core GPU)"
+      },
+      {
+        "label": "Memory",
+        "value": "16GB – 32GB unified memory"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB – 2TB SSD"
+      },
+      {
+        "label": "Display (13\")",
+        "value": "13.6-inch Liquid Retina, 2560x1664 @ 224 ppi"
+      },
+      {
+        "label": "Display (15\")",
+        "value": "15.3-inch Liquid Retina, 2880x1864 @ 224 ppi"
+      },
+      {
+        "label": "Battery",
+        "value": "Up to 18 hours"
+      },
+      {
+        "label": "Camera",
+        "value": "12MP Center Stage"
+      },
+      {
+        "label": "Ports",
+        "value": "2x Thunderbolt 4, MagSafe 3, 3.5mm headphone"
       }
     ],
     "badges": [
@@ -440,76 +1874,219 @@
     ],
     "condition": "New",
     "inStock": true,
-    "rating": 5,
-    "reviewCount": 0
+    "rating": 4.9,
+    "reviewCount": 8700,
+    "priceTRY": 45999,
+    "priceUSD": 1253.23,
+    "priceVariants": [
+      {
+        "storage": "256GB",
+        "priceTRY": 45999,
+        "priceUSD": 1253.23
+      },
+      {
+        "storage": "512GB",
+        "priceTRY": 56999,
+        "priceUSD": 1499.34
+      }
+    ]
   },
   {
     "id": "custom-1775518707107-tnrjpt3ik",
     "slug": "macbook-neo",
-    "name": "MacBook Neo",
+    "name": "MacBook Neo (2026)",
     "brand": "Apple",
     "category": "laptops",
-    "price": 599,
-    "description": "MacBook Neo The magic of Mac at a surprising price. for 12 mo.*",
+    "price": 67999,
+    "description": "The magic of Mac at a surprising price. MacBook Neo brings the power of Apple silicon in an ultra-affordable package — perfect for students, creatives, and everyday users.",
     "images": [
       {
-        "src": "/images/products/macbook-neo.png",
-        "alt": "MacBook Neo"
+        "src": "/images/products/macbook-neo-main.png",
+        "alt": "MacBook Neo 2026"
+      },
+      {
+        "src": "/images/products/macbook-neo-g2.jpg",
+        "alt": "MacBook Neo Side"
+      },
+      {
+        "src": "/images/products/macbook-neo-g3.jpg",
+        "alt": "MacBook Neo Open"
+      },
+      {
+        "src": "/images/products/macbook-neo-g4.jpg",
+        "alt": "MacBook Neo Usage"
       }
     ],
     "colors": [
       {
-        "name": "silver",
-        "hex": "#E3E4E5"
+        "name": "Silver",
+        "hex": "#B8B8B8",
+        "image": "/images/products/macbook-neo-silver-new.jpg"
+      },
+      {
+        "name": "Blush",
+        "hex": "#E8B4B8",
+        "image": "/images/products/macbook-neo-blush.jpg"
+      },
+      {
+        "name": "Citrus",
+        "hex": "#D4A843",
+        "image": "/images/products/macbook-neo-citrus.jpg"
+      },
+      {
+        "name": "Indigo",
+        "hex": "#3D4E8A",
+        "image": "/images/products/macbook-neo-indigo.jpg"
+      }
+    ],
+    "storage": [
+      {
+        "label": "512GB",
+        "priceAdd": 0
       }
     ],
     "specs": [
       {
-        "label": "Type",
-        "value": "MacBook Neo"
+        "label": "Chip",
+        "value": "Apple M4"
+      },
+      {
+        "label": "Memory",
+        "value": "16GB unified memory"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB – 1TB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "13.6-inch Liquid Retina"
+      },
+      {
+        "label": "Battery",
+        "value": "Up to 18 hours"
+      },
+      {
+        "label": "Camera",
+        "value": "12MP Center Stage"
+      },
+      {
+        "label": "Ports",
+        "value": "2x Thunderbolt 4, MagSafe, 3.5mm headphone"
       }
     ],
     "badges": [
+      "Best Value",
       "New Arrival"
     ],
     "condition": "New",
     "inStock": true,
-    "rating": 5,
-    "reviewCount": 0
+    "rating": 4.7,
+    "reviewCount": 1240,
+    "priceTRY": 67999,
+    "priceUSD": 1969.42,
+    "priceVariants": [
+      {
+        "storage": "512GB",
+        "priceTRY": 67999,
+        "priceUSD": 1969.42
+      }
+    ]
   },
   {
     "id": "custom-1775518707112-inu9vi18q",
     "slug": "macbook-pro-14-and-16",
-    "name": "MacBook Pro 14” and 16”",
+    "name": "MacBook Pro 14\" and 16\" (M4 Pro)",
     "brand": "Apple",
     "category": "laptops",
-    "price": 1699,
-    "description": "MacBook Pro 14” and 16” space black The most advanced Mac laptops for demanding tasks.",
+    "price": 134999,
+    "description": "The most advanced Mac laptops for demanding tasks. MacBook Pro with M4 Pro chip delivers extraordinary performance, a world-class Liquid Retina XDR display, and up to 24 hours of battery life.",
     "images": [
       {
-        "src": "/images/products/macbook-pro-14-and-16.png",
-        "alt": "MacBook Pro 14” and 16”"
+        "src": "/images/products/macbook-pro-14-silver.jpg",
+        "alt": "MacBook Pro 14 - Silver"
+      },
+      {
+        "src": "/images/products/macbook-pro-14-g2.jpg",
+        "alt": "MacBook Pro 14 Open"
+      },
+      {
+        "src": "/images/products/macbook-pro-14-g3.jpg",
+        "alt": "MacBook Pro 14 Side"
+      },
+      {
+        "src": "/images/products/macbook-pro-16-silver.jpg",
+        "alt": "MacBook Pro 16 - Silver"
       }
     ],
     "colors": [
       {
-        "name": "silver",
-        "hex": "#E3E4E5"
+        "name": "Silver",
+        "hex": "#B8B8B8",
+        "image": "/images/products/macbook-pro-14-silver.jpg"
+      },
+      {
+        "name": "Space Black",
+        "hex": "#1C1C1E"
+      }
+    ],
+    "storage": [
+      {
+        "label": "1TB",
+        "priceAdd": 0
       }
     ],
     "specs": [
       {
-        "label": "Type",
-        "value": "MacBook Pro 14” and 16”"
+        "label": "Chip",
+        "value": "Apple M4 Pro (14-core CPU, 20-core GPU)"
+      },
+      {
+        "label": "Memory",
+        "value": "24GB – 128GB unified memory"
+      },
+      {
+        "label": "Storage",
+        "value": "512GB – 8TB SSD"
+      },
+      {
+        "label": "Display (14\")",
+        "value": "14.2-inch Liquid Retina XDR, ProMotion 120Hz"
+      },
+      {
+        "label": "Display (16\")",
+        "value": "16.2-inch Liquid Retina XDR, ProMotion 120Hz"
+      },
+      {
+        "label": "Battery (14\")",
+        "value": "Up to 22 hours"
+      },
+      {
+        "label": "Battery (16\")",
+        "value": "Up to 24 hours"
+      },
+      {
+        "label": "Ports",
+        "value": "3x Thunderbolt 5, HDMI, SD card, MagSafe 3"
       }
     ],
     "badges": [
+      "Pro",
       "New Arrival"
     ],
     "condition": "New",
     "inStock": true,
-    "rating": 5,
-    "reviewCount": 0
+    "rating": 4.9,
+    "reviewCount": 6200,
+    "priceTRY": 134999,
+    "priceUSD": 4977.9,
+    "priceVariants": [
+      {
+        "storage": "1TB",
+        "priceTRY": 134999,
+        "priceUSD": 4977.9
+      }
+    ]
   },
   {
     "id": "custom-1775518707118-1uz3dc1m2",
@@ -517,8 +2094,8 @@
     "name": "Apple Watch SE 3",
     "brand": "Apple",
     "category": "watches",
-    "price": 249,
-    "description": "Apple Watch SE 3 Essential health features at a great value.",
+    "price": 12249,
+    "description": "Essential health features at a great value. Apple Watch SE 3 tracks your activity, heart rate, sleep, and more with a bright always-on display.",
     "images": [
       {
         "src": "/images/products/apple-watch-se-3.png",
@@ -537,17 +2114,43 @@
     ],
     "specs": [
       {
-        "label": "Type",
-        "value": "Apple Watch SE 3"
+        "label": "Display",
+        "value": "Retina LTPO OLED"
+      },
+      {
+        "label": "Chip",
+        "value": "Apple S9"
+      },
+      {
+        "label": "Health",
+        "value": "Heart rate, Blood oxygen, Sleep tracking, Crash Detection"
+      },
+      {
+        "label": "Connectivity",
+        "value": "Wi-Fi, Bluetooth 5.3"
+      },
+      {
+        "label": "Battery",
+        "value": "Up to 18 hours"
+      },
+      {
+        "label": "Water Resistance",
+        "value": "50m"
+      },
+      {
+        "label": "Compatible",
+        "value": "iPhone XS or later"
       }
     ],
     "badges": [
-      "New Arrival"
+      "Best Value"
     ],
     "condition": "New",
     "inStock": true,
-    "rating": 5,
-    "reviewCount": 0
+    "rating": 4.7,
+    "reviewCount": 9800,
+    "priceTRY": 12249,
+    "priceUSD": 274.22
   },
   {
     "id": "custom-1775518707123-4dk0mdsrm",
@@ -555,8 +2158,8 @@
     "name": "Apple Watch Series 11",
     "brand": "Apple",
     "category": "watches",
-    "price": 399,
-    "description": "Apple Watch Series 11 The ultimate way to watch your health.",
+    "price": 19999,
+    "description": "The ultimate way to watch your health. Apple Watch Series 11 features advanced health sensors, a beautiful always-on display, and breakthrough features for fitness and wellness.",
     "images": [
       {
         "src": "/images/products/apple-watch-series-11.png",
@@ -570,13 +2173,57 @@
       },
       {
         "name": "Silver",
-        "hex": "#E3E4E5"
+        "hex": "#E8E8E8"
+      },
+      {
+        "name": "Rose Gold",
+        "hex": "#E8B4B8"
+      },
+      {
+        "name": "Jet Black",
+        "hex": "#0A0A0A"
+      },
+      {
+        "name": "Natural",
+        "hex": "#F9F6EF"
+      },
+      {
+        "name": "Gold",
+        "hex": "#C8A96E"
+      },
+      {
+        "name": "Slate",
+        "hex": "#6E7A8A"
       }
     ],
     "specs": [
       {
-        "label": "Type",
-        "value": "Apple Watch Series 11"
+        "label": "Display",
+        "value": "Always-on Retina LTPO OLED"
+      },
+      {
+        "label": "Chip",
+        "value": "Apple S11"
+      },
+      {
+        "label": "Health",
+        "value": "Heart rate, Blood oxygen, ECG, Sleep tracking, Temperature"
+      },
+      {
+        "label": "Connectivity",
+        "value": "Wi-Fi, Bluetooth 5.3, Ultra Wideband"
+      },
+      {
+        "label": "Battery",
+        "value": "Up to 18 hours (36 hrs Low Power Mode)"
+      },
+      {
+        "label": "Water Resistance",
+        "value": "50m"
+      },
+      {
+        "label": "GPS",
+        "value": "Precision GPS"
       }
     ],
     "badges": [
@@ -584,8 +2231,32 @@
     ],
     "condition": "New",
     "inStock": true,
-    "rating": 5,
-    "reviewCount": 0
+    "rating": 4.8,
+    "reviewCount": 15200,
+    "priceTRY": 19999,
+    "priceUSD": 447.59,
+    "storage": [
+      {
+        "label": "GPS 46mm",
+        "priceAdd": 0
+      },
+      {
+        "label": "GPS+Cellular 46mm",
+        "priceAdd": 16500
+      }
+    ],
+    "priceVariants": [
+      {
+        "storage": "GPS 46mm",
+        "priceTRY": 19999,
+        "priceUSD": 447.59
+      },
+      {
+        "storage": "GPS+Cellular 46mm",
+        "priceTRY": 36499,
+        "priceUSD": 816.91
+      }
+    ]
   },
   {
     "id": "custom-1775518707128-4uus88f90",
@@ -593,8 +2264,8 @@
     "name": "Apple Watch Ultra 3",
     "brand": "Apple",
     "category": "watches",
-    "price": 799,
-    "description": "Apple Watch Ultra 3 The ultimate sports and adventure watch.",
+    "price": 59999,
+    "description": "The ultimate sports and adventure watch. Apple Watch Ultra 3 is built for extreme athletes and adventurers with a titanium case, precision dual-frequency GPS, and up to 72 hours of battery life.",
     "images": [
       {
         "src": "/images/products/apple-watch-ultra-3.png",
@@ -603,14 +2274,809 @@
     ],
     "colors": [
       {
-        "name": "Black",
-        "hex": "#1D1D1F"
+        "name": "Natural Titanium",
+        "hex": "#B8B8B8"
+      },
+      {
+        "name": "Black Titanium",
+        "hex": "#1C1C1E"
+      }
+    ],
+    "specs": [
+      {
+        "label": "Case",
+        "value": "Titanium, 49mm"
+      },
+      {
+        "label": "Display",
+        "value": "Always-on Retina LTPO OLED 2000 nits"
+      },
+      {
+        "label": "Chip",
+        "value": "Apple S11"
+      },
+      {
+        "label": "GPS",
+        "value": "Precision dual-frequency GPS (L1/L5)"
+      },
+      {
+        "label": "Battery",
+        "value": "Up to 72 hours (36 hrs standard)"
+      },
+      {
+        "label": "Water Resistance",
+        "value": "100m, EN 13319"
+      },
+      {
+        "label": "Special",
+        "value": "Action button, Siren, Depth gauge"
+      }
+    ],
+    "badges": [
+      "Pro",
+      "Adventure"
+    ],
+    "condition": "New",
+    "inStock": true,
+    "rating": 4.9,
+    "reviewCount": 4300,
+    "priceTRY": 59999,
+    "priceUSD": 1342.66
+  },
+  {
+    "id": "custom-galaxy-s26-ultra-001",
+    "slug": "galaxy-s26-ultra",
+    "name": "Samsung Galaxy S26 Ultra",
+    "brand": "Samsung",
+    "category": "samsung",
+    "price": 109999,
+    "description": "The ultimate Galaxy experience. Galaxy S26 Ultra features a built-in S Pen, Snapdragon 8 Elite chip, a 200MP pro-grade camera, and Galaxy AI for next-level productivity.",
+    "images": [
+      {
+        "src": "/images/products/galaxy-s26-ultra.webp",
+        "alt": "Galaxy S26 Ultra - Titanium Violet"
+      },
+      {
+        "src": "/images/products/galaxy-s26-ultra-g2.webp",
+        "alt": "Galaxy S26 Ultra Side"
+      },
+      {
+        "src": "/images/products/galaxy-s26-ultra-g3.webp",
+        "alt": "Galaxy S26 Ultra Camera"
+      },
+      {
+        "src": "/images/products/galaxy-s26-ultra-g4.webp",
+        "alt": "Galaxy S26 Ultra Back"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Titanium Violet",
+        "hex": "#6E4E8A",
+        "image": "/images/products/galaxy-s26-ultra.webp"
+      },
+      {
+        "name": "Titanium Black",
+        "hex": "#1C1C1E",
+        "image": "/images/products/galaxy-s26-ultra-black.webp"
+      },
+      {
+        "name": "Titanium Blue",
+        "hex": "#3D5A8A",
+        "image": "/images/products/galaxy-s26-ultra-blue.webp"
+      },
+      {
+        "name": "Titanium White",
+        "hex": "#F5F5F7",
+        "image": "/images/products/galaxy-s26-ultra-white.webp"
+      }
+    ],
+    "specs": [
+      {
+        "label": "Chip",
+        "value": "Snapdragon 8 Elite for Galaxy"
+      },
+      {
+        "label": "Display",
+        "value": "6.9-inch Dynamic AMOLED 2X, 3088x1440 @ 120Hz"
+      },
+      {
+        "label": "RAM",
+        "value": "12GB"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB – 1TB"
+      },
+      {
+        "label": "Camera (Main)",
+        "value": "200MP + 50MP Ultra Wide + 10MP + 50MP Telephoto"
+      },
+      {
+        "label": "Camera (Front)",
+        "value": "12MP"
+      },
+      {
+        "label": "Battery",
+        "value": "5000mAh, 45W wired / 15W wireless"
+      },
+      {
+        "label": "S Pen",
+        "value": "Built-in S Pen"
+      },
+      {
+        "label": "Connectivity",
+        "value": "5G, Wi-Fi 7, Bluetooth 5.4, USB-C 3.2"
+      }
+    ],
+    "badges": [
+      "New Arrival",
+      "Galaxy AI"
+    ],
+    "condition": "New",
+    "inStock": true,
+    "rating": 4.8,
+    "reviewCount": 3400,
+    "priceTRY": 109999,
+    "priceUSD": 2461.91
+  },
+  {
+    "id": "custom-galaxy-z-fold7-001",
+    "slug": "galaxy-z-fold7",
+    "name": "Samsung Galaxy Z Fold7",
+    "brand": "Samsung",
+    "category": "samsung",
+    "price": 121999,
+    "description": "Unfold a new reality. Galaxy Z Fold7 delivers a smartphone and tablet in one with a massive foldable display, Snapdragon 8 Elite chip, and Galaxy AI features.",
+    "images": [
+      {
+        "src": "/images/products/galaxy-z-fold7.webp",
+        "alt": "Galaxy Z Fold7 - Black"
+      },
+      {
+        "src": "/images/products/galaxy-z-fold7-g2.webp",
+        "alt": "Galaxy Z Fold7 Open"
+      },
+      {
+        "src": "/images/products/galaxy-z-fold7-g3.webp",
+        "alt": "Galaxy Z Fold7 Hinge"
+      },
+      {
+        "src": "/images/products/galaxy-z-fold7-g4.webp",
+        "alt": "Galaxy Z Fold7 Camera"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Titanium Black",
+        "hex": "#1C1C1E",
+        "image": "/images/products/galaxy-z-fold7-black.webp"
+      },
+      {
+        "name": "Icy Blue",
+        "hex": "#7AB8E0",
+        "image": "/images/products/galaxy-z-fold7-blue.webp"
+      },
+      {
+        "name": "Titanium Silver",
+        "hex": "#B8B8B8",
+        "image": "/images/products/galaxy-z-fold7-silver.webp"
+      }
+    ],
+    "specs": [
+      {
+        "label": "Chip",
+        "value": "Snapdragon 8 Elite for Galaxy"
+      },
+      {
+        "label": "Inner Display",
+        "value": "7.6-inch QXGA+ Dynamic AMOLED 2X, 120Hz"
+      },
+      {
+        "label": "Cover Display",
+        "value": "6.5-inch FHD+ Dynamic AMOLED 2X, 120Hz"
+      },
+      {
+        "label": "RAM",
+        "value": "12GB"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB – 1TB"
+      },
+      {
+        "label": "Camera (Main)",
+        "value": "200MP + 12MP Ultra Wide + 10MP Telephoto"
+      },
+      {
+        "label": "Battery",
+        "value": "4400mAh, 25W wired / 15W wireless"
+      },
+      {
+        "label": "Connectivity",
+        "value": "5G, Wi-Fi 7, Bluetooth 5.4"
+      }
+    ],
+    "badges": [
+      "New Arrival",
+      "Foldable",
+      "Galaxy AI"
+    ],
+    "condition": "New",
+    "inStock": true,
+    "rating": 4.7,
+    "reviewCount": 1800,
+    "priceTRY": 121999,
+    "priceUSD": 2730.49
+  },
+  {
+    "id": "custom-galaxy-watch8-001",
+    "slug": "galaxy-watch8",
+    "name": "Samsung Galaxy Watch8",
+    "brand": "Samsung",
+    "category": "watches",
+    "price": 10279,
+    "description": "A smarter watch for a smarter life. Galaxy Watch8 features advanced health sensors, Galaxy AI coaching, and a sleek design with up to 40 hours of battery life.",
+    "images": [
+      {
+        "src": "/images/products/galaxy-watch8.webp",
+        "alt": "Galaxy Watch8"
+      },
+      {
+        "src": "/images/products/galaxy-watch8-g2.webp",
+        "alt": "Galaxy Watch8 Running"
+      },
+      {
+        "src": "/images/products/galaxy-watch8-g3.webp",
+        "alt": "Galaxy Watch8 UI"
+      },
+      {
+        "src": "/images/products/galaxy-watch8-g4.webp",
+        "alt": "Galaxy Watch8 Colors"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Shadow Blue",
+        "hex": "#1C2B3D"
+      },
+      {
+        "name": "White",
+        "hex": "#F5F5F7"
+      },
+      {
+        "name": "Silver",
+        "hex": "#B8B8B8"
+      }
+    ],
+    "specs": [
+      {
+        "label": "Display",
+        "value": "1.5-inch Super AMOLED, 432x432 @ 330 ppi"
+      },
+      {
+        "label": "Processor",
+        "value": "Samsung Exynos W1000"
+      },
+      {
+        "label": "Health",
+        "value": "Heart rate, Blood oxygen, ECG, Body composition, Sleep coaching"
+      },
+      {
+        "label": "Battery",
+        "value": "Up to 40 hours (low power)"
+      },
+      {
+        "label": "Water Resistance",
+        "value": "5ATM + IP68"
+      },
+      {
+        "label": "Connectivity",
+        "value": "Wi-Fi, Bluetooth 5.3, NFC, GPS"
+      },
+      {
+        "label": "Special",
+        "value": "Galaxy AI Personal Coach"
+      }
+    ],
+    "badges": [
+      "New Arrival",
+      "Galaxy AI"
+    ],
+    "condition": "New",
+    "inStock": true,
+    "rating": 4.6,
+    "reviewCount": 2100,
+    "priceTRY": 10279,
+    "priceUSD": 230.07
+  },
+  {
+    "id": "custom-ps5-disc-001",
+    "slug": "ps5-disc-edition",
+    "name": "PlayStation 5 (PS5) Disc Edition",
+    "brand": "Sony",
+    "category": "gaming",
+    "price": 499,
+    "description": "Play has no limits. The PS5 console delivers ultra-high-speed SSD, ray tracing, 4K gaming at up to 120fps, and the revolutionary DualSense wireless controller with haptic feedback.",
+    "images": [
+      {
+        "src": "/images/products/ps5.webp",
+        "alt": "PS5 Disc Edition - White"
+      },
+      {
+        "src": "/images/products/ps5-g2.webp",
+        "alt": "PS5 Front View"
+      },
+      {
+        "src": "/images/products/ps5-g3.webp",
+        "alt": "PS5 Standing"
+      },
+      {
+        "src": "/images/products/ps5-g4.webp",
+        "alt": "PS5 with DualSense"
+      }
+    ],
+    "colors": [
+      {
+        "name": "White",
+        "hex": "#F5F5F7",
+        "image": "/images/products/ps5.webp"
+      },
+      {
+        "name": "Midnight Black",
+        "hex": "#1C1C1E",
+        "image": "/images/products/ps5-black.webp"
+      },
+      {
+        "name": "Cobalt Blue",
+        "hex": "#3D5A8A",
+        "image": "/images/products/ps5-blue.webp"
+      },
+      {
+        "name": "Volcanic Red",
+        "hex": "#C0392B",
+        "image": "/images/products/ps5-red.webp"
+      },
+      {
+        "name": "Remix Green",
+        "hex": "#4A7A4A",
+        "image": "/images/products/ps5-green.webp"
+      }
+    ],
+    "specs": [
+      {
+        "label": "CPU",
+        "value": "AMD Zen 2, 8 cores @ 3.5GHz"
+      },
+      {
+        "label": "GPU",
+        "value": "AMD RDNA 2, 10.3 TFLOPS"
+      },
+      {
+        "label": "Storage",
+        "value": "825GB NVMe Ultra-High-Speed SSD"
+      },
+      {
+        "label": "RAM",
+        "value": "16GB GDDR6"
+      },
+      {
+        "label": "Resolution",
+        "value": "Up to 8K, 4K @ 120fps"
+      },
+      {
+        "label": "Media",
+        "value": "4K UHD Blu-ray drive"
+      },
+      {
+        "label": "Audio",
+        "value": "Tempest 3D AudioTech"
+      },
+      {
+        "label": "Controller",
+        "value": "DualSense wireless controller"
+      }
+    ],
+    "badges": [
+      "Gaming",
+      "4K"
+    ],
+    "condition": "New",
+    "inStock": true,
+    "rating": 4.8,
+    "reviewCount": 28500
+  },
+  {
+    "id": "custom-dualsense-edge-001",
+    "slug": "dualsense-edge-controller",
+    "name": "DualSense Edge Wireless Controller",
+    "brand": "Sony",
+    "category": "gaming",
+    "price": 199,
+    "description": "The ultimate PS5 controller for competitive play. DualSense Edge features fully remappable buttons, interchangeable stick caps, adjustable trigger travel, and built-in profiles.",
+    "images": [
+      {
+        "src": "/images/products/dualsense-edge.webp",
+        "alt": "DualSense Edge Controller"
+      },
+      {
+        "src": "/images/products/dualsense-edge-g2.webp",
+        "alt": "DualSense Edge Front"
+      },
+      {
+        "src": "/images/products/dualsense-edge-g3.webp",
+        "alt": "DualSense Edge Angle"
+      },
+      {
+        "src": "/images/products/dualsense-edge-g4.webp",
+        "alt": "DualSense Edge Back"
+      },
+      {
+        "src": "/images/products/dualsense-edge-g5.webp",
+        "alt": "DualSense Edge Top"
+      }
+    ],
+    "colors": [
+      {
+        "name": "White",
+        "hex": "#F5F5F7"
       }
     ],
     "specs": [
       {
         "label": "Type",
-        "value": "Apple Watch Ultra 3"
+        "value": "Wireless PS5 Controller"
+      },
+      {
+        "label": "Features",
+        "value": "Remappable buttons, Adjustable triggers, Profile switching"
+      },
+      {
+        "label": "Sticks",
+        "value": "Interchangeable stick caps (3 types)"
+      },
+      {
+        "label": "Back Buttons",
+        "value": "Interchangeable back buttons"
+      },
+      {
+        "label": "Battery",
+        "value": "Built-in rechargeable battery"
+      },
+      {
+        "label": "Connectivity",
+        "value": "Bluetooth, USB-C"
+      },
+      {
+        "label": "Compatible",
+        "value": "PS5, PC"
+      }
+    ],
+    "badges": [
+      "Pro",
+      "Gaming"
+    ],
+    "condition": "New",
+    "inStock": true,
+    "rating": 4.6,
+    "reviewCount": 7200
+  },
+  {
+    "id": "custom-msi-cyborg-15-001",
+    "slug": "msi-cyborg-15",
+    "name": "MSI Cyborg 15 B2RWFKG",
+    "brand": "MSI",
+    "category": "laptops",
+    "price": 58299,
+    "description": "Designed for the next generation of gamers. MSI Cyborg 15 features a transparent design with RGB lighting, AMD Ryzen 7 CPU, NVIDIA RTX 4060 GPU, and a 144Hz FHD display.",
+    "images": [
+      {
+        "src": "/images/products/msi-cyborg-15.jpg",
+        "alt": "MSI Cyborg 15"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Black",
+        "hex": "#1C1C1E"
+      }
+    ],
+    "specs": [
+      {
+        "label": "CPU",
+        "value": "AMD Ryzen 7 7745HX"
+      },
+      {
+        "label": "GPU",
+        "value": "NVIDIA GeForce RTX 4060 8GB"
+      },
+      {
+        "label": "RAM",
+        "value": "16GB DDR5"
+      },
+      {
+        "label": "Display",
+        "value": "15.6\" FHD IPS 144Hz"
+      },
+      {
+        "label": "Storage",
+        "value": "512GB NVMe SSD"
+      },
+      {
+        "label": "Battery",
+        "value": "53.5Wh, 90W charger"
+      },
+      {
+        "label": "Ports",
+        "value": "USB-C, USB-A x3, HDMI, RJ45"
+      },
+      {
+        "label": "Design",
+        "value": "Transparent chassis + RGB"
+      }
+    ],
+    "badges": [
+      "Gaming",
+      "RGB"
+    ],
+    "condition": "New",
+    "inStock": true,
+    "rating": 4.5,
+    "reviewCount": 3200,
+    "priceTRY": 58299,
+    "priceUSD": 1304.72
+  },
+  {
+    "id": "custom-msi-vector-18-001",
+    "slug": "msi-vector-18",
+    "name": "MSI Vector 18 HX AI",
+    "brand": "MSI",
+    "category": "laptops",
+    "price": 172199,
+    "description": "The ultimate gaming powerhouse. MSI Vector 18 HX AI features Intel Core Ultra 9 processor, NVIDIA RTX 5080 GPU, a massive 18-inch Mini LED QHD+ 240Hz display, and AI-powered performance.",
+    "images": [
+      {
+        "src": "/images/products/msi-vector-18-featured.jpg",
+        "alt": "MSI Vector 18 HX AI"
+      },
+      {
+        "src": "/images/products/msi-vector-18-g2.jpg",
+        "alt": "MSI Vector 18 keyboard"
+      },
+      {
+        "src": "/images/products/msi-vector-18-g3.jpg",
+        "alt": "MSI Vector 18 side"
+      },
+      {
+        "src": "/images/products/msi-vector-18-g4.jpg",
+        "alt": "MSI Vector 18 ports"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Black",
+        "hex": "#0A0A0A"
+      }
+    ],
+    "specs": [
+      {
+        "label": "CPU",
+        "value": "Intel Core Ultra 9 275HX"
+      },
+      {
+        "label": "GPU",
+        "value": "NVIDIA GeForce RTX 5080 16GB"
+      },
+      {
+        "label": "RAM",
+        "value": "32GB DDR5 5600MHz"
+      },
+      {
+        "label": "Display",
+        "value": "18\" QHD+ Mini LED 240Hz"
+      },
+      {
+        "label": "Storage",
+        "value": "1TB NVMe PCIe 5 SSD"
+      },
+      {
+        "label": "Battery",
+        "value": "99.9Wh, 330W charger"
+      },
+      {
+        "label": "Cooling",
+        "value": "Cooler Boost Titan"
+      },
+      {
+        "label": "AI",
+        "value": "AI Performance Engine"
+      }
+    ],
+    "badges": [
+      "Gaming",
+      "AI",
+      "Pro"
+    ],
+    "condition": "New",
+    "inStock": true,
+    "rating": 4.8,
+    "reviewCount": 1450,
+    "priceTRY": 172199,
+    "priceUSD": 3853.79
+  },
+  {
+    "id": "custom-mbp14-m5-001",
+    "slug": "macbook-pro-14-m5",
+    "name": "MacBook Pro 14\" (M5)",
+    "brand": "Apple",
+    "category": "laptops",
+    "price": 87999,
+    "description": "Supercharged by M5. MacBook Pro 14\" delivers breakthrough performance with the M5 chip, a stunning Liquid Retina XDR display with ProMotion, up to 24 hours of battery life, and a thin, light design.",
+    "images": [
+      {
+        "src": "/images/products/macbook-pro-14-m5-featured.jpg",
+        "alt": "MacBook Pro 14 M5 - Space Black"
+      },
+      {
+        "src": "/images/products/mbp14-black-g2.jpg",
+        "alt": "MacBook Pro 14 M5 keyboard"
+      },
+      {
+        "src": "/images/products/mbp14-silver.jpg",
+        "alt": "MacBook Pro 14 M5 - Silver"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Space Black",
+        "hex": "#1C1C1E",
+        "image": "/images/products/mbp14-black.jpg"
+      },
+      {
+        "name": "Silver",
+        "hex": "#B8B8B8",
+        "image": "/images/products/mbp14-silver.jpg"
+      }
+    ],
+    "storage": [
+      {
+        "label": "512GB",
+        "priceAdd": 0
+      }
+    ],
+    "specs": [
+      {
+        "label": "Chip",
+        "value": "Apple M5 (10-core CPU, 14-core GPU)"
+      },
+      {
+        "label": "Memory",
+        "value": "16GB – 64GB unified memory"
+      },
+      {
+        "label": "Storage",
+        "value": "512GB – 4TB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "14.2-inch Liquid Retina XDR, ProMotion 120Hz"
+      },
+      {
+        "label": "Battery",
+        "value": "Up to 24 hours"
+      },
+      {
+        "label": "Camera",
+        "value": "12MP Center Stage"
+      },
+      {
+        "label": "Ports",
+        "value": "3x Thunderbolt 5, HDMI, SD card, MagSafe 3"
+      },
+      {
+        "label": "Audio",
+        "value": "6-speaker sound system, Spatial Audio"
+      }
+    ],
+    "badges": [
+      "Pro",
+      "New Arrival"
+    ],
+    "condition": "New",
+    "inStock": true,
+    "rating": 4.9,
+    "reviewCount": 2800,
+    "priceTRY": 87999,
+    "priceUSD": 3692.88,
+    "priceVariants": [
+      {
+        "storage": "512GB",
+        "priceTRY": 87999,
+        "priceUSD": 3692.88
+      }
+    ]
+  },
+  {
+    "id": "custom-mbp15-m4-001",
+    "slug": "macbook-air-15-m4",
+    "name": "MacBook Air 15\" (M4)",
+    "brand": "Apple",
+    "category": "laptops",
+    "price": 55999,
+    "description": "The thin and light powerhouse just got bigger. MacBook Air 15\" with M4 chip delivers incredible performance in a stunning 15.3-inch design with up to 18 hours of battery life.",
+    "images": [
+      {
+        "src": "/images/products/macbook-air-15-m4-featured.jpg",
+        "alt": "MacBook Air 15 M4"
+      },
+      {
+        "src": "/images/products/mbp15-g2.jpg",
+        "alt": "MacBook Air 15 M4 Open"
+      },
+      {
+        "src": "/images/products/mbp15-black.jpg",
+        "alt": "MacBook Air 15 M4 - Midnight"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Midnight",
+        "hex": "#1C1F24",
+        "image": "/images/products/mbp15-black.jpg"
+      },
+      {
+        "name": "Pink",
+        "hex": "#F2B0C0",
+        "image": "/images/products/mbp15-pink.jpg"
+      },
+      {
+        "name": "Silver",
+        "hex": "#B8B8B8",
+        "image": "/images/products/mbp15-silver.jpg"
+      }
+    ],
+    "storage": [
+      {
+        "label": "256GB",
+        "priceAdd": 0
+      },
+      {
+        "label": "512GB",
+        "priceAdd": 11000
+      }
+    ],
+    "specs": [
+      {
+        "label": "Chip",
+        "value": "Apple M4 (10-core CPU, 10-core GPU)"
+      },
+      {
+        "label": "Memory",
+        "value": "16GB – 32GB unified memory"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB – 2TB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "15.3-inch Liquid Retina, 2880x1864 @ 224 ppi"
+      },
+      {
+        "label": "Battery",
+        "value": "Up to 18 hours"
+      },
+      {
+        "label": "Camera",
+        "value": "12MP Center Stage"
+      },
+      {
+        "label": "Ports",
+        "value": "2x Thunderbolt 4, MagSafe 3, 3.5mm headphone"
+      },
+      {
+        "label": "Weight",
+        "value": "1.51 kg"
       }
     ],
     "badges": [
@@ -618,7 +3084,435 @@
     ],
     "condition": "New",
     "inStock": true,
-    "rating": 5,
-    "reviewCount": 0
+    "rating": 4.8,
+    "reviewCount": 5400,
+    "priceTRY": 55999,
+    "priceUSD": 1521.72,
+    "priceVariants": [
+      {
+        "storage": "256GB",
+        "priceTRY": 55999,
+        "priceUSD": 1521.72
+      },
+      {
+        "storage": "512GB",
+        "priceTRY": 66999,
+        "priceUSD": 1790.48
+      }
+    ]
+  },
+  {
+    "id": "custom-mbp16-m4-001",
+    "slug": "macbook-pro-16-m4",
+    "name": "MacBook Pro 16\" (M4 Pro)",
+    "brand": "Apple",
+    "category": "laptops",
+    "price": 164999,
+    "description": "The most powerful MacBook Pro ever. With M4 Pro chip, a breathtaking 16.2-inch Liquid Retina XDR display, and up to 24 hours of battery life — for pros who refuse to compromise.",
+    "images": [
+      {
+        "src": "/images/products/macbook-pro-16-featured.jpg",
+        "alt": "MacBook Pro 16 M4 Pro - Space Black"
+      },
+      {
+        "src": "/images/products/mbp16-silver.jpg",
+        "alt": "MacBook Pro 16 M4 Pro - Silver"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Space Black",
+        "hex": "#1C1C1E",
+        "image": "/images/products/mbp16-black.jpg"
+      },
+      {
+        "name": "Silver",
+        "hex": "#B8B8B8",
+        "image": "/images/products/mbp16-silver.jpg"
+      }
+    ],
+    "storage": [
+      {
+        "label": "1TB",
+        "priceAdd": 0
+      }
+    ],
+    "specs": [
+      {
+        "label": "Chip",
+        "value": "Apple M4 Pro (14-core CPU, 20-core GPU)"
+      },
+      {
+        "label": "Memory",
+        "value": "24GB – 128GB unified memory"
+      },
+      {
+        "label": "Storage",
+        "value": "512GB – 8TB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "16.2-inch Liquid Retina XDR, ProMotion 120Hz"
+      },
+      {
+        "label": "Battery",
+        "value": "Up to 24 hours"
+      },
+      {
+        "label": "Camera",
+        "value": "12MP Center Stage"
+      },
+      {
+        "label": "Ports",
+        "value": "3x Thunderbolt 5, HDMI 2.1, SD card, MagSafe 3"
+      },
+      {
+        "label": "Audio",
+        "value": "6-speaker sound system with Spatial Audio"
+      }
+    ],
+    "badges": [
+      "Pro",
+      "New Arrival"
+    ],
+    "condition": "New",
+    "inStock": true,
+    "rating": 4.9,
+    "reviewCount": 3700,
+    "priceTRY": 164999,
+    "priceUSD": 5371.46,
+    "priceVariants": [
+      {
+        "storage": "1TB",
+        "priceTRY": 164999,
+        "priceUSD": 5371.46
+      }
+    ]
+  },
+  {
+    "id": "custom-airpods-4-anc-001",
+    "slug": "airpods-4-anc",
+    "name": "AirPods 4 (Active Noise Cancellation)",
+    "brand": "Apple",
+    "category": "audio",
+    "price": 8299,
+    "description": "AirPods 4 with Active Noise Cancellation — the same open-ear fit you love, now with ANC that adapts to your ear shape. Features H2 chip, Transparency mode, and up to 30 hours total battery.",
+    "images": [
+      {
+        "src": "/images/products/airpods-4-anc-featured.jpg",
+        "alt": "AirPods 4 ANC"
+      },
+      {
+        "src": "/images/products/airpods-4-anc-g2.jpg",
+        "alt": "AirPods 4 ANC Case"
+      },
+      {
+        "src": "/images/products/airpods-4-anc-g3.jpg",
+        "alt": "AirPods 4 ANC In-ear"
+      },
+      {
+        "src": "/images/products/airpods-4-anc-g4.jpg",
+        "alt": "AirPods 4 ANC Features"
+      }
+    ],
+    "colors": [
+      {
+        "name": "White",
+        "hex": "#F5F5F7"
+      }
+    ],
+    "specs": [
+      {
+        "label": "Chip",
+        "value": "Apple H2"
+      },
+      {
+        "label": "ANC",
+        "value": "Adaptive Active Noise Cancellation"
+      },
+      {
+        "label": "Transparency",
+        "value": "Adaptive Transparency"
+      },
+      {
+        "label": "Battery",
+        "value": "Up to 6 hours (30 hrs with case)"
+      },
+      {
+        "label": "Charging",
+        "value": "USB-C, MagSafe, Qi"
+      },
+      {
+        "label": "Connectivity",
+        "value": "Bluetooth 5.3"
+      },
+      {
+        "label": "Fit",
+        "value": "Open-ear (no ear tips needed)"
+      }
+    ],
+    "badges": [
+      "New Arrival",
+      "ANC"
+    ],
+    "condition": "New",
+    "inStock": true,
+    "rating": 4.7,
+    "reviewCount": 4200,
+    "priceTRY": 8299,
+    "priceUSD": 185
+  },
+  {
+    "id": "custom-airpods-pro-2-001",
+    "slug": "airpods-pro-2",
+    "name": "AirPods Pro 2",
+    "brand": "Apple",
+    "category": "audio",
+    "price": 11499,
+    "description": "The world's best AirPods. AirPods Pro 2 deliver up to 2× more Active Noise Cancellation, Adaptive Audio, Personalized Spatial Audio, and a USB-C MagSafe Charging Case.",
+    "images": [
+      {
+        "src": "/images/products/airpods-pro-2-featured.jpg",
+        "alt": "AirPods Pro 2"
+      },
+      {
+        "src": "/images/products/airpods-pro-2-g2.jpg",
+        "alt": "AirPods Pro 2 In-ear"
+      },
+      {
+        "src": "/images/products/airpods-pro-2-g3.jpg",
+        "alt": "AirPods Pro 2 Case"
+      },
+      {
+        "src": "/images/products/airpods-pro-2-g4.jpg",
+        "alt": "AirPods Pro 2 Features"
+      }
+    ],
+    "colors": [
+      {
+        "name": "White",
+        "hex": "#F5F5F7"
+      }
+    ],
+    "specs": [
+      {
+        "label": "Chip",
+        "value": "Apple H2"
+      },
+      {
+        "label": "ANC",
+        "value": "Up to 2× better Active Noise Cancellation"
+      },
+      {
+        "label": "Transparency",
+        "value": "Adaptive Transparency"
+      },
+      {
+        "label": "Audio",
+        "value": "Personalized Spatial Audio, Lossless audio"
+      },
+      {
+        "label": "Battery",
+        "value": "Up to 6 hours (30 hrs with case)"
+      },
+      {
+        "label": "Charging",
+        "value": "USB-C, MagSafe, Apple Watch charger"
+      },
+      {
+        "label": "Connectivity",
+        "value": "Bluetooth 5.3"
+      }
+    ],
+    "badges": [
+      "Best Seller",
+      "ANC"
+    ],
+    "condition": "New",
+    "inStock": true,
+    "rating": 4.8,
+    "reviewCount": 12800,
+    "priceTRY": 11499,
+    "priceUSD": 257
+  },
+  {
+    "id": "custom-airpods-pro-3-001",
+    "slug": "airpods-pro-3",
+    "name": "AirPods Pro 3",
+    "brand": "Apple",
+    "category": "audio",
+    "price": 13999,
+    "description": "Next generation hearing begins. AirPods Pro 3 bring clinical-grade hearing health features, even more powerful ANC, and the new H3 chip for the most immersive listening experience ever.",
+    "images": [
+      {
+        "src": "/images/products/airpods-pro-3-featured.jpg",
+        "alt": "AirPods Pro 3"
+      },
+      {
+        "src": "/images/products/airpods-pro-3-g2.jpg",
+        "alt": "AirPods Pro 3 In-ear"
+      },
+      {
+        "src": "/images/products/airpods-pro-3-g3.jpg",
+        "alt": "AirPods Pro 3 Case"
+      },
+      {
+        "src": "/images/products/airpods-pro-3-g4.jpg",
+        "alt": "AirPods Pro 3 Features"
+      }
+    ],
+    "colors": [
+      {
+        "name": "White",
+        "hex": "#F5F5F7"
+      }
+    ],
+    "specs": [
+      {
+        "label": "Chip",
+        "value": "Apple H3"
+      },
+      {
+        "label": "ANC",
+        "value": "Next-generation Active Noise Cancellation"
+      },
+      {
+        "label": "Health",
+        "value": "Clinical-grade hearing health features"
+      },
+      {
+        "label": "Audio",
+        "value": "Personalized Spatial Audio, Lossless audio"
+      },
+      {
+        "label": "Battery",
+        "value": "Up to 7 hours (35 hrs with case)"
+      },
+      {
+        "label": "Charging",
+        "value": "USB-C, MagSafe, Apple Watch charger"
+      },
+      {
+        "label": "Connectivity",
+        "value": "Bluetooth 5.4"
+      }
+    ],
+    "badges": [
+      "New Arrival",
+      "Pro"
+    ],
+    "condition": "New",
+    "inStock": true,
+    "rating": 4.9,
+    "reviewCount": 3600,
+    "priceTRY": 13999,
+    "priceUSD": 313
+  },
+  {
+    "id": "custom-mba13-m4-2025-001",
+    "slug": "macbook-air-13-m4-2025",
+    "name": "MacBook Air 13\" M4 (2025)",
+    "brand": "Apple",
+    "category": "laptops",
+    "price": 45999,
+    "description": "Thin. Portable. Insanely capable. The 2025 MacBook Air 13\" with M4 chip delivers extraordinary performance in a fanless design with up to 18 hours of battery life and Apple Intelligence.",
+    "images": [
+      {
+        "src": "/images/products/macbook-air-13-m4-featured.jpg",
+        "alt": "MacBook Air 13 M4 2025"
+      },
+      {
+        "src": "/images/products/mba13-m4-black.jpg",
+        "alt": "MacBook Air 13 M4 - Midnight"
+      }
+    ],
+    "colors": [
+      {
+        "name": "Sky Blue",
+        "hex": "#7AB8E0",
+        "image": "/images/products/mba13-m4-blue.jpg"
+      },
+      {
+        "name": "Midnight",
+        "hex": "#1C1F24",
+        "image": "/images/products/mba13-m4-black.jpg"
+      },
+      {
+        "name": "Pink",
+        "hex": "#F2B0C0",
+        "image": "/images/products/mba13-m4-pink.jpg"
+      },
+      {
+        "name": "Starlight",
+        "hex": "#F9F6EF",
+        "image": "/images/products/mba13-m4.jpg"
+      }
+    ],
+    "storage": [
+      {
+        "label": "256GB",
+        "priceAdd": 0
+      },
+      {
+        "label": "512GB",
+        "priceAdd": 11000
+      }
+    ],
+    "specs": [
+      {
+        "label": "Chip",
+        "value": "Apple M4 (10-core CPU, 10-core GPU)"
+      },
+      {
+        "label": "Memory",
+        "value": "16GB – 32GB unified memory"
+      },
+      {
+        "label": "Storage",
+        "value": "256GB – 2TB SSD"
+      },
+      {
+        "label": "Display",
+        "value": "13.6-inch Liquid Retina, 2560x1664 @ 224 ppi"
+      },
+      {
+        "label": "Battery",
+        "value": "Up to 18 hours"
+      },
+      {
+        "label": "Camera",
+        "value": "12MP Center Stage"
+      },
+      {
+        "label": "Ports",
+        "value": "2x Thunderbolt 4, MagSafe 3, 3.5mm headphone"
+      },
+      {
+        "label": "Weight",
+        "value": "1.24 kg"
+      }
+    ],
+    "badges": [
+      "New Arrival",
+      "Apple Intelligence"
+    ],
+    "condition": "New",
+    "inStock": true,
+    "rating": 4.9,
+    "reviewCount": 9200,
+    "priceTRY": 45999,
+    "priceUSD": 1253.23,
+    "priceVariants": [
+      {
+        "storage": "256GB",
+        "priceTRY": 45999,
+        "priceUSD": 1253.23
+      },
+      {
+        "storage": "512GB",
+        "priceTRY": 56999,
+        "priceUSD": 1499.34
+      }
+    ]
   }
 ]

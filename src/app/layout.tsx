@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import { Manrope, Inter } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import AnnouncementBanner from "@/components/layout/AnnouncementBanner";
 import SiteBackgroundProvider from "@/components/layout/SiteBackgroundProvider";
 import ThemeProvider from "@/components/layout/ThemeProvider";
+import PromoBanner from "@/components/ui/PromoBanner";
 
 const manrope = Manrope({
   variable: "--font-headline",
@@ -23,7 +25,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "ceepyol | Premium Tech Marketplace",
+    default: "ceepyol | Premium Teknoloji Mağazası",
     template: "%s | ceepyol",
   },
   icons: {
@@ -31,11 +33,11 @@ export const metadata: Metadata = {
     apple: "/logo.png",
   },
   description:
-    "Premium technology curated for your lifestyle. The best deals on certified refurbished and new devices.",
+    "Yaşam tarzınız için özenle seçilmiş premium teknoloji. Sertifikalı yenilenmiş ve yeni cihazlarda en iyi fırsatlar.",
   openGraph: {
-    title: "ceepyol | Premium Tech Marketplace",
+    title: "ceepyol | Premium Teknoloji Mağazası",
     description:
-      "Premium technology curated for your lifestyle. The best deals on certified refurbished and new devices.",
+      "Yaşam tarzınız için özenle seçilmiş premium teknoloji. Sertifikalı yenilenmiş ve yeni cihazlarda en iyi fırsatlar.",
     type: "website",
   },
 };
@@ -46,25 +48,28 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${manrope.variable} ${inter.variable} scroll-smooth`}>
+    <html lang="tr" className={`${manrope.variable} ${inter.variable} scroll-smooth`}>
       <head>
         <link
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
           rel="stylesheet"
         />
-        <script
+      </head>
+      <body className="min-h-screen flex flex-col">
+        <Script
+          id="theme-init"
+          strategy="beforeInteractive"
           dangerouslySetInnerHTML={{
             __html: `(function(){var t=localStorage.getItem('theme');if(t==='dark'){document.documentElement.classList.add('dark')}})()`,
           }}
         />
-      </head>
-      <body className="min-h-screen flex flex-col">
         <ThemeProvider>
           <SiteBackgroundProvider />
           <AnnouncementBanner />
           <Navbar />
           <main className="flex-1 pt-[104px] md:pt-[152px]">{children}</main>
           <Footer />
+          <PromoBanner />
         </ThemeProvider>
       </body>
     </html>

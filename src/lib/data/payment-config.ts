@@ -1,4 +1,4 @@
-export type PaymentMethodId = "credit_card" | "crypto" | "wise";
+export type PaymentMethodId = "credit_card" | "crypto" | "wise" | "binance_qr";
 
 export interface CryptoWallet {
   currency: string;
@@ -50,32 +50,39 @@ export const WISE_DETAILS: WiseDetails = {
   email: "payments@ceepyol.store",
   accountHolder: "ceepyol LLC",
   instructions: [
-    "Open your Wise app or visit wise.com",
-    "Send the exact amount shown to the email address above",
-    "Use your Order ID as the payment reference",
+    "Wise uygulamanızı açın veya wise.com adresini ziyaret edin",
+    "Yukarıda gösterilen tam tutarı e-posta adresine gönderin",
+    "Ödeme referansı olarak Sipariş Numaranızı kullanın",
   ],
 };
 
 export const PAYMENT_METHODS: PaymentMethod[] = [
   {
     id: "credit_card",
-    label: "Credit Card",
+    label: "Kredi Kartı",
     labelAr: "بطاقة ائتمان",
     icon: "credit_card",
-    description: "Pay with Visa, Mastercard, or AMEX",
+    description: "Visa, Mastercard veya AMEX ile ödeyin",
   },
   {
     id: "crypto",
-    label: "Cryptocurrency",
+    label: "Kripto Para",
     labelAr: "عملات رقمية",
     icon: "currency_bitcoin",
-    description: "Pay with BTC, USDT, or ETH",
+    description: "BTC, USDT veya ETH ile ödeyin",
   },
   {
     id: "wise",
-    label: "Wise Transfer",
+    label: "Wise Havale",
     labelAr: "تحويل Wise",
     icon: "account_balance",
-    description: "Send money via Wise",
+    description: "Wise ile para gönderin",
+  },
+  {
+    id: "binance_qr",
+    label: "Binance QR",
+    labelAr: "دفع بالباركود",
+    icon: "qr_code",
+    description: "Binance uygulaması ile QR kodu okutarak ödeyin",
   },
 ];

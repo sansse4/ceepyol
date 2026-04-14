@@ -22,11 +22,11 @@ export default function RegisterPage() {
     setError("");
 
     if (password.length < 6) {
-      setError("Password must be at least 6 characters");
+      setError("Şifre en az 6 karakter olmalıdır");
       return;
     }
     if (password !== confirmPassword) {
-      setError("Passwords do not match");
+      setError("Şifreler eşleşmiyor");
       return;
     }
 
@@ -36,7 +36,7 @@ export default function RegisterPage() {
       if (result.success) {
         router.push("/account");
       } else {
-        setError(result.error || "Registration failed");
+        setError(result.error || "Kayıt başarısız");
       }
       setLoading(false);
     }, 500);
@@ -51,9 +51,9 @@ export default function RegisterPage() {
             <Image src="/logo.png" alt="ceepyol" width={200} height={109} className="mix-blend-multiply dark:mix-blend-screen dark:brightness-[2] dark:contrast-125" unoptimized />
           </div>
           <h1 className="text-2xl font-extrabold text-on-surface font-[family-name:var(--font-headline)]">
-            Create Account
+            Hesap Oluştur
           </h1>
-          <p className="text-on-surface-variant text-sm mt-1">Join ceepyol and start shopping</p>
+          <p className="text-on-surface-variant text-sm mt-1">ceepyol&apos;a katılın ve alışverişe başlayın</p>
         </div>
 
         {/* Form */}
@@ -66,7 +66,7 @@ export default function RegisterPage() {
           )}
 
           <div>
-            <label className="text-sm font-bold text-on-surface mb-1.5 block">Full Name</label>
+            <label className="text-sm font-bold text-on-surface mb-1.5 block">Ad Soyad</label>
             <div className="relative">
               <span className="absolute left-3 top-1/2 -translate-y-1/2 material-symbols-outlined text-[20px] text-on-surface-variant/50">
                 person
@@ -75,7 +75,7 @@ export default function RegisterPage() {
                 type="text"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                placeholder="John Doe"
+                placeholder="Ahmet Yılmaz"
                 required
                 className="w-full pl-10 pr-4 py-3 bg-surface-container-low/50 border border-surface-variant rounded-xl text-sm outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all"
               />
@@ -83,7 +83,7 @@ export default function RegisterPage() {
           </div>
 
           <div>
-            <label className="text-sm font-bold text-on-surface mb-1.5 block">Email</label>
+            <label className="text-sm font-bold text-on-surface mb-1.5 block">E-posta</label>
             <div className="relative">
               <span className="absolute left-3 top-1/2 -translate-y-1/2 material-symbols-outlined text-[20px] text-on-surface-variant/50">
                 mail
@@ -92,7 +92,7 @@ export default function RegisterPage() {
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="you@example.com"
+                placeholder="siz@ornek.com"
                 required
                 className="w-full pl-10 pr-4 py-3 bg-surface-container-low/50 border border-surface-variant rounded-xl text-sm outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all"
               />
@@ -100,7 +100,7 @@ export default function RegisterPage() {
           </div>
 
           <div>
-            <label className="text-sm font-bold text-on-surface mb-1.5 block">Password</label>
+            <label className="text-sm font-bold text-on-surface mb-1.5 block">Şifre</label>
             <div className="relative">
               <span className="absolute left-3 top-1/2 -translate-y-1/2 material-symbols-outlined text-[20px] text-on-surface-variant/50">
                 lock
@@ -109,7 +109,7 @@ export default function RegisterPage() {
                 type={showPassword ? "text" : "password"}
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                placeholder="At least 6 characters"
+                placeholder="En az 6 karakter"
                 required
                 className="w-full pl-10 pr-12 py-3 bg-surface-container-low/50 border border-surface-variant rounded-xl text-sm outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all"
               />
@@ -126,7 +126,7 @@ export default function RegisterPage() {
           </div>
 
           <div>
-            <label className="text-sm font-bold text-on-surface mb-1.5 block">Confirm Password</label>
+            <label className="text-sm font-bold text-on-surface mb-1.5 block">Şifreyi Onayla</label>
             <div className="relative">
               <span className="absolute left-3 top-1/2 -translate-y-1/2 material-symbols-outlined text-[20px] text-on-surface-variant/50">
                 lock
@@ -135,7 +135,7 @@ export default function RegisterPage() {
                 type={showPassword ? "text" : "password"}
                 value={confirmPassword}
                 onChange={(e) => setConfirmPassword(e.target.value)}
-                placeholder="Re-enter your password"
+                placeholder="Şifrenizi tekrar girin"
                 required
                 className="w-full pl-10 pr-4 py-3 bg-surface-container-low/50 border border-surface-variant rounded-xl text-sm outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all"
               />
@@ -150,20 +150,20 @@ export default function RegisterPage() {
             {loading ? (
               <>
                 <span className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-                Creating account...
+                Hesap oluşturuluyor...
               </>
             ) : (
               <>
                 <span className="material-symbols-outlined text-[20px]">person_add</span>
-                Create Account
+                Hesap Oluştur
               </>
             )}
           </button>
 
           <p className="text-center text-sm text-on-surface-variant">
-            Already have an account?{" "}
+            Zaten hesabınız var mı?{" "}
             <Link href="/auth/login" className="text-primary font-bold hover:underline">
-              Sign In
+              Giriş Yap
             </Link>
           </p>
         </form>

@@ -18,34 +18,34 @@ export default function OrderSummary() {
 
   return (
     <div className="bg-white dark:bg-surface-container rounded-2xl p-6 shadow-sm border border-surface-variant">
-      <h3 className="font-bold text-lg mb-6">Order Summary</h3>
+      <h3 className="font-bold text-lg mb-6">Sipariş Özeti</h3>
 
       <div className="space-y-3 text-sm">
         <div className="flex justify-between">
-          <span className="text-on-surface-variant">Subtotal ({itemCount} items)</span>
-          <span className="font-semibold">${subtotal.toLocaleString('en-US')}.00</span>
+          <span className="text-on-surface-variant">Ara Toplam ({itemCount} ürün)</span>
+          <span className="font-semibold">₺{subtotal.toLocaleString('en-US')}</span>
         </div>
         <div className="flex justify-between">
-          <span className="text-on-surface-variant">Shipping</span>
+          <span className="text-on-surface-variant">Kargo</span>
           <span className={`font-semibold ${shipping === 0 ? "text-primary" : ""}`}>
-            {shipping === 0 ? "FREE" : `$${shipping}`}
+            {shipping === 0 ? "ÜCRETSİZ" : `₺${shipping}`}
           </span>
         </div>
         <div className="flex justify-between">
-          <span className="text-on-surface-variant">Estimated Tax</span>
-          <span className="font-semibold">${tax.toFixed(2)}</span>
+          <span className="text-on-surface-variant">Tahmini Vergi</span>
+          <span className="font-semibold">₺{tax.toFixed(2)}</span>
         </div>
 
         {shipping > 0 && (
           <p className="text-xs text-primary bg-primary-fixed/10 px-3 py-2 rounded-lg">
-            Add ${(100 - subtotal).toFixed(2)} more for free shipping!
+            Ücretsiz kargo için ₺{(100 - subtotal).toFixed(2)} daha ekleyin!
           </p>
         )}
 
         <div className="border-t border-surface-variant pt-3 mt-3">
           <div className="flex justify-between text-lg font-bold">
-            <span>Total</span>
-            <span>${total.toFixed(2)}</span>
+            <span>Toplam</span>
+            <span>₺{total.toFixed(2)}</span>
           </div>
         </div>
       </div>
@@ -55,14 +55,14 @@ export default function OrderSummary() {
         className="w-full mt-6 py-4 bg-primary text-white font-bold rounded-xl hover:bg-on-primary-fixed-variant transition-colors shadow-lg shadow-primary/20 flex items-center justify-center gap-2 block text-center"
       >
         <span className="material-symbols-outlined">lock</span>
-        Proceed to Checkout
+        Ödemeye Geç
       </Link>
 
       <Link
         href="/products"
         className="w-full mt-3 py-3 text-sm font-semibold text-primary hover:bg-surface-container-low rounded-xl transition-colors block text-center"
       >
-        Continue Shopping
+        Alışverişe Devam Et
       </Link>
     </div>
   );

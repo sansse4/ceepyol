@@ -11,22 +11,24 @@ import { useTheme } from "@/components/layout/ThemeProvider";
 import LanguageSwitcher from "@/components/ui/LanguageSwitcher";
 import { useTranslation } from "@/lib/i18n/useTranslation";
 
-const promoMessages = [
-  "UP TO 70% OFF  --  FREE EXPRESS SHIPPING ON ORDERS OVER ₺3000",
-  "12-MONTH WARRANTY ON ALL DEVICES  --  30-DAY HASSLE-FREE RETURNS",
-  "CERTIFIED REFURBISHED  --  QUALITY GUARANTEED",
-];
-
 export default function Navbar() {
   const { t } = useTranslation();
-  
+
+  const promoMessages = [
+    t("nav.promo.0"),
+    t("nav.promo.1"),
+    t("nav.promo.2"),
+  ];
+
   const categories = [
     { name: t("nav.deals"), href: "/products?category=deals", icon: "local_fire_department", isHot: true },
     { name: t("nav.iphones"), href: "/products?category=iphones", icon: "phone_iphone" },
-    { name: t("nav.samsung"), href: "/products?category=samsung", icon: "smartphone" },
+    { name: "Galaxy", href: "/galaxy", icon: "smartphone" },
+    { name: "MacBook", href: "/macbook", icon: "laptop_mac" },
+    { name: "Laptop", href: "/laptop", icon: "computer" },
+    { name: "AirPods", href: "/airpods", icon: "headphones" },
     { name: t("nav.watches"), href: "/products?category=watches", icon: "watch" },
-    { name: t("nav.laptops"), href: "/products?category=laptops", icon: "laptop_mac" },
-    { name: t("nav.tablets"), href: "/products?category=tablets", icon: "tablet_mac" }
+    { name: t("nav.tablets"), href: "/products?category=tablets", icon: "tablet_mac" },
   ];
 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -142,10 +144,10 @@ export default function Navbar() {
             {/* Side Links */}
             <div className="absolute right-6 hidden md:flex gap-4 text-white/70">
               <Link href="/about" className="hover:text-white transition-colors">
-                About
+                {t("nav.about")}
               </Link>
               <Link href="#" className="hover:text-white transition-colors">
-                Help
+                {t("nav.help")}
               </Link>
             </div>
           </div>
@@ -165,8 +167,8 @@ export default function Navbar() {
             <Image
               src="/logo.png"
               alt="ceepyol logo"
-              width={70}
-              height={38}
+              width={110}
+              height={60}
               className="transition-all group-hover:scale-105 mix-blend-multiply dark:mix-blend-screen dark:brightness-[2] dark:contrast-125"
               unoptimized
               priority
@@ -183,14 +185,14 @@ export default function Navbar() {
                 type="text"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="Search for iPhones, MacBooks, Watches..."
+                placeholder={t("nav.search.placeholder")}
                 className="w-full bg-surface-container-low/70 border border-transparent rounded-2xl py-2.5 pl-11 pr-24 focus:border-primary/30 focus:bg-white dark:focus:bg-surface-container focus:shadow-lg focus:shadow-primary/5 transition-all text-sm outline-none"
               />
               <button
                 type="submit"
                 className="absolute right-1.5 top-1/2 -translate-y-1/2 px-5 py-1.5 rounded-xl bg-primary text-white text-xs font-bold hover:bg-on-primary-fixed-variant transition-all hover:shadow-md hover:shadow-primary/20 active:scale-95"
               >
-                Search
+                {t("nav.search.button")}
               </button>
             </div>
           </form>
@@ -211,7 +213,7 @@ export default function Navbar() {
             <button
               onClick={toggleTheme}
               className="hidden sm:flex w-10 h-10 items-center justify-center hover:bg-surface-container-low rounded-xl transition-all group"
-              title={theme === "dark" ? "Light mode" : "Dark mode"}
+              title={theme === "dark" ? "Açık mod" : "Koyu mod"}
             >
               <span className="material-symbols-outlined text-[22px] text-on-surface-variant group-hover:text-primary transition-colors" style={{ fontVariationSettings: "'FILL' 1" }}>
                 {theme === "dark" ? "light_mode" : "dark_mode"}
@@ -219,13 +221,16 @@ export default function Navbar() {
             </button>
 
             {/* Language Switcher */}
-            <LanguageSwitcher />
+            <div className="hidden sm:flex">
+              <LanguageSwitcher />
+            </div>
+
 
             {/* Wishlist */}
             <Link
               href={isLoggedIn ? "/account" : "/auth/login"}
               className="hidden sm:flex w-10 h-10 items-center justify-center hover:bg-surface-container-low rounded-xl transition-all relative group"
-              title="Wishlist"
+              title="İstek Listesi"
             >
               <span className="material-symbols-outlined text-[22px] text-on-surface-variant group-hover:text-tertiary transition-colors">
                 favorite
@@ -258,7 +263,7 @@ export default function Navbar() {
               <Link
                 href="/admin"
                 className="hidden sm:flex w-10 h-10 items-center justify-center hover:bg-surface-container-low rounded-xl transition-all relative group"
-                title="Admin Panel"
+                title="Yönetim Paneli"
               >
                 <span className="material-symbols-outlined text-[22px] text-tertiary group-hover:text-tertiary/80 transition-colors" style={{ fontVariationSettings: "'FILL' 1" }}>
                   admin_panel_settings
@@ -351,7 +356,7 @@ export default function Navbar() {
                 type="text"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder={t("nav.search") as string}
+                placeholder={t("nav.search.placeholder")}
                 className="w-full bg-surface-container-low border border-transparent rounded-2xl py-3 pl-11 pr-4 focus:border-primary/30 focus:bg-white dark:focus:bg-surface-container focus:shadow-md transition-all text-sm outline-none"
               />
             </form>
@@ -393,21 +398,21 @@ export default function Navbar() {
                   className="flex-1 text-center py-3 text-xs font-bold text-on-surface-variant hover:bg-surface-container-low rounded-xl transition-colors"
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                  About
+                  {t("nav.about")}
                 </Link>
                 <Link
                   href="#"
                   className="flex-1 text-center py-3 text-xs font-bold text-on-surface-variant hover:bg-surface-container-low rounded-xl transition-colors"
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                  Help
+                  {t("nav.help")}
                 </Link>
                 <Link
                   href="/account"
                   className="flex-1 text-center py-3 text-xs font-bold text-on-surface-variant hover:bg-surface-container-low rounded-xl transition-colors"
                   onClick={() => setMobileMenuOpen(false)}
                 >
-                  Account
+                  {t("nav.account")}
                 </Link>
               </div>
             </div>
@@ -419,11 +424,11 @@ export default function Navbar() {
       <nav className="md:hidden fixed bottom-0 left-0 right-0 z-50 glass border-t border-surface-variant/60 safe-area-bottom">
         <div className="flex items-center justify-around py-1.5">
           {[
-            { icon: "home", label: "Home", href: "/", fill: pathname === "/" },
-            { icon: "grid_view", label: "Shop", href: "/products", fill: pathname.startsWith("/products") },
-            { icon: "search", label: "Search", href: "/search", fill: pathname === "/search" },
-            { icon: "shopping_bag", label: "Cart", href: "/cart", fill: pathname === "/cart", badge: cartCount },
-            { icon: "person", label: "Account", href: "/account", fill: pathname === "/account" },
+            { icon: "home", label: "Ana Sayfa", href: "/", fill: pathname === "/" },
+            { icon: "grid_view", label: "Mağaza", href: "/products", fill: pathname.startsWith("/products") },
+            { icon: "search", label: "Ara", href: "/search", fill: pathname === "/search" },
+            { icon: "shopping_bag", label: "Sepet", href: "/cart", fill: pathname === "/cart", badge: cartCount },
+            { icon: "person", label: "Hesap", href: "/account", fill: pathname === "/account" },
           ].map((item) => (
             <Link
               key={item.label}

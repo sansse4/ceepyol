@@ -25,7 +25,7 @@ export default function LoginPage() {
       if (result.success) {
         router.push("/account");
       } else {
-        setError(result.error || "Login failed");
+        setError(result.error || "Giriş başarısız");
       }
       setLoading(false);
     }, 500);
@@ -40,14 +40,14 @@ export default function LoginPage() {
             <Image src="/logo.png" alt="ceepyol" width={200} height={109} className="mix-blend-multiply dark:mix-blend-screen dark:brightness-[2] dark:contrast-125" unoptimized />
           </div>
           <h1 className="text-2xl font-extrabold text-on-surface font-[family-name:var(--font-headline)]">
-            Welcome Back
+            Tekrar Hoş Geldiniz
           </h1>
-          <p className="text-on-surface-variant text-sm mt-1">Sign in to your ceepyol account</p>
+          <p className="text-on-surface-variant text-sm mt-1">ceepyol hesabınıza giriş yapın</p>
         </div>
 
         {/* Admin hint */}
         <div className="bg-secondary-fixed/10 border border-secondary/20 rounded-xl p-3 mb-6 text-xs text-center">
-          <span className="font-bold text-secondary">Admin Account:</span>{" "}
+          <span className="font-bold text-secondary">Yönetici Hesabı:</span>{" "}
           <span className="text-on-surface-variant">admin@ceepyol.com / AA12345678</span>
         </div>
 
@@ -61,7 +61,7 @@ export default function LoginPage() {
           )}
 
           <div>
-            <label className="text-sm font-bold text-on-surface mb-1.5 block">Email</label>
+            <label className="text-sm font-bold text-on-surface mb-1.5 block">E-posta</label>
             <div className="relative">
               <span className="absolute left-3 top-1/2 -translate-y-1/2 material-symbols-outlined text-[20px] text-on-surface-variant/50">
                 mail
@@ -70,7 +70,7 @@ export default function LoginPage() {
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="you@example.com"
+                placeholder="siz@ornek.com"
                 required
                 className="w-full pl-10 pr-4 py-3 bg-surface-container-low/50 border border-surface-variant rounded-xl text-sm outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all"
               />
@@ -78,7 +78,7 @@ export default function LoginPage() {
           </div>
 
           <div>
-            <label className="text-sm font-bold text-on-surface mb-1.5 block">Password</label>
+            <label className="text-sm font-bold text-on-surface mb-1.5 block">Şifre</label>
             <div className="relative">
               <span className="absolute left-3 top-1/2 -translate-y-1/2 material-symbols-outlined text-[20px] text-on-surface-variant/50">
                 lock
@@ -87,7 +87,7 @@ export default function LoginPage() {
                 type={showPassword ? "text" : "password"}
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                placeholder="Enter your password"
+                placeholder="Şifrenizi girin"
                 required
                 className="w-full pl-10 pr-12 py-3 bg-surface-container-low/50 border border-surface-variant rounded-xl text-sm outline-none focus:border-primary focus:ring-2 focus:ring-primary/10 transition-all"
               />
@@ -111,20 +111,20 @@ export default function LoginPage() {
             {loading ? (
               <>
                 <span className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-                Signing in...
+                Giriş yapılıyor...
               </>
             ) : (
               <>
                 <span className="material-symbols-outlined text-[20px]">login</span>
-                Sign In
+                Giriş Yap
               </>
             )}
           </button>
 
           <p className="text-center text-sm text-on-surface-variant">
-            Don&apos;t have an account?{" "}
+            Hesabınız yok mu?{" "}
             <Link href="/auth/register" className="text-primary font-bold hover:underline">
-              Sign Up
+              Kayıt Ol
             </Link>
           </p>
         </form>

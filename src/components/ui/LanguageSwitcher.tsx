@@ -1,14 +1,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { useRouter } from "next/navigation";
 
 export default function LanguageSwitcher() {
-  const router = useRouter();
   const [locale, setLocale] = useState<"tr" | "en">("tr");
 
   useEffect(() => {
-    // Read the cookie directly from document.cookie
     const match = document.cookie.match(new RegExp('(^| )NEXT_LOCALE=([^;]+)'));
     if (match) {
       setLocale(match[2] as "tr" | "en");
@@ -19,7 +16,7 @@ export default function LanguageSwitcher() {
     const newLocale = locale === "tr" ? "en" : "tr";
     setLocale(newLocale);
     document.cookie = `NEXT_LOCALE=${newLocale}; path=/; max-age=31536000`;
-    router.refresh(); // Refresh the current route to fetch new server translations
+    window.dispatchEvent(new Event('localechange'));
   };
 
   return (

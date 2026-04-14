@@ -86,14 +86,14 @@ export default function ScrollVideoPromo() {
             style={{ opacity: opacity }}
         >
             <p className="text-white/80 text-sm md:text-xl uppercase tracking-[0.3em] mb-4 font-light">
-                Amazing Discoveries
+                Muhteşem Keşifler
             </p>
             <h2 className="text-4xl md:text-7xl font-bold text-white mb-6 tracking-tight">
-                Limited Time Discount
+                Sınırlı Süre İndirimi
             </h2>
             <div className="flex items-center justify-center gap-4">
                 <button className="px-8 py-3 bg-white text-black rounded-full font-medium hover:scale-105 transition-transform">
-                   Shop Offers
+                   Fırsatları Keşfet
                 </button>
             </div>
         </div>

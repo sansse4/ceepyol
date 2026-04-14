@@ -1,28 +1,32 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import { useTranslation } from "@/lib/i18n/useTranslation";
+import { DictionaryKeys } from "@/lib/i18n/index";
 
-const shopLinks = [
-  { name: "Deals", href: "/products?category=deals" },
-  { name: "iPhones", href: "/products?category=iphones" },
-  { name: "Samsung", href: "/products?category=samsung" },
-  { name: "Watches", href: "/products?category=watches" },
-  { name: "Laptops", href: "/products?category=laptops" },
-  { name: "Tablets", href: "/products?category=tablets" },
+const shopLinks: { nameKey: DictionaryKeys; href: string }[] = [
+  { nameKey: "footer.shop.deals", href: "/products?category=deals" },
+  { nameKey: "footer.shop.iphones", href: "/products?category=iphones" },
+  { nameKey: "footer.shop.samsung", href: "/products?category=samsung" },
+  { nameKey: "footer.shop.watches", href: "/products?category=watches" },
+  { nameKey: "footer.shop.laptops", href: "/products?category=laptops" },
+  { nameKey: "footer.shop.tablets", href: "/products?category=tablets" },
 ];
 
-const companyLinks = [
-  { name: "About Us", href: "/about" },
-  { name: "Careers", href: "#" },
-  { name: "Sustainability", href: "#" },
-  { name: "Press", href: "#" },
+const companyLinks: { nameKey: DictionaryKeys; href: string }[] = [
+  { nameKey: "footer.company.about", href: "/about" },
+  { nameKey: "footer.company.careers", href: "#" },
+  { nameKey: "footer.company.sustainability", href: "#" },
+  { nameKey: "footer.company.press", href: "#" },
 ];
 
-const supportLinks = [
-  { name: "Help Center", href: "#" },
-  { name: "Contact Us", href: "#" },
-  { name: "Returns", href: "#" },
-  { name: "Warranty", href: "#" },
-  { name: "FAQs", href: "#" },
+const supportLinks: { nameKey: DictionaryKeys; href: string }[] = [
+  { nameKey: "footer.support.help", href: "#" },
+  { nameKey: "footer.support.contact", href: "#" },
+  { nameKey: "footer.support.returns", href: "#" },
+  { nameKey: "footer.support.warranty", href: "#" },
+  { nameKey: "footer.support.faq", href: "#" },
 ];
 
 const socials = [
@@ -33,11 +37,12 @@ const socials = [
 ];
 
 export default function Footer() {
+  const { t } = useTranslation();
+
   return (
     <footer className="w-full bg-inverse-surface text-inverse-on-surface pb-24 md:pb-8">
       {/* Newsletter Band */}
       <div className="bg-gradient-to-r from-primary via-rose-600 to-rose-700 py-12 relative overflow-hidden">
-        {/* Subtle animated bg */}
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute -top-10 -right-20 w-80 h-80 bg-white/5 rounded-full blur-3xl animate-float" />
           <div className="absolute -bottom-10 -left-10 w-60 h-60 bg-white/5 rounded-full blur-3xl animate-float-delayed" />
@@ -45,21 +50,19 @@ export default function Footer() {
         <div className="max-w-screen-xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-5 sm:gap-6 relative">
           <div className="text-center md:text-left">
             <h3 className="text-xl font-extrabold text-white font-[family-name:var(--font-headline)]">
-              Get 10% Off Your First Order
+              {t("footer.newsletter.title")}
             </h3>
-            <p className="text-rose-100 text-sm mt-1">
-              Be the first to know about exclusive deals.
-            </p>
+            <p className="text-rose-100 text-sm mt-1">{t("footer.newsletter.subtitle")}</p>
           </div>
           <form className="flex w-full md:w-auto gap-2" action="#">
             <input
               type="email"
-              placeholder="Your email address"
+              placeholder={t("footer.newsletter.placeholder")}
               className="px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-white/50 flex-1 md:w-64 transition-all"
               required
             />
             <button className="px-6 py-3 bg-white text-primary font-bold rounded-xl text-sm hover:bg-rose-50 transition-all duration-300 shadow-lg active:scale-95 hover:shadow-xl hover:-translate-y-0.5">
-              Subscribe
+              {t("footer.newsletter.subscribe")}
             </button>
           </form>
         </div>
@@ -81,8 +84,7 @@ export default function Footer() {
               />
             </div>
             <p className="text-sm text-inverse-on-surface/60 mb-6 leading-relaxed max-w-sm">
-              Premium technology curated for your lifestyle. The best deals on certified refurbished
-              and new devices with 12-month warranty.
+              {t("footer.brand.desc")}
             </p>
             <div className="flex gap-3">
               {socials.map((s) => (
@@ -101,16 +103,13 @@ export default function Footer() {
           {/* Shop */}
           <div>
             <h4 className="font-bold text-inverse-on-surface mb-5 uppercase tracking-wider text-xs">
-              Shop
+              {t("footer.shop")}
             </h4>
             <ul className="space-y-3 text-sm">
               {shopLinks.map((link) => (
-                <li key={link.name}>
-                  <Link
-                    className="text-inverse-on-surface/50 hover:text-primary-fixed-dim transition-all duration-200 hover:translate-x-1 inline-block"
-                    href={link.href}
-                  >
-                    {link.name}
+                <li key={link.nameKey}>
+                  <Link className="text-inverse-on-surface/50 hover:text-primary-fixed-dim transition-all duration-200 hover:translate-x-1 inline-block" href={link.href}>
+                    {t(link.nameKey)}
                   </Link>
                 </li>
               ))}
@@ -120,16 +119,13 @@ export default function Footer() {
           {/* Company */}
           <div>
             <h4 className="font-bold text-inverse-on-surface mb-5 uppercase tracking-wider text-xs">
-              Company
+              {t("footer.company")}
             </h4>
             <ul className="space-y-3 text-sm">
               {companyLinks.map((link) => (
-                <li key={link.name}>
-                  <Link
-                    className="text-inverse-on-surface/50 hover:text-primary-fixed-dim transition-all duration-200 hover:translate-x-1 inline-block"
-                    href={link.href}
-                  >
-                    {link.name}
+                <li key={link.nameKey}>
+                  <Link className="text-inverse-on-surface/50 hover:text-primary-fixed-dim transition-all duration-200 hover:translate-x-1 inline-block" href={link.href}>
+                    {t(link.nameKey)}
                   </Link>
                 </li>
               ))}
@@ -139,16 +135,13 @@ export default function Footer() {
           {/* Support */}
           <div>
             <h4 className="font-bold text-inverse-on-surface mb-5 uppercase tracking-wider text-xs">
-              Support
+              {t("footer.support")}
             </h4>
             <ul className="space-y-3 text-sm">
               {supportLinks.map((link) => (
-                <li key={link.name}>
-                  <Link
-                    className="text-inverse-on-surface/50 hover:text-primary-fixed-dim transition-all duration-200 hover:translate-x-1 inline-block"
-                    href={link.href}
-                  >
-                    {link.name}
+                <li key={link.nameKey}>
+                  <Link className="text-inverse-on-surface/50 hover:text-primary-fixed-dim transition-all duration-200 hover:translate-x-1 inline-block" href={link.href}>
+                    {t(link.nameKey)}
                   </Link>
                 </li>
               ))}
@@ -161,20 +154,14 @@ export default function Footer() {
       <div className="border-t border-white/8">
         <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 py-5 sm:py-6 flex flex-col md:flex-row justify-between items-center gap-3 sm:gap-4">
           <div className="flex flex-wrap justify-center gap-4 text-[11px] font-semibold text-inverse-on-surface/40">
-            <Link href="#" className="hover:text-primary-fixed-dim transition-colors duration-200">
-              Privacy Policy
-            </Link>
+            <Link href="#" className="hover:text-primary-fixed-dim transition-colors duration-200">{t("footer.legal.privacy")}</Link>
             <span className="opacity-30">|</span>
-            <Link href="#" className="hover:text-primary-fixed-dim transition-colors duration-200">
-              Terms of Service
-            </Link>
+            <Link href="#" className="hover:text-primary-fixed-dim transition-colors duration-200">{t("footer.legal.terms")}</Link>
             <span className="opacity-30">|</span>
-            <Link href="#" className="hover:text-primary-fixed-dim transition-colors duration-200">
-              Cookie Policy
-            </Link>
+            <Link href="#" className="hover:text-primary-fixed-dim transition-colors duration-200">{t("footer.legal.cookies")}</Link>
           </div>
           <p className="text-inverse-on-surface/30 text-[11px] font-semibold">
-            &copy; 2025 ceepyol. All rights reserved.
+            {t("footer.legal.copyright")}
           </p>
           <div className="flex gap-2">
             {[

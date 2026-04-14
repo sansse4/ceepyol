@@ -113,7 +113,7 @@ export default function ProductCard({ product }: { product: Product }) {
             >
               {isAdding ? "check_circle" : "shopping_bag"}
             </span>
-            {isAdding ? "Added!" : "Add to Cart"}
+            {isAdding ? "Eklendi!" : "Sepete Ekle"}
           </button>
         </div>
       </div>
@@ -132,21 +132,21 @@ export default function ProductCard({ product }: { product: Product }) {
           star
         </span>
         <span className="font-bold">{product.rating}</span>
-        <span className="text-on-surface-variant">({product.reviewCount.toLocaleString('tr-TR')})</span>
+        <span className="text-on-surface-variant">({product.reviewCount.toLocaleString('en-US')})</span>
       </div>
       {product.buyerCount && product.buyerCount > 0 && (
         <div className="flex items-center gap-1 mb-2.5 text-[10px] text-on-surface-variant">
           <span className="material-symbols-outlined text-[12px]">shopping_cart</span>
-          <span className="font-semibold">{product.buyerCount.toLocaleString('tr-TR')} satın aldı</span>
+          <span className="font-semibold">{product.buyerCount.toLocaleString('en-US')} satın aldı</span>
         </div>
       )}
       <div className="flex items-baseline gap-2">
         <span className="text-on-surface font-extrabold text-lg transition-all duration-300 group-hover:text-primary">
-          ₺{product.price.toLocaleString('tr-TR')}
+          ₺{product.price.toLocaleString('en-US')}
         </span>
         {product.originalPrice && (
           <span className="text-on-surface-variant text-xs line-through">
-            ₺{product.originalPrice.toLocaleString('tr-TR')}
+            ₺{product.originalPrice.toLocaleString('en-US')}
           </span>
         )}
       </div>

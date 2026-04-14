@@ -16,11 +16,11 @@ import FlashSaleManager from "@/components/admin/FlashSaleManager";
 type Section = "products" | "announcements" | "discounts" | "settings" | "flashsale";
 
 const NAV_ITEMS: { id: Section; label: string; icon: string }[] = [
-  { id: "products", label: "Products", icon: "inventory_2" },
-  { id: "flashsale", label: "Flash Sale", icon: "timer" },
-  { id: "announcements", label: "Announcements", icon: "campaign" },
-  { id: "discounts", label: "Discount Codes", icon: "confirmation_number" },
-  { id: "settings", label: "Site Settings", icon: "settings" },
+  { id: "products", label: "Ürünler", icon: "inventory_2" },
+  { id: "flashsale", label: "Flaş İndirim", icon: "timer" },
+  { id: "announcements", label: "Duyurular", icon: "campaign" },
+  { id: "discounts", label: "İndirim Kodları", icon: "confirmation_number" },
+  { id: "settings", label: "Site Ayarları", icon: "settings" },
 ];
 
 export default function AdminPage() {
@@ -38,10 +38,10 @@ export default function AdminPage() {
   }, [loadData]);
 
   const stats = [
-    { label: "Products", value: products.length, icon: "inventory_2", color: "emerald" },
-    { label: "Flash Sale", value: flashSale.active ? "ON" : "OFF", icon: "timer", color: flashSale.active ? "emerald" : "amber" },
-    { label: "Announcements", value: activeAnnouncements, icon: "campaign", color: "blue" },
-    { label: "Discount Codes", value: activeCodes, icon: "confirmation_number", color: "purple" },
+    { label: "Ürünler", value: products.length, icon: "inventory_2", color: "emerald" },
+    { label: "Flaş İndirim", value: flashSale.active ? "AÇIK" : "KAPALI", icon: "timer", color: flashSale.active ? "emerald" : "amber" },
+    { label: "Duyurular", value: activeAnnouncements, icon: "campaign", color: "blue" },
+    { label: "İndirim Kodları", value: activeCodes, icon: "confirmation_number", color: "purple" },
   ];
 
   return (
@@ -59,7 +59,7 @@ export default function AdminPage() {
             </div>
             <div>
               <span className="font-extrabold text-sm">ceepy<span className="text-emerald-400">ol</span></span>
-              <p className="text-[10px] text-white/30 font-medium">Admin Panel</p>
+              <p className="text-[10px] text-white/30 font-medium">Yönetim Paneli</p>
             </div>
           </Link>
         </div>
@@ -89,10 +89,10 @@ export default function AdminPage() {
           </div>
           <div className="flex gap-2 mt-3">
             <Link href="/" className="flex-1 py-2 bg-white/5 rounded-lg text-[10px] font-bold text-white/40 text-center hover:bg-white/10 hover:text-white/60 transition-all">
-              View Store
+              Mağazayı Gör
             </Link>
             <button onClick={async () => { await logout(); window.location.href = "/"; }} className="flex-1 py-2 bg-red-500/10 rounded-lg text-[10px] font-bold text-red-400 text-center hover:bg-red-500/20 transition-all">
-              Logout
+              Çıkış
             </button>
           </div>
         </div>
@@ -108,11 +108,11 @@ export default function AdminPage() {
             </button>
             <div>
               <h1 className="text-lg font-bold">{NAV_ITEMS.find((n) => n.id === section)?.label}</h1>
-              <p className="text-xs text-white/30">Manage your store</p>
+              <p className="text-xs text-white/30">Mağazanızı yönetin</p>
             </div>
           </div>
           <Link href="/" className="hidden sm:flex items-center gap-2 px-4 py-2 bg-white/5 rounded-xl text-xs font-bold text-white/50 hover:bg-white/10 hover:text-white/70 transition-all">
-            <span className="material-symbols-outlined text-sm">open_in_new</span>View Store
+            <span className="material-symbols-outlined text-sm">open_in_new</span>Mağazayı Gör
           </Link>
         </header>
 
@@ -162,12 +162,12 @@ function ProductsSection() {
     <div className="space-y-4">
       <div className="flex items-center justify-between flex-wrap gap-3">
         <div>
-          <h3 className="text-lg font-bold text-white">Products</h3>
-          <p className="text-xs text-white/40">{filtered.length} products{filter !== "all" ? ` in ${filter}` : ""}</p>
+          <h3 className="text-lg font-bold text-white">Ürünler</h3>
+          <p className="text-xs text-white/40">{filtered.length} ürün{filter !== "all" ? ` - ${filter}` : ""}</p>
         </div>
         <button onClick={() => setShowAdd(!showAdd)} className="px-4 py-2 bg-gradient-to-r from-emerald-500 to-emerald-600 text-white font-bold rounded-xl text-sm flex items-center gap-2 hover:shadow-lg hover:shadow-emerald-500/25 transition-all">
           <span className="material-symbols-outlined text-lg">{showAdd ? "close" : "add"}</span>
-          {showAdd ? "Cancel" : "Add Product"}
+          {showAdd ? "İptal" : "Ürün Ekle"}
         </button>
       </div>
 
@@ -177,7 +177,7 @@ function ProductsSection() {
       <div className="flex gap-1.5 overflow-x-auto pb-2 hide-scrollbar">
         {categories.map((cat) => (
           <button key={cat} onClick={() => setFilter(cat)} className={`px-3.5 py-1.5 rounded-lg text-xs font-bold whitespace-nowrap transition-all ${filter === cat ? "bg-emerald-500/20 text-emerald-400" : "bg-white/5 text-white/30 hover:text-white/50"}`}>
-            {cat === "all" ? "All" : cat.charAt(0).toUpperCase() + cat.slice(1)}
+            {cat === "all" ? "Tümü" : cat.charAt(0).toUpperCase() + cat.slice(1)}
           </button>
         ))}
       </div>
@@ -185,11 +185,11 @@ function ProductsSection() {
       {/* Deleted Products */}
       {deletedProductIds.length > 0 && (
         <div className="bg-red-500/5 rounded-xl p-3 border border-red-500/10">
-          <p className="text-[10px] font-bold text-red-400 mb-2">Deleted ({deletedProductIds.length})</p>
+          <p className="text-[10px] font-bold text-red-400 mb-2">Silinenler ({deletedProductIds.length})</p>
           <div className="flex flex-wrap gap-2">
             {deletedProductIds.map((id) => (
               <button key={id} onClick={() => restoreProduct(id)} className="text-[10px] bg-red-500/10 px-2.5 py-1.5 rounded-lg border border-red-500/10 text-red-400 font-semibold flex items-center gap-1 hover:bg-red-500/20 transition-all">
-                <span className="material-symbols-outlined text-xs">restore</span>Restore #{id}
+                <span className="material-symbols-outlined text-xs">restore</span>Geri Yükle #{id}
               </button>
             ))}
           </div>
@@ -214,25 +214,25 @@ function ProductsSection() {
                   <span className="px-1.5 py-0.5 bg-white/5 rounded">{product.brand}</span>
                   <span className="px-1.5 py-0.5 bg-white/5 rounded">{product.category}</span>
                   <span className={`px-1.5 py-0.5 rounded font-bold ${product.inStock ? "bg-emerald-500/10 text-emerald-400" : "bg-red-500/10 text-red-400"}`}>
-                    {product.inStock ? "In Stock" : "Out"}
+                    {product.inStock ? "Stokta" : "Tükendi"}
                   </span>
-                  <span className="text-white/20">{product.images.length} imgs</span>
-                  <span className="text-white/20">{product.colors.length} colors</span>
+                  <span className="text-white/20">{product.images.length} görsel</span>
+                  <span className="text-white/20">{product.colors.length} renk</span>
                 </div>
               </div>
               <div className="text-right flex-shrink-0">
                 {editPriceId === product.id ? (
                   <div className="flex items-center gap-2">
-                    <input type="number" value={newPrice} onChange={(e) => setNewPrice(e.target.value)} className="w-20 px-2 py-1 bg-[#1a1d27] border border-white/10 rounded-lg text-xs text-white outline-none focus:border-emerald-500/50" placeholder="Price" />
-                    <input type="number" value={newOrigPrice} onChange={(e) => setNewOrigPrice(e.target.value)} className="w-20 px-2 py-1 bg-[#1a1d27] border border-white/10 rounded-lg text-xs text-white/50 outline-none focus:border-emerald-500/50" placeholder="Was" />
+                    <input type="number" value={newPrice} onChange={(e) => setNewPrice(e.target.value)} className="w-20 px-2 py-1 bg-[#1a1d27] border border-white/10 rounded-lg text-xs text-white outline-none focus:border-emerald-500/50" placeholder="Fiyat" />
+                    <input type="number" value={newOrigPrice} onChange={(e) => setNewOrigPrice(e.target.value)} className="w-20 px-2 py-1 bg-[#1a1d27] border border-white/10 rounded-lg text-xs text-white/50 outline-none focus:border-emerald-500/50" placeholder="Eski" />
                     <button onClick={() => { if (newPrice) setPriceOverride(product.id, Number(newPrice), newOrigPrice ? Number(newOrigPrice) : undefined); setEditPriceId(null); }}
                       className="text-emerald-400"><span className="material-symbols-outlined text-lg">check</span></button>
                     <button onClick={() => setEditPriceId(null)} className="text-white/30"><span className="material-symbols-outlined text-lg">close</span></button>
                   </div>
                 ) : (
                   <div>
-                    <p className="text-sm font-extrabold text-white">${product.price.toLocaleString()}</p>
-                    {product.originalPrice && <p className="text-[10px] text-white/20 line-through">${product.originalPrice.toLocaleString()}</p>}
+                    <p className="text-sm font-extrabold text-white">₺{product.price.toLocaleString()}</p>
+                    {product.originalPrice && <p className="text-[10px] text-white/20 line-through">₺{product.originalPrice.toLocaleString()}</p>}
                   </div>
                 )}
               </div>

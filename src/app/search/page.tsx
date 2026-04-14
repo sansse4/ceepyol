@@ -4,8 +4,8 @@ import ProductCard from "@/components/ui/ProductCard";
 import { searchProducts } from "@/lib/data/products-db";
 
 export const metadata = {
-  title: "Search",
-  description: "Search for premium tech products on ceepyol.",
+  title: "Arama",
+  description: "ceepyol'da premium teknoloji ürünlerini arayın.",
 };
 
 export default async function SearchPage({
@@ -19,14 +19,14 @@ export default async function SearchPage({
 
   return (
     <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Search" }]} />
+      <Breadcrumb items={[{ label: "Ana Sayfa", href: "/" }, { label: "Arama" }]} />
 
       <h1 className="text-3xl font-extrabold font-[family-name:var(--font-headline)] mb-2">
-        {query ? `Results for "${query}"` : "Search Products"}
+        {query ? `"${query}" için sonuçlar` : "Ürün Ara"}
       </h1>
       {query && (
         <p className="text-on-surface-variant mb-8">
-          {results.length} product{results.length !== 1 ? "s" : ""} found
+          {results.length} ürün bulundu
         </p>
       )}
 
@@ -35,12 +35,12 @@ export default async function SearchPage({
           <span className="material-symbols-outlined text-6xl text-on-surface-variant/20 mb-4 block">
             search_off
           </span>
-          <h2 className="text-xl font-bold mb-2">No results found</h2>
+          <h2 className="text-xl font-bold mb-2">Sonuç bulunamadı</h2>
           <p className="text-on-surface-variant mb-6">
-            We couldn&apos;t find anything matching &quot;{query}&quot;. Try a different search term.
+            &quot;{query}&quot; ile eşleşen bir şey bulamadık. Farklı bir arama terimi deneyin.
           </p>
           <div className="flex flex-wrap gap-3 justify-center">
-            {["iPhone", "MacBook", "Samsung", "Headphones", "Watch"].map((suggestion) => (
+            {["iPhone", "MacBook", "Samsung", "Kulaklık", "Saat"].map((suggestion) => (
               <Link
                 key={suggestion}
                 href={`/search?q=${suggestion}`}
@@ -62,9 +62,9 @@ export default async function SearchPage({
           <span className="material-symbols-outlined text-6xl text-on-surface-variant/20 mb-4 block">
             search
           </span>
-          <h2 className="text-xl font-bold mb-2">Search our store</h2>
+          <h2 className="text-xl font-bold mb-2">Mağazamızda arayın</h2>
           <p className="text-on-surface-variant">
-            Use the search bar above to find iPhones, MacBooks, Watches, and more.
+            iPhone, MacBook, Saat ve daha fazlasını bulmak için yukarıdaki arama çubuğunu kullanın.
           </p>
         </div>
       )}

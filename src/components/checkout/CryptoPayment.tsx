@@ -24,7 +24,7 @@ export default function CryptoPayment({ total }: Props) {
     <div className="space-y-5 animate-[fade-in-up_0.4s_ease-out]">
       <h3 className="font-bold text-base flex items-center gap-2">
         <span className="material-symbols-outlined text-primary">currency_bitcoin</span>
-        Send Payment via Cryptocurrency
+        Kripto Para ile Ödeme Gönderin
       </h3>
 
       {/* Currency selector */}
@@ -52,8 +52,8 @@ export default function CryptoPayment({ total }: Props) {
       <div className="bg-surface-container-low rounded-2xl p-6 flex flex-col items-center gap-5">
         {/* Amount */}
         <div className="text-center">
-          <p className="text-sm text-on-surface-variant mb-1">Amount Due</p>
-          <p className="text-2xl font-extrabold text-primary">${total.toFixed(2)}</p>
+          <p className="text-sm text-on-surface-variant mb-1">Ödenecek Tutar</p>
+          <p className="text-2xl font-extrabold text-primary">₺{total.toFixed(2)}</p>
         </div>
 
         {/* QR Code */}
@@ -69,13 +69,13 @@ export default function CryptoPayment({ total }: Props) {
 
         {/* Network badge */}
         <span className="px-3 py-1 bg-primary/10 text-primary text-xs font-bold rounded-full">
-          {wallet.network} Network
+          {wallet.network} Ağı
         </span>
 
         {/* Wallet address */}
         <div className="w-full">
           <p className="text-xs text-on-surface-variant mb-2 text-center">
-            {wallet.currency} Wallet Address
+            {wallet.currency} Cüzdan Adresi
           </p>
           <div className="flex items-center gap-2 bg-white dark:bg-surface-container-low rounded-xl p-3 border border-surface-variant">
             <code className="flex-1 text-xs font-mono break-all text-on-surface select-all">
@@ -92,7 +92,7 @@ export default function CryptoPayment({ total }: Props) {
               <span className="material-symbols-outlined text-[16px]">
                 {copied ? "check" : "content_copy"}
               </span>
-              {copied ? "Copied!" : "Copy"}
+              {copied ? "Kopyalandı!" : "Kopyala"}
             </button>
           </div>
         </div>
@@ -102,9 +102,9 @@ export default function CryptoPayment({ total }: Props) {
       <div className="flex gap-3 p-4 bg-amber-50 border border-amber-200 rounded-xl">
         <span className="material-symbols-outlined text-amber-600 shrink-0">info</span>
         <p className="text-sm text-amber-800 leading-relaxed">
-          After sending payment, your order will be placed with{" "}
-          <strong>&quot;Pending Verification&quot;</strong> status. We will confirm
-          receipt within 24 hours.
+          Ödeme gönderdikten sonra siparişiniz{" "}
+          <strong>&quot;Doğrulama Bekliyor&quot;</strong> durumunda oluşturulacaktır. 24 saat içinde
+          ödemenizi onaylayacağız.
         </p>
       </div>
     </div>

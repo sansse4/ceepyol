@@ -47,10 +47,10 @@ export default function AccountPage() {
   const isAdmin = user.role === "admin";
 
   const tabs: { id: Tab; label: string; icon: string; adminOnly?: boolean }[] = [
-    { id: "profile", label: "Profile", icon: "person" },
-    { id: "orders", label: "Orders", icon: "receipt_long" },
-    { id: "wishlist", label: "Wishlist", icon: "favorite" },
-    ...(isAdmin ? [{ id: "admin" as Tab, label: "Admin Panel", icon: "admin_panel_settings", adminOnly: true }] : []),
+    { id: "profile", label: "Profil", icon: "person" },
+    { id: "orders", label: "Siparişler", icon: "receipt_long" },
+    { id: "wishlist", label: "İstek Listesi", icon: "favorite" },
+    ...(isAdmin ? [{ id: "admin" as Tab, label: "Yönetim Paneli", icon: "admin_panel_settings", adminOnly: true }] : []),
   ];
 
   return (
@@ -82,7 +82,7 @@ export default function AccountPage() {
           className="px-5 py-2.5 border-2 border-error/20 text-error font-bold rounded-xl text-sm hover:bg-error/5 transition-all flex items-center gap-2"
         >
           <span className="material-symbols-outlined text-[18px]">logout</span>
-          Sign Out
+          Çıkış Yap
         </button>
       </div>
 
@@ -119,11 +119,11 @@ export default function AccountPage() {
         {activeTab === "admin" && isAdmin && (
           <div className="text-center py-16">
             <span className="material-symbols-outlined text-[64px] text-tertiary mb-4 block" style={{ fontVariationSettings: "'FILL' 1" }}>admin_panel_settings</span>
-            <h3 className="text-lg font-bold mb-2">Admin Dashboard</h3>
-            <p className="text-sm text-on-surface-variant mb-6">Manage products, announcements, discount codes, and site settings</p>
+            <h3 className="text-lg font-bold mb-2">Yönetim Paneli</h3>
+            <p className="text-sm text-on-surface-variant mb-6">Ürünleri, duyuruları, indirim kodlarını ve site ayarlarını yönetin</p>
             <a href="/admin" className="inline-flex items-center gap-2 px-8 py-3 bg-tertiary text-white font-bold rounded-xl text-sm hover:bg-tertiary/90 transition-all shadow-lg shadow-tertiary/20">
               <span className="material-symbols-outlined text-[18px]">open_in_new</span>
-              Open Admin Dashboard
+              Yönetim Panelini Aç
             </a>
           </div>
         )}
@@ -152,10 +152,10 @@ function ProfileTab({
 
   return (
     <div className="max-w-lg">
-      <h2 className="text-lg font-extrabold mb-6">Personal Information</h2>
+      <h2 className="text-lg font-extrabold mb-6">Kişisel Bilgiler</h2>
       <div className="space-y-5">
         <div>
-          <label className="text-sm font-bold text-on-surface mb-1.5 block">Full Name</label>
+          <label className="text-sm font-bold text-on-surface mb-1.5 block">Ad Soyad</label>
           <input
             type="text"
             value={name}
@@ -164,7 +164,7 @@ function ProfileTab({
           />
         </div>
         <div>
-          <label className="text-sm font-bold text-on-surface mb-1.5 block">Email</label>
+          <label className="text-sm font-bold text-on-surface mb-1.5 block">E-posta</label>
           <input
             type="email"
             value={user.email}
@@ -173,7 +173,7 @@ function ProfileTab({
           />
         </div>
         <div>
-          <label className="text-sm font-bold text-on-surface mb-1.5 block">Phone</label>
+          <label className="text-sm font-bold text-on-surface mb-1.5 block">Telefon</label>
           <input
             type="tel"
             value={phone}
@@ -183,9 +183,9 @@ function ProfileTab({
           />
         </div>
         <div>
-          <label className="text-sm font-bold text-on-surface mb-1.5 block">Member Since</label>
+          <label className="text-sm font-bold text-on-surface mb-1.5 block">Üyelik Tarihi</label>
           <p className="text-sm text-on-surface-variant">
-            {new Date(user.createdAt).toLocaleDateString("en-US", {
+            {new Date(user.createdAt).toLocaleDateString("tr-TR", {
               year: "numeric",
               month: "long",
               day: "numeric",
@@ -203,7 +203,7 @@ function ProfileTab({
           <span className="material-symbols-outlined text-[18px]">
             {saved ? "check_circle" : "save"}
           </span>
-          {saved ? "Saved!" : "Save Changes"}
+          {saved ? "Kaydedildi!" : "Değişiklikleri Kaydet"}
         </button>
       </div>
     </div>
@@ -234,14 +234,14 @@ function OrdersTab({ userId }: { userId: string }) {
         <span className="material-symbols-outlined text-[64px] text-on-surface-variant/20 mb-4 block">
           receipt_long
         </span>
-        <h3 className="text-lg font-bold text-on-surface-variant mb-2">No orders yet</h3>
-        <p className="text-sm text-on-surface-variant/70 mb-6">Your order history will appear here</p>
+        <h3 className="text-lg font-bold text-on-surface-variant mb-2">Henüz sipariş yok</h3>
+        <p className="text-sm text-on-surface-variant/70 mb-6">Sipariş geçmişiniz burada görünecek</p>
         <Link
           href="/products"
           className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white font-bold rounded-xl text-sm hover:bg-on-primary-fixed-variant transition-all"
         >
           <span className="material-symbols-outlined text-[18px]">shopping_bag</span>
-          Start Shopping
+          Alışverişe Başla
         </Link>
       </div>
     );
@@ -249,7 +249,7 @@ function OrdersTab({ userId }: { userId: string }) {
 
   return (
     <div className="space-y-4">
-      <h2 className="text-lg font-extrabold mb-2">Order History</h2>
+      <h2 className="text-lg font-extrabold mb-2">Sipariş Geçmişi</h2>
       {orders.map((order) => {
         const cfg = statusConfig[order.status] || statusConfig.pending;
         return (
@@ -259,7 +259,7 @@ function OrdersTab({ userId }: { userId: string }) {
           >
             <div className="flex flex-wrap items-center justify-between gap-3 mb-3">
               <div>
-                <span className="text-xs font-bold text-on-surface-variant">ORDER</span>
+                <span className="text-xs font-bold text-on-surface-variant">SİPARİŞ</span>
                 <p className="font-extrabold text-on-surface">{order.id}</p>
               </div>
               <span className={`px-3 py-1 rounded-lg text-xs font-extrabold flex items-center gap-1 ${cfg.color}`}>
@@ -286,7 +286,7 @@ function OrdersTab({ userId }: { userId: string }) {
               <span className="text-on-surface-variant">
                 {new Date(order.createdAt).toLocaleDateString()}
               </span>
-              <span className="font-extrabold text-on-surface">${order.total.toFixed(2)}</span>
+              <span className="font-extrabold text-on-surface">₺{order.total.toFixed(2)}</span>
             </div>
           </div>
         );
@@ -314,14 +314,14 @@ function WishlistTab() {
         <span className="material-symbols-outlined text-[64px] text-on-surface-variant/20 mb-4 block">
           favorite
         </span>
-        <h3 className="text-lg font-bold text-on-surface-variant mb-2">Your wishlist is empty</h3>
-        <p className="text-sm text-on-surface-variant/70 mb-6">Save your favorite items to buy later</p>
+        <h3 className="text-lg font-bold text-on-surface-variant mb-2">İstek listeniz boş</h3>
+        <p className="text-sm text-on-surface-variant/70 mb-6">Daha sonra almak istediğiniz ürünleri kaydedin</p>
         <Link
           href="/products"
           className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white font-bold rounded-xl text-sm hover:bg-on-primary-fixed-variant transition-all"
         >
           <span className="material-symbols-outlined text-[18px]">explore</span>
-          Browse Products
+          Ürünlere Göz At
         </Link>
       </div>
     );
@@ -330,7 +330,7 @@ function WishlistTab() {
   return (
     <div>
       <h2 className="text-lg font-extrabold mb-4">
-        My Wishlist <span className="text-on-surface-variant font-normal">({wishlistProducts.length})</span>
+        İstek Listem <span className="text-on-surface-variant font-normal">({wishlistProducts.length})</span>
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {wishlistProducts.map((product) => (
@@ -360,10 +360,10 @@ function WishlistTab() {
               <h3 className="font-bold text-sm mb-1 hover:text-primary transition-colors">{product.name}</h3>
             </Link>
             <div className="flex items-baseline gap-2 mb-3">
-              <span className="font-extrabold">${product.price.toLocaleString('en-US')}</span>
+              <span className="font-extrabold">₺{product.price.toLocaleString('tr-TR')}</span>
               {product.originalPrice && (
                 <span className="text-xs text-on-surface-variant line-through">
-                  ${product.originalPrice.toLocaleString('en-US')}
+                  ₺{product.originalPrice.toLocaleString('tr-TR')}
                 </span>
               )}
             </div>
@@ -387,7 +387,7 @@ function WishlistTab() {
               <span className="material-symbols-outlined text-[18px]" style={{ fontVariationSettings: "'FILL' 1" }}>
                 shopping_bag
               </span>
-              Add to Cart
+              Sepete Ekle
             </button>
           </div>
         ))}
@@ -406,7 +406,7 @@ function AdminTab() {
         <span className="material-symbols-outlined text-tertiary text-[28px]" style={{ fontVariationSettings: "'FILL' 1" }}>
           admin_panel_settings
         </span>
-        <h2 className="text-lg font-extrabold">Admin Panel</h2>
+        <h2 className="text-lg font-extrabold">Yönetim Paneli</h2>
       </div>
 
       {/* Sub-tabs */}
@@ -419,7 +419,7 @@ function AdminTab() {
               : "bg-surface-container-low text-on-surface-variant hover:bg-surface-container"
           }`}
         >
-          Manage Products
+          Ürünleri Yönet
         </button>
         <button
           onClick={() => setAdminSection("site")}
@@ -429,7 +429,7 @@ function AdminTab() {
               : "bg-surface-container-low text-on-surface-variant hover:bg-surface-container"
           }`}
         >
-          Site Settings
+          Site Ayarları
         </button>
       </div>
 
@@ -463,13 +463,13 @@ function AdminProducts() {
   return (
     <div>
       <div className="flex items-center justify-between mb-4">
-        <p className="text-sm text-on-surface-variant">{allProducts.length} products</p>
+        <p className="text-sm text-on-surface-variant">{allProducts.length} ürün</p>
         <button
           onClick={() => setShowAddForm(!showAddForm)}
           className="px-4 py-2 bg-primary text-white font-bold rounded-xl text-sm flex items-center gap-2 hover:bg-on-primary-fixed-variant transition-all"
         >
           <span className="material-symbols-outlined text-[18px]">{showAddForm ? "close" : "add"}</span>
-          {showAddForm ? "Cancel" : "Add Product"}
+          {showAddForm ? "İptal" : "Ürün Ekle"}
         </button>
       </div>
 
@@ -485,7 +485,7 @@ function AdminProducts() {
       {/* Deleted products (restorable) */}
       {deletedIds.length > 0 && (
         <div className="mb-4 p-3 bg-error-container/20 rounded-xl">
-          <p className="text-xs font-bold text-error mb-2">Deleted Products ({deletedIds.length})</p>
+          <p className="text-xs font-bold text-error mb-2">Silinen Ürünler ({deletedIds.length})</p>
           <div className="flex flex-wrap gap-2">
             {deletedIds.map((id) => (
               <button
@@ -494,7 +494,7 @@ function AdminProducts() {
                 className="text-xs bg-white dark:bg-surface-container-low px-3 py-1.5 rounded-lg border border-error/20 text-error font-semibold flex items-center gap-1 hover:bg-error/5 transition-all"
               >
                 <span className="material-symbols-outlined text-[14px]">restore</span>
-                Restore {id}
+                Geri Yükle {id}
               </button>
             ))}
           </div>
@@ -538,7 +538,7 @@ function AdminProducts() {
                     <span className={`px-1.5 py-0.5 rounded text-[10px] font-extrabold ${
                       product.inStock ? "bg-green-100 text-green-800" : "bg-red-100 text-red-800"
                     }`}>
-                      {product.inStock ? "In Stock" : "Out of Stock"}
+                      {product.inStock ? "Stokta" : "Tükendi"}
                     </span>
                   </div>
                 </div>
@@ -605,14 +605,14 @@ function AddProductForm({ onAdd }: { onAdd: (product: Product) => void }) {
     <form onSubmit={handleSubmit} className="bg-primary/5 rounded-2xl p-5 mb-4 space-y-4 border border-primary/10">
       <h3 className="font-bold text-sm flex items-center gap-2">
         <span className="material-symbols-outlined text-primary text-[18px]">add_box</span>
-        New Product
+        Yeni Ürün
       </h3>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         <input
           type="text"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          placeholder="Product Name *"
+          placeholder="Ürün Adı *"
           required
           className="px-3 py-2.5 bg-white dark:bg-surface-container-low border border-surface-variant rounded-xl dark:text-on-surface text-sm outline-none focus:border-primary transition-all"
         />
@@ -620,7 +620,7 @@ function AddProductForm({ onAdd }: { onAdd: (product: Product) => void }) {
           type="text"
           value={brand}
           onChange={(e) => setBrand(e.target.value)}
-          placeholder="Brand *"
+          placeholder="Marka *"
           required
           className="px-3 py-2.5 bg-white dark:bg-surface-container-low border border-surface-variant rounded-xl dark:text-on-surface text-sm outline-none focus:border-primary transition-all"
         />
@@ -628,7 +628,7 @@ function AddProductForm({ onAdd }: { onAdd: (product: Product) => void }) {
           type="number"
           value={price}
           onChange={(e) => setPrice(e.target.value)}
-          placeholder="Price *"
+          placeholder="Fiyat *"
           required
           className="px-3 py-2.5 bg-white dark:bg-surface-container-low border border-surface-variant rounded-xl dark:text-on-surface text-sm outline-none focus:border-primary transition-all"
         />
@@ -636,7 +636,7 @@ function AddProductForm({ onAdd }: { onAdd: (product: Product) => void }) {
           type="number"
           value={originalPrice}
           onChange={(e) => setOriginalPrice(e.target.value)}
-          placeholder="Original Price (optional)"
+          placeholder="Orijinal Fiyat (isteğe bağlı)"
           className="px-3 py-2.5 bg-white dark:bg-surface-container-low border border-surface-variant rounded-xl dark:text-on-surface text-sm outline-none focus:border-primary transition-all"
         />
         <select
@@ -666,13 +666,13 @@ function AddProductForm({ onAdd }: { onAdd: (product: Product) => void }) {
         type="url"
         value={imageUrl}
         onChange={(e) => setImageUrl(e.target.value)}
-        placeholder="Image URL (optional)"
+        placeholder="Görsel URL (isteğe bağlı)"
         className="w-full px-3 py-2.5 bg-white dark:bg-surface-container-low border border-surface-variant rounded-xl dark:text-on-surface text-sm outline-none focus:border-primary transition-all"
       />
       <textarea
         value={description}
         onChange={(e) => setDescription(e.target.value)}
-        placeholder="Description"
+        placeholder="Açıklama"
         rows={2}
         className="w-full px-3 py-2.5 bg-white dark:bg-surface-container-low border border-surface-variant rounded-xl dark:text-on-surface text-sm outline-none focus:border-primary transition-all resize-none"
       />
@@ -681,7 +681,7 @@ function AddProductForm({ onAdd }: { onAdd: (product: Product) => void }) {
         className="px-6 py-2.5 bg-primary text-white font-bold rounded-xl text-sm flex items-center gap-2 hover:bg-on-primary-fixed-variant transition-all"
       >
         <span className="material-symbols-outlined text-[18px]">check</span>
-        Add Product
+        Ürün Ekle
       </button>
     </form>
   );
@@ -729,13 +729,13 @@ function EditProductForm({
           className="px-4 py-2 bg-primary text-white font-bold rounded-xl text-xs flex items-center gap-1"
         >
           <span className="material-symbols-outlined text-[16px]">check</span>
-          Save
+          Kaydet
         </button>
         <button
           onClick={onCancel}
           className="px-4 py-2 bg-surface-container-low text-on-surface-variant font-bold rounded-xl text-xs"
         >
-          Cancel
+          İptal
         </button>
       </div>
     </div>
@@ -767,11 +767,11 @@ function AdminSiteSettings() {
     <div className="max-w-lg space-y-5">
       <h3 className="font-bold text-sm flex items-center gap-2 mb-4">
         <span className="material-symbols-outlined text-tertiary text-[18px]">settings</span>
-        Site Configuration
+        Site Yapılandırması
       </h3>
 
       <div>
-        <label className="text-sm font-bold text-on-surface mb-1.5 block">Site Name</label>
+        <label className="text-sm font-bold text-on-surface mb-1.5 block">Site Adı</label>
         <input
           type="text"
           value={siteName}
@@ -781,7 +781,7 @@ function AdminSiteSettings() {
       </div>
 
       <div>
-        <label className="text-sm font-bold text-on-surface mb-1.5 block">Promo Banner Text</label>
+        <label className="text-sm font-bold text-on-surface mb-1.5 block">Promosyon Banner Metni</label>
         <textarea
           value={promoText}
           onChange={(e) => setPromoText(e.target.value)}
@@ -791,7 +791,7 @@ function AdminSiteSettings() {
       </div>
 
       <div>
-        <label className="text-sm font-bold text-on-surface mb-1.5 block">Primary Color</label>
+        <label className="text-sm font-bold text-on-surface mb-1.5 block">Ana Renk</label>
         <div className="flex items-center gap-3">
           <input
             type="color"
@@ -809,19 +809,19 @@ function AdminSiteSettings() {
       </div>
 
       <div className="bg-surface-container-low/50 rounded-xl p-4 border border-surface-variant">
-        <p className="text-xs font-bold text-on-surface-variant mb-2">Quick Stats</p>
+        <p className="text-xs font-bold text-on-surface-variant mb-2">Hızlı İstatistikler</p>
         <div className="grid grid-cols-3 gap-3">
           <div className="text-center">
             <p className="text-2xl font-extrabold text-primary">{adminStore.products.length}</p>
-            <p className="text-[10px] text-on-surface-variant font-bold">Products</p>
+            <p className="text-[10px] text-on-surface-variant font-bold">Ürünler</p>
           </div>
           <div className="text-center">
             <p className="text-2xl font-extrabold text-secondary">0</p>
-            <p className="text-[10px] text-on-surface-variant font-bold">Orders Today</p>
+            <p className="text-[10px] text-on-surface-variant font-bold">Bugünkü Siparişler</p>
           </div>
           <div className="text-center">
-            <p className="text-2xl font-extrabold text-tertiary">$0</p>
-            <p className="text-[10px] text-on-surface-variant font-bold">Revenue</p>
+            <p className="text-2xl font-extrabold text-tertiary">₺0</p>
+            <p className="text-[10px] text-on-surface-variant font-bold">Gelir</p>
           </div>
         </div>
       </div>
@@ -837,7 +837,7 @@ function AdminSiteSettings() {
         <span className="material-symbols-outlined text-[18px]">
           {saved ? "check_circle" : "save"}
         </span>
-        {saved ? "Settings Saved!" : "Save Settings"}
+        {saved ? "Ayarlar Kaydedildi!" : "Ayarları Kaydet"}
       </button>
     </div>
   );

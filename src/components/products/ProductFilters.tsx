@@ -3,23 +3,23 @@
 import { useRouter, useSearchParams } from "next/navigation";
 
 const categoryLabels: Record<string, string> = {
-  iphones: "iPhones",
+  iphones: "iPhone'lar",
   samsung: "Samsung",
-  laptops: "Laptops",
-  audio: "Audio",
-  watches: "Watches",
-  tablets: "Tablets",
-  accessories: "Accessories",
-  gaming: "Gaming",
-  deals: "Deals",
+  laptops: "Dizüstü",
+  audio: "Ses",
+  watches: "Saatler",
+  tablets: "Tabletler",
+  accessories: "Aksesuarlar",
+  gaming: "Oyun",
+  deals: "Fırsatlar",
 };
 
-const conditions = ["New", "Like New", "Certified Refurbished"];
+const conditions = ["Yeni", "Yeni Gibi", "Sertifikalı Yenilenmiş"];
 const sortOptions = [
-  { value: "", label: "Default" },
-  { value: "price-asc", label: "Price: Low to High" },
-  { value: "price-desc", label: "Price: High to Low" },
-  { value: "rating", label: "Top Rated" },
+  { value: "", label: "Varsayılan" },
+  { value: "price-asc", label: "Fiyat: Düşükten Yükseğe" },
+  { value: "price-desc", label: "Fiyat: Yüksekten Düşüğe" },
+  { value: "rating", label: "En Yüksek Puan" },
 ];
 
 export default function ProductFilters({
@@ -58,7 +58,7 @@ export default function ProductFilters({
       {/* Sort - Mobile friendly */}
       <div>
         <label className="text-xs font-bold uppercase tracking-wider text-on-surface-variant mb-2 block">
-          Sort By
+          Sırala
         </label>
         <select
           value={currentSort}
@@ -76,7 +76,7 @@ export default function ProductFilters({
       {/* Category */}
       <div>
         <label className="text-xs font-bold uppercase tracking-wider text-on-surface-variant mb-3 block">
-          Category
+          Kategori
         </label>
         <div className="space-y-2">
           <button
@@ -85,7 +85,7 @@ export default function ProductFilters({
               !currentCategory ? "bg-primary text-white font-bold" : "hover:bg-surface-container-low"
             }`}
           >
-            All Products
+            Tüm Ürünler
           </button>
           {categories.map((cat) => (
             <button
@@ -106,7 +106,7 @@ export default function ProductFilters({
       {/* Brand */}
       <div>
         <label className="text-xs font-bold uppercase tracking-wider text-on-surface-variant mb-3 block">
-          Brand
+          Marka
         </label>
         <div className="space-y-2">
           <button
@@ -115,7 +115,7 @@ export default function ProductFilters({
               !currentBrand ? "bg-primary text-white font-bold" : "hover:bg-surface-container-low"
             }`}
           >
-            All Brands
+            Tüm Markalar
           </button>
           {brands.map((brand) => (
             <button
@@ -136,7 +136,7 @@ export default function ProductFilters({
       {/* Condition */}
       <div>
         <label className="text-xs font-bold uppercase tracking-wider text-on-surface-variant mb-3 block">
-          Condition
+          Durum
         </label>
         <div className="space-y-2">
           <button
@@ -145,7 +145,7 @@ export default function ProductFilters({
               !currentCondition ? "bg-primary text-white font-bold" : "hover:bg-surface-container-low"
             }`}
           >
-            All Conditions
+            Tüm Durumlar
           </button>
           {conditions.map((cond) => (
             <button
@@ -169,7 +169,7 @@ export default function ProductFilters({
           onClick={clearFilters}
           className="w-full py-2.5 text-sm font-bold text-error hover:bg-error-container/30 rounded-xl transition-colors"
         >
-          Clear All Filters
+          Tüm Filtreleri Temizle
         </button>
       )}
     </div>

@@ -20,26 +20,26 @@ export default function WisePayment({ total }: Props) {
     <div className="space-y-5 animate-[fade-in-up_0.4s_ease-out]">
       <h3 className="font-bold text-base flex items-center gap-2">
         <span className="material-symbols-outlined text-primary">account_balance</span>
-        Pay via Wise Transfer
+        Wise Havale ile Ödeyin
       </h3>
 
       {/* Wise account details */}
       <div className="bg-surface-container-low rounded-2xl p-6 space-y-5">
         {/* Amount */}
         <div className="text-center">
-          <p className="text-sm text-on-surface-variant mb-1">Amount Due</p>
-          <p className="text-2xl font-extrabold text-primary">${total.toFixed(2)}</p>
+          <p className="text-sm text-on-surface-variant mb-1">Ödenecek Tutar</p>
+          <p className="text-2xl font-extrabold text-primary">₺{total.toFixed(2)}</p>
         </div>
 
         {/* Account holder */}
         <div className="bg-white dark:bg-surface-container rounded-xl p-4 border border-surface-variant text-center">
-          <p className="text-xs text-on-surface-variant mb-1">Account Holder</p>
+          <p className="text-xs text-on-surface-variant mb-1">Hesap Sahibi</p>
           <p className="font-bold text-lg">{WISE_DETAILS.accountHolder}</p>
         </div>
 
         {/* Email */}
         <div>
-          <p className="text-xs text-on-surface-variant mb-2 text-center">Wise Email</p>
+          <p className="text-xs text-on-surface-variant mb-2 text-center">Wise E-postası</p>
           <div className="flex items-center gap-2 bg-white dark:bg-surface-container-low rounded-xl p-3 border border-surface-variant">
             <code className="flex-1 text-sm font-mono text-on-surface text-center select-all">
               {WISE_DETAILS.email}
@@ -55,7 +55,7 @@ export default function WisePayment({ total }: Props) {
               <span className="material-symbols-outlined text-[16px]">
                 {copied ? "check" : "content_copy"}
               </span>
-              {copied ? "Copied!" : "Copy"}
+              {copied ? "Kopyalandı!" : "Kopyala"}
             </button>
           </div>
         </div>
@@ -63,7 +63,7 @@ export default function WisePayment({ total }: Props) {
 
       {/* Transfer steps */}
       <div className="bg-white dark:bg-surface-container rounded-2xl p-6 border border-surface-variant">
-        <h4 className="font-bold text-sm mb-5">How to complete your payment</h4>
+        <h4 className="font-bold text-sm mb-5">Ödemenizi nasıl tamamlarsınız</h4>
         <div className="space-y-0">
           {WISE_DETAILS.instructions.map((step, i) => (
             <div key={i} className="flex gap-4">
@@ -87,9 +87,9 @@ export default function WisePayment({ total }: Props) {
       <div className="flex gap-3 p-4 bg-amber-50 border border-amber-200 rounded-xl">
         <span className="material-symbols-outlined text-amber-600 shrink-0">info</span>
         <p className="text-sm text-amber-800 leading-relaxed">
-          After sending payment, your order will be placed with{" "}
-          <strong>&quot;Pending Verification&quot;</strong> status. We will confirm
-          receipt within 24 hours.
+          Ödeme gönderdikten sonra siparişiniz{" "}
+          <strong>&quot;Doğrulama Bekliyor&quot;</strong> durumunda oluşturulacaktır. 24 saat içinde
+          ödemenizi onaylayacağız.
         </p>
       </div>
     </div>

@@ -56,10 +56,10 @@ export default function ProductOptions({ product }: { product: Product }) {
       {/* Price */}
       <div className="bg-surface-container-low/50 rounded-2xl p-5 transition-all duration-300 hover:shadow-sm">
         <div className="flex items-baseline gap-3">
-          <span className="text-2xl sm:text-3xl font-extrabold text-on-surface">₺{totalPrice.toLocaleString('tr-TR')}</span>
+          <span className="text-2xl sm:text-3xl font-extrabold text-on-surface">₺{totalPrice.toLocaleString('en-US')}</span>
           {product.originalPrice && (
             <span className="text-lg text-on-surface-variant line-through">
-              ₺{product.originalPrice.toLocaleString('tr-TR')}
+              ₺{product.originalPrice.toLocaleString('en-US')}
             </span>
           )}
           {product.originalPrice && (
@@ -71,12 +71,12 @@ export default function ProductOptions({ product }: { product: Product }) {
         {product.originalPrice && (
           <p className="text-sm font-bold text-primary mt-1.5 flex items-center gap-1">
             <span className="material-symbols-outlined text-[16px]" style={{ fontVariationSettings: "'FILL' 1" }}>savings</span>
-            You save ₺{(product.originalPrice - product.price).toLocaleString('tr-TR')}
+            ₺{(product.originalPrice - product.price).toLocaleString('en-US')} tasarruf edin
           </p>
         )}
         {product.monthlyPrice && (
           <p className="text-sm text-on-surface-variant mt-1">
-            or <span className="font-semibold">₺{product.monthlyPrice}/mo</span> for 18 mo.
+            veya 18 ay x <span className="font-semibold">₺{product.monthlyPrice}/ay</span>
           </p>
         )}
       </div>
@@ -85,7 +85,7 @@ export default function ProductOptions({ product }: { product: Product }) {
       {product.colors.length > 0 && (
         <div>
           <label className="text-sm font-bold mb-3 block">
-            Color: <span className="font-normal text-on-surface-variant transition-all duration-300">{selectedColor}</span>
+            Renk: <span className="font-normal text-on-surface-variant transition-all duration-300">{selectedColor}</span>
           </label>
           <div className="flex gap-3">
             {product.colors.map((color) => (
@@ -121,7 +121,7 @@ export default function ProductOptions({ product }: { product: Product }) {
       {/* Storage */}
       {product.storage && product.storage.length > 0 && (
         <div>
-          <label className="text-sm font-bold mb-3 block">Storage</label>
+          <label className="text-sm font-bold mb-3 block">Depolama</label>
           <div className="flex flex-wrap gap-2">
             {product.storage.map((option) => (
               <button
@@ -145,7 +145,7 @@ export default function ProductOptions({ product }: { product: Product }) {
 
       {/* Quantity */}
       <div>
-        <label className="text-sm font-bold mb-3 block">Quantity</label>
+        <label className="text-sm font-bold mb-3 block">Adet</label>
         <div className="flex items-center bg-surface-container-low rounded-xl w-fit overflow-hidden">
           <button
             onClick={() => setQuantity(Math.max(1, quantity - 1))}
@@ -183,7 +183,7 @@ export default function ProductOptions({ product }: { product: Product }) {
           >
             {adding ? "check_circle" : "shopping_bag"}
           </span>
-          {adding ? "Added! Going to cart..." : "Add to Cart"}
+          {adding ? "Eklendi! Sepete gidiliyor..." : "Sepete Ekle"}
         </button>
 
         {/* Buy Now */}
@@ -199,16 +199,16 @@ export default function ProductOptions({ product }: { product: Product }) {
           <span className={`material-symbols-outlined text-[20px] transition-transform duration-300 ${buyingNow ? "" : "group-hover:scale-110"}`}>
             bolt
           </span>
-          {buyingNow ? "Redirecting..." : "Buy Now"}
+          {buyingNow ? "Yönlendiriliyor..." : "Hemen Satın Al"}
         </button>
       </div>
 
       {/* Trust Badges */}
       <div className="grid grid-cols-3 gap-3 pt-4 border-t border-surface-variant/60">
         {[
-          { icon: "local_shipping", text: "Free Shipping" },
-          { icon: "verified", text: "12-Mo Warranty" },
-          { icon: "lock", text: "30-Day Returns" },
+          { icon: "local_shipping", text: "Ücretsiz Kargo" },
+          { icon: "verified", text: "12 Ay Garanti" },
+          { icon: "lock", text: "30 Gün İade" },
         ].map((badge) => (
           <div
             key={badge.text}

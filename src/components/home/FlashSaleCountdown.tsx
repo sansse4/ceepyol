@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useAdminStore } from "@/lib/store/admin";
+import { useTranslation } from "@/lib/i18n/useTranslation";
 
 function useCountdown(endsAt: string) {
   const [timeLeft, setTimeLeft] = useState(() => Math.max(0, new Date(endsAt).getTime() - Date.now()));
@@ -40,14 +41,13 @@ function TimeBlock({ value, label }: { value: number; label: string }) {
 }
 
 export default function FlashSaleCountdown() {
+  const { t } = useTranslation();
   const flashSale = useAdminStore((s) => s.flashSale);
   const { days, hours, mins, secs, expired } = useCountdown(flashSale.endsAt);
 
   if (!flashSale.active || expired) return null;
 
-  const href = flashSale.productIds.length === 1
-    ? `/products`
-    : `/products`;
+  const href = `/products`;
 
   return (
     <section className="py-10 sm:py-16 px-6 relative overflow-hidden">
@@ -55,12 +55,10 @@ export default function FlashSaleCountdown() {
         className="max-w-screen-2xl mx-auto rounded-3xl p-8 sm:p-12 lg:p-16 relative overflow-hidden group"
         style={{ background: `linear-gradient(135deg, ${flashSale.bgFrom}, ${flashSale.bgTo})` }}
       >
-        {/* Animated background blobs */}
         <div className="absolute -top-20 -right-20 w-80 h-80 bg-white/5 rounded-full blur-[80px] transition-all duration-1000 group-hover:scale-110 pointer-events-none" />
         <div className="absolute -bottom-20 -left-20 w-72 h-72 bg-black/10 rounded-full blur-[80px] transition-all duration-1000 group-hover:scale-110 pointer-events-none" />
 
         <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-8 text-white">
-          {/* Text */}
           <div className="text-center lg:text-left">
             <span className="inline-block px-3 py-1 bg-white/15 rounded-full text-[10px] font-extrabold tracking-widest uppercase mb-3 border border-white/20">
               {flashSale.label}
@@ -69,22 +67,20 @@ export default function FlashSaleCountdown() {
               {flashSale.title}
             </h2>
             <p className="text-white/70 text-base sm:text-lg mb-6 lg:mb-0">
-              Save up to{" "}
-              <span className="text-white font-extrabold text-xl">{flashSale.discount}%</span>{" "}
-              {flashSale.productIds.length === 0 ? "on all products" : `on ${flashSale.productIds.length} selected product${flashSale.productIds.length > 1 ? "s" : ""}`}
+              <span className="text-white font-extrabold text-xl">%{flashSale.discount}</span>{" "}
+              {flashSale.productIds.length === 0 ? t("flash.allProducts") : `${flashSale.productIds.length} ${t("flash.selectedProducts")}`}
             </p>
           </div>
 
-          {/* Timer + CTA */}
           <div className="flex flex-col items-center gap-6">
             <div className="flex items-center gap-1.5 sm:gap-2">
-              <TimeBlock value={days} label="Days" />
+              <TimeBlock value={days} label={t("flash.time.days")} />
               <span className="text-2xl font-bold opacity-40 -mt-3">:</span>
-              <TimeBlock value={hours} label="Hrs" />
+              <TimeBlock value={hours} label={t("flash.time.hours")} />
               <span className="text-2xl font-bold opacity-40 -mt-3">:</span>
-              <TimeBlock value={mins} label="Min" />
+              <TimeBlock value={mins} label={t("flash.time.mins")} />
               <span className="text-2xl font-bold opacity-40 -mt-3">:</span>
-              <TimeBlock value={secs} label="Sec" />
+              <TimeBlock value={secs} label={t("flash.time.secs")} />
             </div>
 
             <Link
@@ -92,7 +88,7 @@ export default function FlashSaleCountdown() {
               className="px-8 py-3.5 bg-white font-extrabold rounded-xl text-sm transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-black/30 active:scale-95"
               style={{ color: flashSale.bgTo }}
             >
-              Shop the Sale →
+              {t("flash.cta")}
             </Link>
           </div>
         </div>

@@ -7,22 +7,22 @@ export default function NotFound() {
         explore_off
       </span>
       <h1 className="text-5xl font-extrabold font-[family-name:var(--font-headline)] mb-4">404</h1>
-      <h2 className="text-xl font-bold mb-3">Page Not Found</h2>
+      <h2 className="text-xl font-bold mb-3">Sayfa Bulunamadı</h2>
       <p className="text-on-surface-variant mb-8 max-w-md mx-auto">
-        The page you&apos;re looking for doesn&apos;t exist or has been moved. Let&apos;s get you back on track.
+        Aradığınız sayfa mevcut değil veya taşınmış olabilir. Sizi doğru yola yönlendirelim.
       </p>
       <div className="flex flex-col sm:flex-row gap-4 justify-center">
         <Link
           href="/"
           className="px-8 py-4 bg-primary text-white font-bold rounded-xl hover:bg-on-primary-fixed-variant transition-colors shadow-lg shadow-primary/20"
         >
-          Go Home
+          Ana Sayfaya Dön
         </Link>
         <Link
           href="/products"
           className="px-8 py-4 font-bold rounded-xl border border-surface-variant hover:bg-surface-container-low transition-colors"
         >
-          Browse Products
+          Ürünlere Göz At
         </Link>
       </div>
     </div>

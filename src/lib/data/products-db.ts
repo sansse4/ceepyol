@@ -84,6 +84,17 @@ export async function filterProducts(params: FilterParams): Promise<Product[]> {
   return results;
 }
 
+export async function getProductsByCategoryAndBrand(
+  category: string,
+  brand?: string
+): Promise<Product[]> {
+  let results = productsData.filter((p) => p.category === category);
+  if (brand) {
+    results = results.filter((p) => p.brand.toLowerCase() === brand.toLowerCase());
+  }
+  return results;
+}
+
 export async function searchProducts(query: string): Promise<Product[]> {
   const q = query.toLowerCase().trim();
 

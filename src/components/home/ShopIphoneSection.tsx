@@ -10,15 +10,9 @@ interface ShopIphoneSectionProps {
   products: Product[];
 }
 
-const navLinks = [
-  "All Models",
-  "Shopping Guides",
-  "Ways to Save",
-  "Accessories",
-  "Setup and Support",
-  "The iPhone Experience",
-  "Special Stores"
-];
+
+// Locale-independent number formatter — avoids server/client ICU mismatch
+const formatNum = (n: number) => String(Math.round(n)).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
 
 // Helper to generate deterministic realistic metrics based on product ID
 const getMetrics = (id: string) => {
@@ -26,49 +20,39 @@ const getMetrics = (id: string) => {
   const buyers = 15000 + (hash % 85000); // 15k to 100k buyers
   const rating = 4.6 + ((hash % 40) / 100); // 4.6 to 4.99
   const reviews = 1200 + (hash % 8000);
-  return { 
-    buyers: buyers.toLocaleString(), 
-    rating: rating.toFixed(1), 
-    reviews: reviews.toLocaleString() 
+  return {
+    buyers: formatNum(buyers),
+    rating: rating.toFixed(1),
+    reviews: formatNum(reviews)
   };
 };
 
 export default function ShopIphoneSection({ products }: ShopIphoneSectionProps) {
   const { t } = useTranslation();
-  // Sort or ensure we have distinct items to show
-  const displayProducts = [...products].slice(0, 8);
+  // iPhone 17 Pro Max always first, rest follow in original order
+  const displayProducts = [...products]
+    .sort((a, b) => {
+      if (a.slug === "iphone-17-pro-max") return -1;
+      if (b.slug === "iphone-17-pro-max") return 1;
+      return 0;
+    })
+    .slice(0, 8);
 
   return (
     <section className="py-12 md:py-20 bg-white dark:bg-[#0a0a0a]">
       <div className="max-w-screen-2xl mx-auto px-4 sm:px-6">
         <AnimateOnScroll animation="animate-fade-in-up">
-          <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
-            <div>
-              <div className="flex items-center gap-3 mb-2">
-                <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold tracking-tight text-black dark:text-white">
-                  {t("home.shopIphone.title") as string}
-                </h2>
-                <div className="hidden sm:flex items-center gap-1.5 px-3 py-1 bg-green-50 dark:bg-green-500/10 text-green-700 dark:text-green-400 rounded-full text-xs font-bold border border-green-200 dark:border-green-500/20">
-                  <span className="material-symbols-outlined text-[14px]">groups</span>
-                  500k+ {t("home.shopIphone.buyers") as string}
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Navigation Links */}
-          <div className="flex gap-6 overflow-x-auto hide-scrollbar text-sm font-medium text-gray-800 dark:text-gray-300 mb-10 pb-2 border-b border-gray-100 dark:border-white/10">
-            {navLinks.map((link, idx) => (
-              <span key={idx} className="cursor-pointer hover:text-black dark:hover:text-white transition-colors whitespace-nowrap">
-                {link}
-              </span>
-            ))}
-          </div>
-
-          <div className="mb-8">
-            <h3 className="text-xl md:text-2xl font-semibold text-gray-900 dark:text-white">
-              {t("home.shopIphone.subtitle") as string}
-            </h3>
+          {/* Header: Title + Compare link */}
+          <div className="flex items-center justify-between mb-10">
+            <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold tracking-tight text-black dark:text-white">
+              {t("home.shopIphone.title") as string}
+            </h2>
+            <Link
+              href="/products"
+              className="text-sm font-medium text-[#0071e3] hover:underline whitespace-nowrap"
+            >
+              {t("home.shopIphone.nav.0") as string} &rarr;
+            </Link>
           </div>
         </AnimateOnScroll>
 
@@ -102,7 +86,7 @@ export default function ShopIphoneSection({ products }: ShopIphoneSectionProps) 
                       </div>
                       <div className="text-[11px] font-semibold text-gray-500 dark:text-gray-400">
                         <span className="material-symbols-outlined text-[12px] align-text-bottom mr-0.5">shopping_cart</span>
-                        {metrics.buyers} Buyers
+                        {metrics.buyers} {t("home.shopIphone.buyers.label")}
                       </div>
                     </div>
                   </div>
@@ -146,7 +130,7 @@ export default function ShopIphoneSection({ products }: ShopIphoneSectionProps) 
                   {/* Action Footer */}
                   <div className="flex items-end justify-between mt-auto z-10">
                     <div className="text-[10px] md:text-xs text-gray-500 dark:text-gray-400 max-w-[65%]">
-                      From ₺{product.price.toLocaleString('tr-TR')} or ₺{monthlyPrice}/mo. for 24 mo.*
+                      ₺{formatNum(product.price)}'den başlayan veya 24 ay x ₺{monthlyPrice}/ay*
                     </div>
                     
                     <Link
@@ -171,7 +155,7 @@ export default function ShopIphoneSection({ products }: ShopIphoneSectionProps) 
              <div className="w-[240px] sm:w-[280px] md:w-[320px] h-full min-h-[420px] sm:min-h-[480px] bg-[#f5f5f7] dark:bg-[#1a1a1a] rounded-[24px] sm:rounded-[32px] p-5 sm:p-8 flex flex-col justify-between transition-all duration-300 cursor-pointer hover:opacity-90">
                 <div className="text-left mb-6">
                   <h4 className="text-xl md:text-2xl font-semibold text-black dark:text-white leading-tight">
-                    Explore iPhone accessories.
+                    {t("home.shopIphone.explore")}
                   </h4>
                 </div>
                 <div className="flex-1 w-full relative flex items-center justify-center">
@@ -193,6 +177,23 @@ export default function ShopIphoneSection({ products }: ShopIphoneSectionProps) 
           </AnimateOnScroll>
 
         </div>
+
+        {/* Navigation Links + subtitle below carousel */}
+        <AnimateOnScroll animation="animate-fade-in-up">
+          <div className="mt-6 pt-4 border-t border-gray-100 dark:border-white/10">
+            <div className="flex gap-6 overflow-x-auto hide-scrollbar text-sm font-medium text-gray-800 dark:text-gray-300 pb-2 mb-4">
+              {(["home.shopIphone.nav.1","home.shopIphone.nav.2","home.shopIphone.nav.3","home.shopIphone.nav.4","home.shopIphone.nav.5","home.shopIphone.nav.6"] as const).map((key, idx) => (
+                <span key={idx} className="cursor-pointer hover:text-black dark:hover:text-white transition-colors whitespace-nowrap">
+                  {t(key)}
+                </span>
+              ))}
+            </div>
+            <p className="text-xl md:text-2xl font-semibold text-gray-900 dark:text-white">
+              {t("home.shopIphone.subtitle") as string}
+            </p>
+          </div>
+        </AnimateOnScroll>
+
       </div>
     </section>
   );

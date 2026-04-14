@@ -5,20 +5,20 @@ import Breadcrumb from "@/components/ui/Breadcrumb";
 import { filterProducts, getAllCategories, getAllBrands } from "@/lib/data/products-db";
 
 const categoryLabels: Record<string, string> = {
-  iphones: "iPhones",
+  iphones: "iPhone'lar",
   samsung: "Samsung",
-  laptops: "Laptops",
-  audio: "Audio",
-  watches: "Watches",
-  tablets: "Tablets",
-  accessories: "Accessories",
-  gaming: "Gaming",
-  deals: "Deals",
+  laptops: "Dizüstü",
+  audio: "Ses",
+  watches: "Saatler",
+  tablets: "Tabletler",
+  accessories: "Aksesuarlar",
+  gaming: "Oyun",
+  deals: "Fırsatlar",
 };
 
 export const metadata = {
-  title: "Products",
-  description: "Browse our curated collection of premium tech devices.",
+  title: "Ürünler",
+  description: "Premium teknoloji cihazlarımızın özenle seçilmiş koleksiyonuna göz atın.",
 };
 
 export default async function ProductsPage({
@@ -39,8 +39,8 @@ export default async function ProductsPage({
   ]);
 
   const breadcrumbs: { label: string; href?: string }[] = [
-    { label: "Home", href: "/" },
-    { label: "Products", href: category ? "/products" : undefined },
+    { label: "Ana Sayfa", href: "/" },
+    { label: "Ürünler", href: category ? "/products" : undefined },
   ];
   if (category) {
     breadcrumbs.push({ label: categoryLabels[category] || category });
@@ -53,10 +53,10 @@ export default async function ProductsPage({
       <div className="flex items-end justify-between mb-6 sm:mb-8">
         <div>
           <h1 className="text-2xl sm:text-3xl font-extrabold font-[family-name:var(--font-headline)]">
-            {category ? categoryLabels[category] || "Products" : "All Products"}
+            {category ? categoryLabels[category] || "Ürünler" : "Tüm Ürünler"}
           </h1>
           <p className="text-on-surface-variant mt-1">
-            {filtered.length} product{filtered.length !== 1 ? "s" : ""} found
+            {filtered.length} ürün bulundu
           </p>
         </div>
       </div>
@@ -78,7 +78,7 @@ export default async function ProductsPage({
             <details className="bg-white dark:bg-surface-container rounded-2xl shadow-sm border border-surface-variant">
               <summary className="px-6 py-4 font-bold text-sm cursor-pointer flex items-center gap-2">
                 <span className="material-symbols-outlined text-[20px]">tune</span>
-                Filters & Sort
+                Filtreler ve Sıralama
               </summary>
               <div className="px-6 pb-6">
                 <Suspense>
@@ -93,9 +93,9 @@ export default async function ProductsPage({
               <span className="material-symbols-outlined text-6xl text-on-surface-variant/30 mb-4 block">
                 search_off
               </span>
-              <h3 className="text-xl font-bold mb-2">No products found</h3>
+              <h3 className="text-xl font-bold mb-2">Ürün bulunamadı</h3>
               <p className="text-on-surface-variant">
-                Try adjusting your filters or browse all products.
+                Filtrelerinizi değiştirmeyi deneyin veya tüm ürünlere göz atın.
               </p>
             </div>
           ) : (

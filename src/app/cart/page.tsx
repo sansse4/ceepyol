@@ -26,13 +26,13 @@ export default function CartPage() {
 
   return (
     <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
-      <Breadcrumb items={[{ label: "Home", href: "/" }, { label: "Cart" }]} />
+      <Breadcrumb items={[{ label: "Ana Sayfa", href: "/" }, { label: "Sepet" }]} />
 
       <h1 className="text-2xl sm:text-3xl font-extrabold font-[family-name:var(--font-headline)] mb-6 sm:mb-8">
-        Shopping Cart
+        Alışveriş Sepeti
         {items.length > 0 && (
           <span className="text-on-surface-variant font-normal text-lg ml-3">
-            ({items.length} item{items.length !== 1 ? "s" : ""})
+            ({items.length} ürün)
           </span>
         )}
       </h1>
@@ -42,16 +42,16 @@ export default function CartPage() {
           <span className="material-symbols-outlined text-7xl text-on-surface-variant/20 mb-6 block">
             shopping_cart
           </span>
-          <h2 className="text-2xl font-bold mb-3">Your cart is empty</h2>
+          <h2 className="text-2xl font-bold mb-3">Sepetiniz boş</h2>
           <p className="text-on-surface-variant mb-8">
-            Looks like you haven&apos;t added any products yet.
+            Henüz hiçbir ürün eklememişsiniz.
           </p>
           <Link
             href="/products"
             className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-white font-bold rounded-xl hover:bg-on-primary-fixed-variant transition-colors shadow-lg shadow-primary/20"
           >
             <span className="material-symbols-outlined">storefront</span>
-            Start Shopping
+            Alışverişe Başla
           </Link>
         </div>
       ) : (

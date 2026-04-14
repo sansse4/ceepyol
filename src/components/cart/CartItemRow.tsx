@@ -57,7 +57,7 @@ export default function CartItemRow({ item }: { item: CartItem }) {
                   {item.selectedColor}
                 </span>
               )}
-              {item.selectedStorage && <span>Storage: {item.selectedStorage}</span>}
+              {item.selectedStorage && <span>Depolama: {item.selectedStorage}</span>}
             </div>
           </div>
           <button
@@ -92,9 +92,9 @@ export default function CartItemRow({ item }: { item: CartItem }) {
 
           {/* Price */}
           <div className="text-right">
-            <div className="font-bold text-lg tabular-nums">${lineTotal.toLocaleString('en-US')}.00</div>
+            <div className="font-bold text-lg tabular-nums">₺{lineTotal.toLocaleString('tr-TR')}</div>
             {item.quantity > 1 && (
-              <div className="text-xs text-on-surface-variant">${item.unitPrice.toLocaleString('en-US')}.00 each</div>
+              <div className="text-xs text-on-surface-variant">₺{item.unitPrice.toLocaleString('tr-TR')} / adet</div>
             )}
           </div>
         </div>

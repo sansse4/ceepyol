@@ -18,6 +18,9 @@ export interface Product {
   rating: number;
   reviewCount: number;
   buyerCount?: number;
+  priceTRY?: number;
+  priceUSD?: number;
+  priceVariants?: { storage: string; priceTRY: number; priceUSD: number }[];
 }
 
 export interface CartItem {
