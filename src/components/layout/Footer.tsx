@@ -22,11 +22,11 @@ const companyLinks: { nameKey: DictionaryKeys; href: string }[] = [
 ];
 
 const supportLinks: { nameKey: DictionaryKeys; href: string }[] = [
-  { nameKey: "footer.support.help", href: "#" },
-  { nameKey: "footer.support.contact", href: "#" },
-  { nameKey: "footer.support.returns", href: "#" },
-  { nameKey: "footer.support.warranty", href: "#" },
-  { nameKey: "footer.support.faq", href: "#" },
+  { nameKey: "footer.support.help", href: "/contact" },
+  { nameKey: "footer.support.contact", href: "/contact" },
+  { nameKey: "footer.support.returns", href: "/returns" },
+  { nameKey: "footer.support.warranty", href: "/warranty" },
+  { nameKey: "footer.support.faq", href: "/contact" },
 ];
 
 const socials = [
@@ -86,17 +86,15 @@ export default function Footer() {
             <p className="text-sm text-inverse-on-surface/60 mb-6 leading-relaxed max-w-sm">
               {t("footer.brand.desc")}
             </p>
-            <div className="flex gap-3">
-              {socials.map((s) => (
-                <a
-                  key={s.label}
-                  className="w-10 h-10 rounded-xl bg-white/8 border border-white/10 flex items-center justify-center text-inverse-on-surface/50 hover:text-primary-fixed-dim hover:bg-white/15 hover:border-primary-fixed-dim/30 transition-all duration-300 hover:scale-110 hover:-translate-y-0.5 active:scale-95"
-                  href="#"
-                  title={s.label}
-                >
-                  <span className="material-symbols-outlined text-[20px]">{s.icon}</span>
-                </a>
-              ))}
+            <div className="flex flex-col gap-3 text-sm text-inverse-on-surface/70 mt-6">
+              <a href="mailto:info@ceepyool.store" className="flex items-center gap-2 hover:text-primary-fixed-dim transition-colors">
+                <span className="material-symbols-outlined text-[18px]">mail</span>
+                info@ceepyool.store
+              </a>
+              <a href="https://wa.me/447916695072" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-primary-fixed-dim transition-colors">
+                <span className="material-symbols-outlined text-[18px]">phone_enabled</span>
+                +44 7916 695072
+              </a>
             </div>
           </div>
 
@@ -154,11 +152,11 @@ export default function Footer() {
       <div className="border-t border-white/8">
         <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 py-5 sm:py-6 flex flex-col md:flex-row justify-between items-center gap-3 sm:gap-4">
           <div className="flex flex-wrap justify-center gap-4 text-[11px] font-semibold text-inverse-on-surface/40">
-            <Link href="#" className="hover:text-primary-fixed-dim transition-colors duration-200">{t("footer.legal.privacy")}</Link>
+            <Link href="/privacy" className="hover:text-primary-fixed-dim transition-colors duration-200">{t("footer.legal.privacy")}</Link>
             <span className="opacity-30">|</span>
-            <Link href="#" className="hover:text-primary-fixed-dim transition-colors duration-200">{t("footer.legal.terms")}</Link>
+            <Link href="/terms" className="hover:text-primary-fixed-dim transition-colors duration-200">{t("footer.legal.terms")}</Link>
             <span className="opacity-30">|</span>
-            <Link href="#" className="hover:text-primary-fixed-dim transition-colors duration-200">{t("footer.legal.cookies")}</Link>
+            <Link href="/cookies" className="hover:text-primary-fixed-dim transition-colors duration-200">{t("footer.legal.cookies")}</Link>
           </div>
           <p className="text-inverse-on-surface/30 text-[11px] font-semibold">
             {t("footer.legal.copyright")}

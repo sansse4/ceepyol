@@ -62,7 +62,7 @@ export default function HomeStaticSections({ afterCategories }: HomeStaticSectio
               <div className="font-bold flex items-center gap-1">
                 4.8/5{" "}
                 <span className="bg-rose-500 rounded-full w-2 h-2 inline-block animate-pulse"></span>{" "}
-                Trustpilot
+                {t("home.reviews.verified") || "Müşteri Puanı"}
               </div>
               <div className="text-on-surface-variant text-xs">{t("home.trust.trustpilot")}</div>
             </div>

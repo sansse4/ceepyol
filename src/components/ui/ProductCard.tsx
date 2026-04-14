@@ -95,11 +95,11 @@ export default function ProductCard({ product }: { product: Product }) {
         />
 
         {/* Quick Add Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-all duration-400 flex items-end justify-center p-3 backdrop-blur-[1px]">
+        <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-all duration-400 flex items-end justify-center p-3 backdrop-blur-[1px] pointer-events-none">
           <button
             onClick={handleQuickAdd}
             disabled={isAdding}
-            className={`w-full py-2.5 rounded-xl text-sm font-bold flex items-center justify-center gap-2 shadow-lg transition-all duration-300 transform translate-y-0 sm:translate-y-4 sm:group-hover:translate-y-0 ${
+            className={`w-full py-2.5 rounded-xl text-sm font-bold flex items-center justify-center gap-2 shadow-lg transition-all duration-300 transform translate-y-0 sm:translate-y-4 sm:group-hover:translate-y-0 pointer-events-auto ${
               isAdding
                 ? "bg-primary text-white scale-95"
                 : "bg-surface-container-lowest dark:bg-surface-container text-primary hover:bg-primary hover:text-white active:scale-95"
