@@ -8,6 +8,7 @@ import AnnouncementBanner from "@/components/layout/AnnouncementBanner";
 import SiteBackgroundProvider from "@/components/layout/SiteBackgroundProvider";
 import ThemeProvider from "@/components/layout/ThemeProvider";
 import PromoBanner from "@/components/ui/PromoBanner";
+import { Analytics } from "@vercel/analytics/next";
 
 const manrope = Manrope({
   variable: "--font-headline",
@@ -71,6 +72,7 @@ export default function RootLayout({
           <Footer />
           <PromoBanner />
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
