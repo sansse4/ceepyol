@@ -10,7 +10,7 @@ const slideConfig = [
   {
     tagKey: "hero.0.tag" as DictionaryKeys,
     tagColor: "text-amber-800 bg-amber-100",
-    title: "iPhone 17 Pro.",
+    title: "iPhone 17 Pro Max.",
     highlightKey: "hero.0.highlight" as DictionaryKeys,
     highlightColor: "text-amber-600",
     descriptionKey: "hero.0.description" as DictionaryKeys,
@@ -18,10 +18,10 @@ const slideConfig = [
     btnClass: "bg-amber-600 text-white shadow-lg",
     bgClass: "bg-gradient-to-br from-[#fdfbf7] to-[#f4eee1]",
     glowColor: "bg-amber-500/10",
-    image: "/images/products/iphone-17-pro.jpg",
-    imageAlt: "iPhone 17 Pro",
+    image: "/images/products/ip17pm-orange.jpg",
+    imageAlt: "iPhone 17 Pro Max",
     imgClass: "w-80 rounded-3xl shadow-2xl animate-float object-contain",
-    href: "/products/iphone-17-pro",
+    href: "/products/iphone-17-pro-max",
   },
   {
     tagKey: "hero.1.tag" as DictionaryKeys,
